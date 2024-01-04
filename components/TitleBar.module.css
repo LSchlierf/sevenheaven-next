@@ -1,0 +1,51 @@
+.titleBar {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+
+.desktopLinks {
+    display: none;
+}
+
+.desktopLink > a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Nexa Rust Sans';
+    font-size: medium;
+}
+
+.mobileIcons {
+    display: flex;
+    align-items: center;
+}
+
+.mobileIcons > a > img {
+    width: 6vw;
+    height: 6vw;
+    padding: 1vw 3vw;
+}
+
+@media only screen and (min-width: 768px) {
+    .desktopLinks {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 40vw;
+    }
+
+    .desktopLink {
+        transition: all 0.1s;
+    }
+
+    .desktopLink:hover {
+        transform: scale(1.2);
+        transition: all 0.1s;
+    }
+
+    .mobileIcons {
+        display: none;
+    }
+}

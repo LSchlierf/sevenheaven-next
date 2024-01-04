@@ -1,0 +1,47 @@
+.footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+.mail {
+    color: white;
+}
+
+.phoneMobile {
+    color: white;
+}
+
+.phoneDesktop {
+    display: none;
+}
+
+.gradient {
+    height: 3px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, white 50%, rgba(255, 255, 255, 0) 100%);
+    margin: 10px 10vw;
+}
+
+.legalLinks {
+    display: flex;
+    justify-content: space-around;
+}
+
+.legalLink {
+    color: white;
+    transition: all 0.1s;
+}
+
+@media only screen and (min-width: 768px) {
+    .phoneMobile {
+        display: none;
+    }
+
+    .phoneDesktop {
+        display: block;
+    }
+
+    .legalLink:hover {
+        transform: scale(1.2);
+        transition: all 0.1s;
+    }
+}

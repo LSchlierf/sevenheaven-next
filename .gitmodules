@@ -1,6 +1,0 @@
-[submodule "sevenheaven-site"]
-	path = sevenheaven-site
-	url = git@github.com:LSchlierf/sevenheaven-site.git
-[submodule "sevenheaven-api"]
-	path = sevenheaven-api
-	url = git@github.com:LSchlierf/sevenheaven-api.git

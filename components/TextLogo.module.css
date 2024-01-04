@@ -1,0 +1,38 @@
+.centerLogo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 14vw;
+    margin: 1vh 0;
+}
+
+.centerLogo > img {
+    height: 10vw;
+}
+
+.text {
+    font-family: "Nexa Rust Sans Modified";
+    position: absolute;
+    top: 4vw;
+    background-color: black;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: white;
+    transition: all 0.1s;
+}
+
+.text:hover {
+    transform: scale(1.2);
+    transition: all 0.1s;
+}
+
+@media only screen and (min-width: 768px) {
+    .centerLogo > img {
+        height: 6vw;
+    }
+
+    .text {
+        top: 2.2vw;
+        font-size: 1.1vw;
+    }
+}
