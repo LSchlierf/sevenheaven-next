@@ -1,0 +1,20 @@
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.gradientLeft, .gradientRight {
+    width: 10vw;
+    height: 5px;
+    margin: 0 5vw
+}
+
+.gradientLeft {
+    background: linear-gradient(to left, white 0%, transparent 100%);
+}
+
+.gradientRight {
+    background: linear-gradient(to right, white 0%, transparent 100%);
+}

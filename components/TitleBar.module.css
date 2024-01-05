@@ -6,6 +6,11 @@
     padding: 0 2vw;
 }
 
+.gradient {
+    height: 5vw;
+    background: linear-gradient(black 0%, black 25%, transparent 100%);
+}
+
 .desktopLinks {
     display: none;
 }
