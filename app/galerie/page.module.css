@@ -12,7 +12,7 @@
 
 .concertPreview {
     text-decoration: none;
-    padding: 0 10vw 10vw;
+    margin: 0 10vw 10vw;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -51,6 +51,10 @@
     .concertPreview {
         width: 29vw;
         height: 19vw;
-        padding: 2vw;
+        margin: 2vw;
+    }
+
+    .concertPreview:hover > .preview > .galleryIcon {
+        opacity: 50%;
     }
 }

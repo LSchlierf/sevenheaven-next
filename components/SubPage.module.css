@@ -6,7 +6,34 @@
     mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 20%);
 }
 
+.bannerContainer {
+    height: 30vh;
+    width: 100vw;
+    z-index: -2;
+    position: absolute;
+    top: 12vw
+}
+
 .gradient {
     height: 5vh;
     background: linear-gradient(transparent 0%, black 75%, black 100%);
+}
+
+.spacer {
+    height: 30vh;
+}
+
+@media only screen and (min-width: 768px) {
+    .bannerContainer {
+        height: 60vh;
+        top: 8vw;
+    }
+
+    /* .banner {
+        object-position: 0 -6vw;
+    } */
+
+    .spacer {
+        height: 50vh;
+    }
 }

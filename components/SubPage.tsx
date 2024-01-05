@@ -1,29 +1,32 @@
 import Image from 'next/image'
 import styles from './SubPage.module.css'
 import background from '../public/img/bg_red.jpg'
+import BackButton from './BackButton'
 
 export default function SubPage(props: any) {
   return (
     <main>
-      <Image
-        className={styles.banner}
-        src={props.banner}
-        alt='banner'
-        fill
-        quality={100}
-        placeholder='blur'
-        style={{
-          zIndex: -2,
-          objectFit: 'cover'
-        }}
-      />
-      <div style={{
-        height: '50vh'
-      }} />
+      <div className={styles.bannerContainer}>
+        <Image
+          className={styles.banner}
+          src={props.banner}
+          alt='banner'
+          fill
+          quality={100}
+          placeholder='blur'
+          style={{
+            zIndex: -2,
+            objectFit: 'cover',
+            objectPosition: 'center ' + (props.offset || '-6vw')
+          }}
+        />
+      </div>
+      <div className={styles.spacer} />
       <div style={{
         position: 'relative'
       }} >
         {props.children}
+        <BackButton text='Zurück zur Startseite' to='/' />
         <div className={styles.gradient} />
         <div style={{
           position: 'absolute',

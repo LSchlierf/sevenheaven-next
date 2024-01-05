@@ -1,0 +1,92 @@
+.headlinerContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headliner {
+    width: 80vw;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 5vw;
+}
+
+.headlinerTitle {
+    background-color: black;
+    padding: 10px 0;
+    font-size: larger;
+}
+
+.headlinerSongs {
+    background-color: white;
+    color: black;
+    padding: 10px 0;
+    font-size: large;
+    padding: 10px;
+}
+
+.repertoireContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 10vw;
+}
+
+.repertoire {
+    width: 80vw;
+    padding-bottom: 10vw;
+}
+
+.repertoireTitle {
+    font-family: 'Nexa Rust Sans Modified';
+    font-size: 60px;
+}
+
+.repertoireSongs {
+    font-weight: bold;
+    font-size: large;
+    line-height: 1.4;
+}
+
+@media only screen and (min-width: 768px) {
+    .headlinerContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .headliner {
+        width: 30vw;
+        padding-bottom: 3vw;
+    }
+
+    .headlinerTitle {
+        font-size: xx-large;
+    }
+
+    .headlinerSongs {
+        font-size: x-large;
+    }
+
+    .repertoireContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .repertoire {
+        width: 50vw;
+        text-align: center;
+        padding-bottom: 10vh;
+    }
+
+    .repertoireTitle {
+        font-size: 100px;
+    }
+
+    .repertoireSongs {
+        font-size: x-large;
+        padding: 0 5vw;
+    }
+}

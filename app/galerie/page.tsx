@@ -31,16 +31,14 @@ export default function Galerie() {
     <SubPage banner={banner}>
       <H1 text='Galerie' />
       <div className={styles.textBox} >
-        Anmerkung: Aus rechtlichen Gründen ist es uns leider nicht gestattet hier Cover-Songs zu veröffentlichen. Auf Anfrage schicken wir Dir aber gerne einige unserer Performances zu.
+        Anmerkung: Aus rechtlichen Gründen ist es uns leider nicht gestattet hier Cover-Songs zu veröffentlichen.
+        Auf Anfrage schicken wir Dir aber gerne einige unserer Performances zu.
       </div>
       <H2 text='Fotos' />
       <div className={styles.concertList}>
         {Object.entries(concerts).map(galleryPreview)}
-        {Object.entries(concerts).map(galleryPreview)}
-        {Object.entries(concerts).map(galleryPreview)}
-        {Object.entries(concerts).map(galleryPreview)}
-        {Object.entries(concerts).map(galleryPreview)}
       </div>
+      <H2 text='Videos' />
     </SubPage>
   )
 }

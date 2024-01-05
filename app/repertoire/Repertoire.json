@@ -1,0 +1,400 @@
+[
+    {
+        "letter": "A",
+        "songs": [
+            {
+                "title": "Alles neu",
+                "artist": "Peter Fox"
+            },
+            {
+                "title": "Angels",
+                "artist": "Robbie Williams"
+            }
+        ]
+    },
+    {
+        "letter": "B",
+        "songs": [
+            {
+                "title": "Basket Case",
+                "artist": "Green Day"
+            },
+            {
+                "title": "Boulevard of Broken Dreams",
+                "artist": "Green Day"
+            },
+            {
+                "title": "Brenna tuats guat",
+                "artist": "Hubert von Goisern"
+            },
+            {
+                "title": "Britney Spears Medley",
+                "artist": "Britney Spears"
+            }
+        ]
+    },
+    {
+        "letter": "C",
+        "songs": [
+            {
+                "title": "Can't Fight This Feeling",
+                "artist": "REO Speedwagon"
+            },
+            {
+                "title": "Can't Stop",
+                "artist": "Red Hot Chili Peppers"
+            },
+            {
+                "title": "Creep",
+                "artist": "Radiohead"
+            }
+        ]
+    },
+    {
+        "letter": "D",
+        "songs": [
+            {
+                "title": "Dancing Queen",
+                "artist": "ABBA"
+            },
+            {
+                "title": "Disney Medley",
+                "artist": "Sevenheaven"
+            },
+            {
+                "title": "Don't Stop Believin'",
+                "artist": "Journey"
+            },
+            {
+                "title": "Don't Stop Me Now",
+                "artist": "Queen"
+            }
+        ]
+    },
+    {
+        "letter": "E",
+        "songs": [
+            {
+                "title": "Ein Kompliment",
+                "artist": "Sportfreunde Stiller"
+            }
+        ]
+    },
+    {
+        "letter": "F",
+        "songs": [
+            {
+                "title": "F\u00fcrstenfeld",
+                "artist": "S.T.S"
+            }
+        ]
+    },
+    {
+        "letter": "G",
+        "songs": [
+            {
+                "title": "Gimme! Gimme! Gimme!",
+                "artist": "ABBA"
+            },
+            {
+                "title": "Grace Kelly",
+                "artist": "MIKA"
+            },
+            {
+                "title": "Griechischer Wein",
+                "artist": "Udo J\u00fcrgens"
+            }
+        ]
+    },
+    {
+        "letter": "H",
+        "songs": [
+            {
+                "title": "Ham kummst",
+                "artist": "Seiler und Speer"
+            },
+            {
+                "title": "Hey Jude",
+                "artist": "The Beatles"
+            },
+            {
+                "title": "Hold the Line",
+                "artist": "Toto"
+            },
+            {
+                "title": "Holiday",
+                "artist": "Green Day"
+            },
+            {
+                "title": "Hollywood Hills",
+                "artist": "Sunrise Avenue"
+            },
+            {
+                "title": "Hotel California",
+                "artist": "Eagles"
+            },
+            {
+                "title": "Hurra, hurra, die Schule brennt",
+                "artist": "Extrabreit"
+            }
+        ]
+    },
+    {
+        "letter": "I",
+        "songs": [
+            {
+                "title": "I Will Survive",
+                "artist": "Gloria Gaynor"
+            },
+            {
+                "title": "Irgendwie, irgendwo, irgendwann",
+                "artist": "Nena"
+            },
+            {
+                "title": "It's My Life",
+                "artist": "Bon Jovi"
+            }
+        ]
+    },
+    {
+        "letter": "J",
+        "songs": [
+            {
+                "title": "Jet Lag",
+                "artist": "Simple Plan"
+            },
+            {
+                "title": "Jump",
+                "artist": "Van Halen"
+            }
+        ]
+    },
+    {
+        "letter": "K",
+        "songs": []
+    },
+    {
+        "letter": "L",
+        "songs": [
+            {
+                "title": "Little Talks",
+                "artist": "Of Monsters and Men"
+            }
+        ]
+    },
+    {
+        "letter": "M",
+        "songs": [
+            {
+                "title": "Major Tom",
+                "artist": "Peter Schilling"
+            },
+            {
+                "title": "More Than You Know",
+                "artist": "Axwell /\\ Ingrosso"
+            }
+        ]
+    },
+    {
+        "letter": "N",
+        "songs": [
+            {
+                "title": "Narcotic",
+                "artist": "Liquido"
+            }
+        ]
+    },
+    {
+        "letter": "O",
+        "songs": [
+            {
+                "title": "Ohne dich",
+                "artist": "M\u00fcnchener Freiheit"
+            }
+        ]
+    },
+    {
+        "letter": "P",
+        "songs": [
+            {
+                "title": "Papaoutai",
+                "artist": "Stromae"
+            },
+            {
+                "title": "Perfekte Welle",
+                "artist": "Juli"
+            }
+        ]
+    },
+    {
+        "letter": "Q",
+        "songs": [
+            {
+                "title": "Que Sera Sera",
+                "artist": "Doris Day"
+            }
+        ]
+    },
+    {
+        "letter": "R",
+        "songs": [
+            {
+                "title": "Rockin' All Over The World",
+                "artist": "Status Quo"
+            },
+            {
+                "title": "Rolling in the Deep",
+                "artist": "Adele"
+            },
+            {
+                "title": "Ruby",
+                "artist": "Kaiser Chiefs"
+            }
+        ]
+    },
+    {
+        "letter": "S",
+        "songs": [
+            {
+                "title": "Schickeria",
+                "artist": "Spider Murphy Gang"
+            },
+            {
+                "title": "Schrei nach Liebe",
+                "artist": "Die \u00c4rzte"
+            },
+            {
+                "title": "Se bastasse una canzone",
+                "artist": "Eros Ramazzotti"
+            },
+            {
+                "title": "Seven Nation Army (Walzer)",
+                "artist": "The White Stripes"
+            },
+            {
+                "title": "Seven Nation Army",
+                "artist": "The White Stripes"
+            },
+            {
+                "title": "Sex on Fire",
+                "artist": "Kings of Leon"
+            },
+            {
+                "title": "Shallow",
+                "artist": "Lady Gaga, Bradley Cooper"
+            },
+            {
+                "title": "Shut Up and Dance",
+                "artist": "WALK THE MOON"
+            },
+            {
+                "title": "Skandal im Sperrbezirk",
+                "artist": "Spider Murphy Gang"
+            },
+            {
+                "title": "Skyfall",
+                "artist": "Adele"
+            },
+            {
+                "title": "Summer of '69",
+                "artist": "Bryan Adams"
+            },
+            {
+                "title": "Sweet Caroline",
+                "artist": "DJ \u00d6tzi"
+            },
+            {
+                "title": "Sweet Home Chicago",
+                "artist": "The Blues Brothers"
+            }
+        ]
+    },
+    {
+        "letter": "T",
+        "songs": [
+            {
+                "title": "Tage wie diese",
+                "artist": "Die Toten Hosen"
+            },
+            {
+                "title": "This Is The Life",
+                "artist": "Amy Macdonald"
+            },
+            {
+                "title": "This Love",
+                "artist": "Maroon 5"
+            },
+            {
+                "title": "Time Warp",
+                "artist": "Rocky Horror Picture Show"
+            }
+        ]
+    },
+    {
+        "letter": "U",
+        "songs": []
+    },
+    {
+        "letter": "V",
+        "songs": [
+            {
+                "title": "Viva La Vida",
+                "artist": "Coldplay"
+            }
+        ]
+    },
+    {
+        "letter": "W",
+        "songs": [
+            {
+                "title": "Waterloo",
+                "artist": "ABBA"
+            },
+            {
+                "title": "Weus'd a Herz hast wia a Bergwerk",
+                "artist": "Rainhard Fendrich"
+            },
+            {
+                "title": "What's Up?",
+                "artist": "4 Non Blondes"
+            },
+            {
+                "title": "Whatever It Takes",
+                "artist": "Imagine Dragons"
+            },
+            {
+                "title": "Wonderwall",
+                "artist": "Oasis"
+            }
+        ]
+    },
+    {
+        "letter": "X",
+        "songs": []
+    },
+    {
+        "letter": "Y",
+        "songs": []
+    },
+    {
+        "letter": "Z",
+        "songs": []
+    },
+    {
+        "letter": "#",
+        "songs": [
+            {
+                "title": "1000 und 1 Nacht",
+                "artist": "Klaus Lage"
+            },
+            {
+                "title": "500 Miles",
+                "artist": "The Proclaimers"
+            },
+            {
+                "title": "99 Luftballons",
+                "artist": "Nena"
+            }
+        ]
+    }
+]

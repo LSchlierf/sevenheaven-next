@@ -1,0 +1,106 @@
+.portraits {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
+
+.portraitMobile, .portraitDesktop {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portraitDesktop {
+    display: none;
+}
+
+.textBox {
+    font-weight: bold;
+    text-align: center;
+    font-size: medium;
+    padding: 0 30px 50px;
+}
+
+.contactWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.channels {
+    padding-bottom: 30px;
+}
+
+.separator {
+    width: 80vw;
+    height: 4px;
+    background: linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
+    margin: 10px 0;
+}
+
+.contactForm {
+    width: 100%;
+}
+
+.channel, .channelPhoneMobile, .channelPhoneDesktop {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.channel > img, .channelPhoneMobile > img, .channelPhoneDesktop > img {
+    min-width: 120px;
+}
+
+.channelPhoneDesktop {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .portraitMobile {
+        display: none;
+    }
+
+    .portraitDesktop {
+        display: flex;
+        font-size: x-large;
+    }
+
+    .textBox {
+        font-size: larger;
+    }
+
+    .contactWrapper {
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        align-items: flex-start;
+    }
+
+    .separator {
+        height: 450px;
+        width: 6px;
+        margin: 30px 0;
+        background: linear-gradient(transparent 0%, white 20%, white 80%, transparent 100%)
+    }
+
+    .channels, .contactForm {
+        width: calc(50vw - 3px);
+    }
+
+    .channelPhoneDesktop {
+        display: flex;
+    }
+
+    .channelPhoneMobile {
+        display: none;
+    }
+
+    .channel, .channelPhoneDesktop {
+        padding-left: 8vw;
+        font-size: large;
+    }
+}

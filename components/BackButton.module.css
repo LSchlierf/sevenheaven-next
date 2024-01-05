@@ -1,0 +1,29 @@
+.wrapper {
+    padding: 15px;
+    border-radius: 15px;
+    width: 80vw;
+    margin: 0 10vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.text {
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        width: 24vw;
+        margin: 20px 38vw 0;
+        transition: all 0.1s;
+    }
+
+    .wrapper:hover {
+        transform: scale(1.1);
+    }
+}

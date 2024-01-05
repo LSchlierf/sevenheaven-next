@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .gradientLeft, .gradientRight {
@@ -17,4 +18,18 @@
 
 .gradientRight {
     background: linear-gradient(to right, white 0%, transparent 100%);
+}
+
+@media only screen and (min-width: 768px) {
+    .headerContainer > h1 {
+        font-size: xxx-large;
+    }
+
+    .headerContainer > h2 {
+        font-size: xx-large;
+    }
+
+    .headerContainer > h3 {
+        font-size: x-large;
+    }
 }
