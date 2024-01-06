@@ -10,12 +10,13 @@ import Image from 'next/image';
 import BackButton from '@/components/BackButton';
 
 export default function Page({ params }: { params: { concert: string } }) {
+  let [largeImg, setLargeImg] = useState(<></>)
+  
   if (!params.concert || !concerts[params.concert as keyof Object]) {
     return notFound()
   }
 
   const data = concerts[params.concert as keyof Object]
-  let [largeImg, setLargeImg] = useState(<></>)
 
   document.onkeydown = (e) => {
     if (e.code === "Escape") {
