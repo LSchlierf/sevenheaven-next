@@ -87,6 +87,7 @@ export default function Kontakt() {
             <img
               src='/mail.svg'
               height={40}
+              alt=''
             />
             kontakt@sevenheaven.band
           </a>
@@ -94,6 +95,7 @@ export default function Kontakt() {
             <img
               src='/phone.svg'
               height={40}
+              alt=''
             />
             089 / 71034962
           </a>
@@ -101,6 +103,7 @@ export default function Kontakt() {
             <img
               src='/phone.svg'
               height={40}
+              alt=''
             />
             089 / 71034962
           </div>
@@ -108,6 +111,7 @@ export default function Kontakt() {
             <img
               src='/insta.svg'
               height={40}
+              alt=''
             />
             @sevenheaven.band
           </a>

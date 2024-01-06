@@ -1,3 +1,7 @@
+.wrapper {
+    position: static;
+}
+
 .titleBar {
     color: white;
     background-color: black;
@@ -15,7 +19,7 @@
     display: none;
 }
 
-.desktopLink > a {
+.desktopLink a, .menu summary, .menu a {
     text-decoration: none;
     color: white;
     font-family: 'Nexa Rust Sans';
@@ -27,13 +31,50 @@
     align-items: center;
 }
 
-.mobileIcons > a > img {
+.mobileIcons>a>img {
     width: 6vw;
     height: 6vw;
     padding: 1vw 3vw;
 }
 
+.arrow {
+    display: none;
+}
+
 @media only screen and (min-width: 768px) {
+    .wrapper {
+        position: fixed;
+        width: 100vw;
+        z-index: 4;
+        top: calc(0px - (var(--scrolled) * 7vw));
+        animation: desktopBarUp 0.3s;
+    }
+
+    .wrapper:hover {
+        top: 0;
+        animation: desktopBarLower 0.3s;
+    }
+
+    @keyframes desktopBarLower {
+        from {
+            top: calc(0px - (var(--scrolled) * 7vw));
+        }
+
+        to {
+            top: 0px;
+        }
+    }
+
+    @keyframes desktopBarUp {
+        from {
+            top: 0px;
+        }
+
+        to {
+            top: calc(0px - (var(--scrolled) * 7vw));
+        }
+    }
+
     .desktopLinks {
         display: flex;
         justify-content: space-around;
@@ -42,7 +83,7 @@
     }
 
     .desktopLink {
-        transition: all 0.1s;
+        transition: all 0.5s;
     }
 
     .desktopLink:hover {
@@ -50,7 +91,68 @@
         transition: all 0.1s;
     }
 
+    .menu a:hover {
+        transform: scale(1.1);
+    }
+
     .mobileIcons {
         display: none;
+    }
+
+    .gradient {
+        display: flex;
+        justify-content: center;
+    }
+
+    .arrow {
+        display: unset;
+        height: 3vw;
+        transform: rotate(-90deg);
+        opacity: var(--scrolled);
+        transition: opacity 0.3s;
+    }
+
+    .wrapper:hover .arrow {
+        opacity: 0;
+    }
+
+    .spacer {
+        height: 12vw;
+        width: 100vw;
+    }
+
+    .menu {
+        cursor: pointer;
+    }
+
+    .menu summary {
+        transition: all 0.1s;
+    }
+    
+    .menu summary:hover {
+        transform: scale(1.1);
+    }
+
+    /* .menu summary::marker, .menu summary::-webkit-details-marker {
+        display: none;
+        content: '';
+    } */
+
+    .sub {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub a {
+        font-size: small;
+        padding-top: 3px;
+        padding-left: 13px;
+        opacity: calc(1 - var(--scrolled));
+        transition: opacity 0.3s, transform 0.1s;
+    }
+
+    .wrapper:hover a {
+        opacity: 1;
     }
 }

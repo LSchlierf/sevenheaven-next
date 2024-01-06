@@ -11,22 +11,24 @@ import BackButton from '@/components/BackButton';
 
 export default function Page({ params }: { params: { concert: string } }) {
   let [largeImg, setLargeImg] = useState(<></>)
-  
+
   if (!params.concert || !concerts[params.concert as keyof Object]) {
     return notFound()
   }
 
-  let data : any = concerts[params.concert as keyof Object]
+  let data: any = concerts[params.concert as keyof Object]
 
-  document.onkeydown = (e) => {
-    if (e.code === "Escape") {
-      setLargeImg(<></>)
+  if (typeof document !== 'undefined') {
+    document.onkeydown = (e) => {
+      if (e.code === "Escape") {
+        setLargeImg(<></>)
+      }
     }
   }
 
   function galleryCardMobile(img: any, index: number) {
     return (
-      <div className={img.vert ? styles.imageWrapperMobileVert : styles.imageWrapperMobile} >
+      <div className={img.vert ? styles.imageWrapperMobileVert : styles.imageWrapperMobile} key={index}>
         <Image
           className={styles.image}
           src={'/img/' + img.src}
@@ -52,6 +54,7 @@ export default function Page({ params }: { params: { concert: string } }) {
           objectFit: 'cover',
           cursor: 'pointer'
         }}
+        key={index}
         onClick={() => setLargeImg(
           <div className={styles.largeImg} onClick={() => setLargeImg(<></>)}>
             <div className={styles.largeImgContainer}>
@@ -87,7 +90,7 @@ export default function Page({ params }: { params: { concert: string } }) {
               fill
               style={{
                 objectFit: 'cover',
-                filter: 'blur(15px'
+                filter: 'blur(15px)'
               }}
             />
           </div>
@@ -100,7 +103,7 @@ export default function Page({ params }: { params: { concert: string } }) {
           {data.images.map(galleryCardDesktop)}
         </div>
       </main>
-      <BackButton to='/galerie' text='Zurück zur Galerie' color='darkred'/>
+      <BackButton to='/galerie' text='Zurück zur Galerie' color='darkred' />
     </>
   )
 }

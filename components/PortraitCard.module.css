@@ -1,0 +1,134 @@
+.wrapper {
+    width: 42.5vw;
+    height: 75vw;
+    position: relative;
+    display: flex;
+    margin: 2.5vw;
+}
+
+.banner {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.text {
+    position: relative;
+    box-sizing: border-box;
+    top: 0;
+    width: 100%;
+    height: 65vw;
+    padding: 10px;
+    overflow-y: scroll;
+    animation: flyIn ease-out 0.3s;
+}
+
+@keyframes flyIn {
+    from {
+        height: 0;
+        top: 65vw;
+    }
+
+    to {
+        height: 65vw;
+        top: 0;
+    }
+}
+
+.banner > summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vw;
+    backdrop-filter: blur(10px) brightness(50%);
+}
+
+.banner > summary::marker, .banner > summary::-webkit-details-marker {
+    display: none;
+}
+
+.icon {
+    height: 5vw;
+    margin-right: 15px;
+    transform: rotate(90deg);
+}
+
+.banner[open] .icon {
+    transform: rotate(-90deg);
+}
+
+.banner:not([open]) > summary {
+    backdrop-filter: blur(10px) brightness(50%);
+}
+
+.banner[open] {
+    backdrop-filter: grayscale(100%) brightness(50%);
+    transition: all 0.3s;
+}
+
+.name, .role {
+    padding: 0 10px
+}
+
+.name {
+    font-size: x-small;
+    font-family: 'Nexa Rust Sans';
+}
+
+.role {
+    font-size: xx-small;
+    font-weight: bold;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        width: 15vw;
+        height: 26.5vw;
+        margin: 20px;
+    }
+
+    .banner > summary {
+        cursor: pointer;
+        height: 4.5vw
+    }
+
+    .icon {
+        height: 2vw
+    }
+
+    .text {
+        height: 22vw;
+        font-size: large;
+        padding: 20px;
+        animation: flyInDesktop ease-out 0.3s
+    }
+
+    @keyframes flyInDesktop {
+        from {
+            height: 0;
+            top: 22vw;
+        }
+    
+        to {
+            height: 22vw;
+            top: 0;
+        }
+    }
+
+    .name {
+        font-size: large;
+    }
+
+    .role {
+        font-size: small;
+    }
+}

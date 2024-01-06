@@ -3,6 +3,19 @@
 import { useState } from 'react'
 import styles from './BurgerMenu.module.css'
 
+if (typeof window !== 'undefined') {
+  window.addEventListener('scroll', updateScrolled)
+  window.addEventListener('resize', updateScrolled)
+}
+
+function updateScrolled() {
+  if (typeof document !== 'undefined') {
+    const htmlElement = document.documentElement
+    const screenScrolled = htmlElement.scrollTop / htmlElement.clientHeight
+    htmlElement.style.setProperty("--scrolled", String(Math.min(screenScrolled, 0.5) * 2))
+  }
+}
+
 export default function BurgerMenu() {
   let [shown, setShown] = useState(false)
 
@@ -47,10 +60,10 @@ export default function BurgerMenu() {
                 Über uns
               </a>
             </div>
-            <div className={styles.menuItem}>
-              <a href='/angebot'>
+            <details className={styles.menuItem}>
+              <summary>
                 Angebot
-              </a>
+              </summary>
               <div className={styles.sub}>
                 <a href='/angebot/event'>
                   Eventband
@@ -62,7 +75,7 @@ export default function BurgerMenu() {
                   Partyband
                 </a>
               </div>
-            </div>
+            </details>
             <div className={styles.menuItem}>
               <a href='/repertoire'>
                 Repertoire

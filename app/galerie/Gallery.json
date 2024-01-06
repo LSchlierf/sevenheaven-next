@@ -36,8 +36,8 @@
         "thumbnail": "23-09-2023/IMG_8264.jpg",
         "images": [
             {"src": "23-09-2023/IMG_7616.jpg"},
-            {"src": "23-09-2023/IMG_7684.jpg"},
             {"src": "23-09-2023/IMG_7782.jpg", "vert" : true},
+            {"src": "23-09-2023/IMG_7684.jpg"},
             {"src": "23-09-2023/IMG_7792.jpg"},
             {"src": "23-09-2023/IMG_7795.jpg"},
             {"src": "23-09-2023/IMG_7818.jpg"},
@@ -46,14 +46,14 @@
             {"src": "23-09-2023/IMG_7864.jpg"},
             {"src": "23-09-2023/IMG_7932.jpg"},
             {"src": "23-09-2023/IMG_7935.jpg"},
-            {"src": "23-09-2023/IMG_7958.jpg"},
             {"src": "23-09-2023/IMG_7993.jpg", "vert" : true},
+            {"src": "23-09-2023/IMG_7958.jpg"},
             {"src": "23-09-2023/IMG_8015.jpg", "vert" : true},
             {"src": "23-09-2023/IMG_8134.jpg"},
-            {"src": "23-09-2023/IMG_7860.jpg"},
-            {"src": "23-09-2023/IMG_8264.jpg"},
             {"src": "23-09-2023/IMG_8074.jpg", "vert" : true},
-            {"src": "23-09-2023/IMG_8329.jpg", "vert" : true}
+            {"src": "23-09-2023/IMG_7860.jpg"},
+            {"src": "23-09-2023/IMG_8329.jpg", "vert" : true},
+            {"src": "23-09-2023/IMG_8264.jpg"}
         ]
     },
     "westparkjubulaeum": {
@@ -62,8 +62,8 @@
         "thumbnail": "westparkjubilaeum/20230722_215033.jpg",
         "images": [
             {"src": "westparkjubilaeum/20230722_215033.jpg"},
-            {"src": "westparkjubilaeum/20230722_220342.jpg"},
             {"src": "westparkjubilaeum/Band2.jpg", "vert" : true},
+            {"src": "westparkjubilaeum/20230722_220342.jpg"},
             {"src": "westparkjubilaeum/AllesNeu.jpg"},
             {"src": "westparkjubilaeum/LucasLuisa2.jpg"},
             {"src": "westparkjubilaeum/Band.jpg"},
@@ -105,8 +105,8 @@
             {"src": "juha/L1000615.jpg"},
             {"src": "juha/L1000623.jpg", "vert" : true},
             {"src": "juha/L1000620.jpg"},
-            {"src": "juha/L1000631.jpg"},
             {"src": "juha/L1000635.jpg", "vert" : true},
+            {"src": "juha/L1000631.jpg"},
             {"src": "juha/L1000649.jpg"},
             {"src": "juha/L1000568.jpg", "vert" : true},
             {"src": "juha/L1000653.jpg"},

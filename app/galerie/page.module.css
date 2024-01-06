@@ -30,7 +30,7 @@
     position: absolute;
     bottom: 10px;
     right: 10px;
-    opacity: 25%;
+    opacity: 50%;
     height: 50px;
 }
 
@@ -41,6 +41,12 @@
     font-weight: bold;
     font-size: large;
     padding: 10px 0;
+}
+
+.videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -55,6 +61,16 @@
     }
 
     .concertPreview:hover > .preview > .galleryIcon {
-        opacity: 50%;
+        opacity: 100%;
+    }
+
+    .concertPreview:hover > .preview > img:not(.galleryIcon) {
+        filter: brightness(50%);
+    }
+
+    .videos {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }

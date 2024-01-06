@@ -14,7 +14,7 @@ export default function Repertoire() {
           {item.title}
         </div>
         <div className={stlyes.headlinerSongs}>
-          {item.songs.map((song) => <>{song}<br /></>)}
+          {item.songs.map((song, index) => <div key={index}>{song}</div>)}
         </div>
       </div>
     )
@@ -30,7 +30,7 @@ export default function Repertoire() {
           {item.letter}
         </div>
         <div className={stlyes.repertoireSongs}>
-          {item.songs.map((song) => <>{song.title} - {song.artist}<br /></>)}
+          {item.songs.map((song, index) => <div key={index}>{song.title} - {song.artist}</div>)}
         </div>
       </div>
     )

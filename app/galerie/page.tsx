@@ -4,6 +4,7 @@ import { H1, H2 } from "@/components/Header";
 import styles from './page.module.css'
 import concerts from './Gallery.json'
 import Image from "next/image";
+import VideoCard from "@/components/VideoCard";
 
 function galleryPreview(concert: any, index: any) {
   return (
@@ -17,7 +18,7 @@ function galleryPreview(concert: any, index: any) {
             objectFit: 'cover'
           }}
         />
-        <img src='/photo-gallery-icon.svg' className={styles.galleryIcon} />
+        <img src='/photo-gallery-icon.svg' className={styles.galleryIcon} alt='' />
       </div>
       <div className={styles.concertTitle} >
         {concert[1].preview}
@@ -39,6 +40,13 @@ export default function Galerie() {
         {Object.entries(concerts).map(galleryPreview)}
       </div>
       <H2 text='Videos' />
+      <div className={styles.videos}>
+        <VideoCard src='https://www.youtube.com/embed/qWwdPrLqDso?si=fCnIT9igCO999ylX' text={<>Inside Seven Heaven<br />(Part 1)</>} thumbnail='thumbnails/inside1.jpg' domain='YouTube' />
+        <VideoCard src='https://www.youtube.com/embed/fqxEIZ4eg38?si=SgePP1OxdlPuEnjp' text={<>Inside Seven Heaven<br />(Part 2)</>} thumbnail='thumbnails/inside2.jpg' domain='YouTube' />
+        <VideoCard src='https://www.youtube.com/embed/9AU7nnl1-mk?si=QQ-UNfkHshuFIaMr' text={<>Inside Seven Heaven<br />(Part 3)</>} thumbnail='thumbnails/inside3.jpg' domain='YouTube' />
+        <VideoCard src='https://www.youtube.com/embed/j6pDTYMMN7o?si=mEWEJK5ZGlRIHqyF' text={<>40-jähriges Westpark Jubiläum 2023<br />(Highlights)</>} thumbnail='thumbnails/westpark.jpg' domain='YouTube' />
+        <VideoCard src='https://www.youtube.com/embed/urSar1gnXOQ?si=DQh8lAVymiEx-CFJ' text={<>Konzert Jugendhaus Neuried 2023<br />(Highlights)</>} thumbnail='thumbnails/juha.jpg' domain='YouTube' />
+      </div>
     </SubPage>
   )
 }

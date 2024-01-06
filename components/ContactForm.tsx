@@ -7,7 +7,7 @@ const mailRegex = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~
 
 export default function ContactForm() {
 
-  function handleServerReply(reply : any) {
+  function handleServerReply(reply: any) {
     if (!reply || reply['status'] !== 'success') {
       setForm(errorTemplate)
       return
@@ -15,7 +15,7 @@ export default function ContactForm() {
     setForm(successTemplate)
   }
 
-  function sendMail(data : {mail : string, mesg : string}) {
+  function sendMail(data: { mail: string, mesg: string }) {
     fetch('/api/kontakt', {
       method: 'POST',
       headers: {
@@ -30,8 +30,8 @@ export default function ContactForm() {
   }
 
   function submit() {
-    const mailInput : any = document.getElementsByClassName(styles.contactMail)[0]
-    const mesgInput : any = document.getElementsByClassName(styles.contactMsg)[0]
+    const mailInput: any = document.getElementsByClassName(styles.contactMail)[0]
+    const mesgInput: any = document.getElementsByClassName(styles.contactMsg)[0]
     const mail = mailInput.value
     const mesg = mesgInput.value
     if (mesg.length === 0) {
@@ -50,7 +50,7 @@ export default function ContactForm() {
   }
 
   function checkMail() {
-    const mailInput : any = document.getElementsByClassName(styles.contactMail)[0]
+    const mailInput: any = document.getElementsByClassName(styles.contactMail)[0]
     const mail = mailInput.value
     const valid = mailRegex.test(mail)
     if (valid) {
@@ -64,7 +64,7 @@ export default function ContactForm() {
     checkMail()
   }
 
-  function formTemplate(mailInputField : React.ReactNode) {
+  function formTemplate(mailInputField: React.ReactNode) {
     return (
       <form className={styles.contactForm} onSubmit={(event) => { event.preventDefault(); submit() }}>
         <div className={styles.contactMailWrapper}>
@@ -88,7 +88,7 @@ export default function ContactForm() {
     <>
       <input type='email' placeholder='Deine Mail-Adresse...' className={styles.contactMail} onBlur={mailFinished} onInput={checkMail} />
       <div className={styles.contactMailIconWrapper}>
-        <img src='/valid.svg' />
+        <img src='/valid.svg' alt='' />
       </div>
     </>
   )
@@ -97,7 +97,7 @@ export default function ContactForm() {
     <>
       <input type='email' placeholder='Deine Mail-Adresse...' className={styles.contactMail} onBlur={mailFinished} onInput={checkMail} />
       <div className={styles.contactMailIconWrapper}>
-        <img src='/invalid.svg' />
+        <img src='/invalid.svg' alt='' />
       </div>
     </>
   )
@@ -117,7 +117,7 @@ export default function ContactForm() {
     </div>
   )
 
-  function feedbackTemplate(text : React.ReactNode) {
+  function feedbackTemplate(text: React.ReactNode) {
     return (
       <div className={styles.contactForm}>
         <div className={styles.contactFeedback}>
