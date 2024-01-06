@@ -16,7 +16,7 @@ export default function Page({ params }: { params: { concert: string } }) {
     return notFound()
   }
 
-  const data = concerts[params.concert as keyof Object]
+  let data : any = concerts[params.concert as keyof Object]
 
   document.onkeydown = (e) => {
     if (e.code === "Escape") {
@@ -24,7 +24,7 @@ export default function Page({ params }: { params: { concert: string } }) {
     }
   }
 
-  function galleryCardMobile(img: string, index: number) {
+  function galleryCardMobile(img: any, index: number) {
     return (
       <div className={img.vert ? styles.imageWrapperMobileVert : styles.imageWrapperMobile} >
         <Image
@@ -40,7 +40,7 @@ export default function Page({ params }: { params: { concert: string } }) {
     )
   }
 
-  function galleryCardDesktop(img: string, index: number) {
+  function galleryCardDesktop(img: any, index: number) {
     return (
       <Image
         className={styles.image}

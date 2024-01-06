@@ -7,7 +7,7 @@ import { H1, H2 } from '@/components/Header'
 import BackButton from '@/components/BackButton'
 
 export default function Repertoire() {
-  function headlinerItem(item, index: number) {
+  function headlinerItem(item : {songs : string[], title: string}, index: number) {
     return (
       <div className={stlyes.headliner} key={index}>
         <div className={stlyes.headlinerTitle}>
@@ -20,7 +20,7 @@ export default function Repertoire() {
     )
   }
 
-  function repertoireItem(item, index: number) {
+  function repertoireItem(item : {songs : {title: string, artist : string}[], letter : string}, index: number) {
     if (item.songs.length === 0) {
       return null
     }

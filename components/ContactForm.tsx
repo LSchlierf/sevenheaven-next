@@ -1,13 +1,13 @@
 "use client";
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import styles from './ContactForm.module.css'
 
 const mailRegex = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/
 
 export default function ContactForm() {
 
-  function handleServerReply(reply) {
+  function handleServerReply(reply : any) {
     if (!reply || reply['status'] !== 'success') {
       setForm(errorTemplate)
       return
@@ -15,7 +15,7 @@ export default function ContactForm() {
     setForm(successTemplate)
   }
 
-  function sendMail(data) {
+  function sendMail(data : {mail : string, mesg : string}) {
     fetch('/api/kontakt', {
       method: 'POST',
       headers: {
@@ -30,8 +30,8 @@ export default function ContactForm() {
   }
 
   function submit() {
-    const mailInput = document.getElementsByClassName(styles.contactMail)[0]
-    const mesgInput = document.getElementsByClassName(styles.contactMsg)[0]
+    const mailInput : any = document.getElementsByClassName(styles.contactMail)[0]
+    const mesgInput : any = document.getElementsByClassName(styles.contactMsg)[0]
     const mail = mailInput.value
     const mesg = mesgInput.value
     if (mesg.length === 0) {
@@ -50,7 +50,7 @@ export default function ContactForm() {
   }
 
   function checkMail() {
-    const mailInput = document.getElementsByClassName(styles.contactMail)[0]
+    const mailInput : any = document.getElementsByClassName(styles.contactMail)[0]
     const mail = mailInput.value
     const valid = mailRegex.test(mail)
     if (valid) {
@@ -64,14 +64,14 @@ export default function ContactForm() {
     checkMail()
   }
 
-  function formTemplate(mailInputField) {
+  function formTemplate(mailInputField : React.ReactNode) {
     return (
       <form className={styles.contactForm} onSubmit={(event) => { event.preventDefault(); submit() }}>
         <div className={styles.contactMailWrapper}>
           {mailInputField}
         </div>
         <div style={{ height: '20px' }} />
-        <textarea type='text' placeholder='Deine Nachricht an uns...' className={styles.contactMsg} />
+        <textarea placeholder='Deine Nachricht an uns...' className={styles.contactMsg} />
         <div style={{ height: '20px' }} />
         <div className={styles.contactSubmitWrapper}>
           <input type='button' onClick={submit} value='Senden' className={styles.contactSubmit} />
@@ -117,7 +117,7 @@ export default function ContactForm() {
     </div>
   )
 
-  function feedbackTemplate(text) {
+  function feedbackTemplate(text : React.ReactNode) {
     return (
       <div className={styles.contactForm}>
         <div className={styles.contactFeedback}>
