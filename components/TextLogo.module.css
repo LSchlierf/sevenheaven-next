@@ -19,6 +19,7 @@
     text-decoration: none;
     color: white;
     transition: all 0.1s;
+    font-weight: 400;
 }
 
 .text:hover {

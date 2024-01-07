@@ -21,7 +21,7 @@ export default function Wir() {
       </div>
       <H2 text='Die Crew' />
       <div className={styles.portraits}>
-        <PortraitCard img='Patrick.png' name='Patrick Friemelt' role='Tontechnik' text={<>Patrick ist studierter Audio-Ingenieur.<br/><br/>Er spielt selbst virtuos Gitarre und bescchäftigt sich auch sonst viel mit Musik.<br/><br/>Sein Know-How liefert uns den Perfekten Sound für unsere Gigs.</>} />
+        <PortraitCard img='Patrick.png' name='Patrick Friemelt' role='Tontechnik' text={<>Patrick ist studierter Audio-Ingenieur.<br/><br/>Er spielt selbst virtuos Gitarre und beschäftigt sich auch sonst viel mit Musik.<br/><br/>Sein Know-How liefert uns den perfekten Sound für unsere Gigs.</>} />
         <PortraitCard img='Ylai.png' name='Ylai Elsler' role='Tontechnik' text={<>Der gelernte Audio-Ingenieur ist jetzt als erfolgreicher DJ, sowie Musikproduzent tätig.<br/><br/>Auch auf wiederholte Rückfrage möchte er uns partout nicht verraten für wen er schon produziert hat.<br/>&quot;Berufsgeheimnis&quot;, sagt er.</>} />
       </div>
     </SubPage>

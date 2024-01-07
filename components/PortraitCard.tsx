@@ -9,7 +9,8 @@ export default function PortraitCard({ img, name, role, text }: { img: string, n
         alt=''
         fill
         style={{
-          objectFit: 'cover'
+          objectFit: 'cover',
+          objectPosition: 'top'
         }}
       />
       <details className={styles.banner}>

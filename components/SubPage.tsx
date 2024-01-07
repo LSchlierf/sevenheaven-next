@@ -32,7 +32,7 @@ export default function SubPage(props: any) {
           position: 'absolute',
           display: 'flex',
           justifyContent: 'center',
-          top: 0,
+          top: 200,
           height: '100%',
           width: '100vw',
           zIndex: -1

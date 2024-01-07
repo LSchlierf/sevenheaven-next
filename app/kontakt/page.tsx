@@ -9,7 +9,7 @@ import ContactForm from "@/components/ContactForm";
 
 export default function Kontakt() {
   return (
-    <SubPage banner={banner} offset='-1vw'>
+    <SubPage banner={banner} offset='center'>
       <H1 text='Kontakt' />
       <H2 text='Deine Ansprechpartner' />
       <div className={styles.portraits} >

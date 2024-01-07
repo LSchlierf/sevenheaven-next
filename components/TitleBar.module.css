@@ -77,13 +77,22 @@
 
     .desktopLinks {
         display: flex;
-        justify-content: space-around;
+        /* justify-content: space-around; */
         align-items: center;
         width: 40vw;
     }
 
+    .desktopLinks:first-child {
+        justify-content: flex-end;
+    }
+
+    .desktopLinks:last-child {
+        justify-content: flex-start;
+    }
+
     .desktopLink {
         transition: all 0.5s;
+        margin: 0 30px;
     }
 
     .desktopLink:hover {
@@ -142,11 +151,12 @@
         position: absolute;
         display: flex;
         flex-direction: column;
+        padding-top: 2px;
     }
 
     .sub a {
         font-size: small;
-        padding-top: 3px;
+        padding-top: 8px;
         padding-left: 13px;
         opacity: calc(1 - var(--scrolled));
         transition: opacity 0.3s, transform 0.1s;
