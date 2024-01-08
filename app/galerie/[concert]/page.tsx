@@ -11,6 +11,7 @@ import BackButton from '@/components/BackButton';
 
 export default function Page({ params }: { params: { concert: string } }) {
   let [largeImg, setLargeImg] = useState(<></>)
+  let [curIndex, setCurIndex] = useState(NaN)
 
   if (!params.concert || !concerts[params.concert as keyof Object]) {
     return notFound()
@@ -22,6 +23,12 @@ export default function Page({ params }: { params: { concert: string } }) {
     document.onkeydown = (e) => {
       if (e.code === "Escape") {
         setLargeImg(<></>)
+        setCurIndex(NaN)
+      }
+      else if(e.code === "ArrowRight" && !Number.isNaN(curIndex)) {
+        turnRight(curIndex)
+      } else if(e.code === "ArrowLeft" && !Number.isNaN(curIndex)) {
+        turnLeft(curIndex)
       }
     }
   }
@@ -42,6 +49,47 @@ export default function Page({ params }: { params: { concert: string } }) {
     )
   }
 
+  function makeLargeImg({ src }: { src: string }, index: number) {
+    setCurIndex(index)
+    setLargeImg(
+      <div className={styles.largeImg} onClick={() => {setLargeImg(<></>); setCurIndex(NaN)}}>
+        <div className={styles.right} onClick={(e) => {turnRight(index); e.stopPropagation()}} >
+          <img src='/triarrow.svg' alt='' height={50}/>
+        </div>
+        <div className={styles.left} onClick={(e) => {turnLeft(index); e.stopPropagation()}} >
+          <img src='/triarrow.svg' alt='' height={50}/>
+        </div>
+        <div className={styles.largeImgContainer}>
+          <Image
+            src={'/img/' + src}
+            fill
+            alt=''
+            quality={100}
+            style={{
+              objectFit: 'contain',
+              flexShrink: 0,
+              maxHeight: '100%',
+              maxWidth: '100%',
+              boxSizing: 'border-box'
+            }}
+          />
+        </div>
+      </div>
+    )
+  }
+
+  function turnRight(index : number) {
+    let newIndex = (index + 1) % data.images.length
+    setCurIndex(newIndex)
+    makeLargeImg(data.images[newIndex], newIndex)
+  }
+  
+  function turnLeft(index : number) {
+    let newIndex = (index - 1 + data.images.length) % data.images.length
+    setCurIndex(newIndex)
+    makeLargeImg(data.images[newIndex], newIndex)
+  }
+
   function galleryCardDesktop(img: any, index: number) {
     return (
       <Image
@@ -55,25 +103,7 @@ export default function Page({ params }: { params: { concert: string } }) {
           cursor: 'pointer'
         }}
         key={index}
-        onClick={() => setLargeImg(
-          <div className={styles.largeImg} onClick={() => setLargeImg(<></>)}>
-            <div className={styles.largeImgContainer}>
-              <Image
-                src={'/img/' + img.src}
-                fill
-                alt=''
-                quality={100}
-                style={{
-                  objectFit: 'contain',
-                  flexShrink: 0,
-                  maxHeight: '100%',
-                  maxWidth: '100%',
-                  boxSizing: 'border-box'
-                }}
-              />
-            </div>
-          </div>
-        )}
+        onClick={() => makeLargeImg(img, index)}
       />
     )
   }

@@ -56,6 +56,10 @@
         padding: 15px 0;
     }
 
+    .image:hover {
+        filter: brightness(70%);
+    }
+
     .galleryContentMobile {
         display: none;
     }
@@ -80,5 +84,36 @@
         bottom: 4vh;
         left: 4vh;
         right: 4vh;
+    }
+
+    .right, .left {
+        position: absolute;
+        z-index: 12;
+        top: calc(50vh - 50px);
+        height: 100px;
+        width: 100px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0,0,0,0.5);
+        cursor: pointer;
+        transition: transform 0.1s;
+    }
+
+    .left:hover, .right:hover {
+        transform: scale(1.2);
+    }
+
+    .right img {
+        transform: scaleX(-1);
+    }
+
+    .right {
+        right: 40px;
+    }
+
+    .left {
+        left: 40px;
     }
 }
