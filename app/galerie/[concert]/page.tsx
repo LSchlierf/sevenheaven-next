@@ -74,6 +74,9 @@ export default function Page({ params }: { params: { concert: string } }) {
             }}
           />
         </div>
+        <div className={styles.progress} >
+          {index + 1} / {data.images.length}
+        </div>
       </div>
     )
   }
@@ -120,12 +123,15 @@ export default function Page({ params }: { params: { concert: string } }) {
               fill
               style={{
                 objectFit: 'cover',
-                filter: 'blur(15px)'
+                filter: 'blur(15px) brightness(50%)'
               }}
             />
           </div>
         </div>
         <H1 text={data.title} />
+        <div className={styles.text}>
+          {data.text}
+        </div>
         <div className={styles.galleryContentMobile} >
           {data.images.map(galleryCardMobile)}
         </div>

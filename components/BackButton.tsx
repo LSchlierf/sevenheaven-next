@@ -1,8 +1,9 @@
+import Link from 'next/link'
 import styles from './BackButton.module.css'
 
 export default function BackButton({ to, text, color = 'rgba(0,0,0,0.5)' }: { to: string, text: string, color?: string }) {
   return (
-    <a
+    <Link
       style={{
         backgroundColor: color
       }}
@@ -14,6 +15,6 @@ export default function BackButton({ to, text, color = 'rgba(0,0,0,0.5)' }: { to
         {text}
       </div>
       <div style={{ width: 30 }} />
-    </a>
+    </Link>
   )
 }

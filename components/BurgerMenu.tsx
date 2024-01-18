@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import styles from './BurgerMenu.module.css'
+import Link from 'next/link';
 
 if (typeof window !== 'undefined') {
   window.addEventListener('scroll', updateScrolled)
@@ -35,6 +36,12 @@ export default function BurgerMenu() {
     }, 400)
   }
 
+  function closeBurger() {
+    if (shown) {
+      toggleBurger()
+    }
+  }
+
   return (
     <>
       <div className={styles.burger} onClick={toggleBurger}>
@@ -45,51 +52,51 @@ export default function BurgerMenu() {
       {
         shown ?
           <div className={styles.menu}>
-            <div className={styles.menuImgContainer}>
-              <a href='/'>
+            <div className={styles.menuImgContainer} onClick={closeBurger}>
+              <Link href='/'>
                 <img src='/logo192.png' alt='Bandlogo' />
-              </a>
+              </Link>
             </div>
-            <div className={styles.menuItem}>
-              <a href='/aktuelles'>
+            <div className={styles.menuItem} onClick={closeBurger}>
+              <Link href='/aktuelles'>
                 Aktuelles
-              </a>
+              </Link>
             </div>
-            <div className={styles.menuItem}>
-              <a href='/wir'>
+            <div className={styles.menuItem} onClick={closeBurger}>
+              <Link href='/wir'>
                 Über uns
-              </a>
+              </Link>
             </div>
             <details className={styles.menuItem}>
               <summary>
                 Angebot
               </summary>
-              <div className={styles.sub}>
-                <a href='/angebot/event'>
+              <div className={styles.sub} onClick={closeBurger}>
+                <Link href='/angebot/event'>
                   Eventband
-                </a>
-                <a href='/angebot/hochzeit'>
+                </Link>
+                <Link href='/angebot/hochzeit'>
                   Hochzeitsband
-                </a>
-                <a href='/angebot/party'>
+                </Link>
+                <Link href='/angebot/party'>
                   Partyband
-                </a>
+                </Link>
               </div>
             </details>
-            <div className={styles.menuItem}>
-              <a href='/repertoire'>
+            <div className={styles.menuItem} onClick={closeBurger}>
+              <Link href='/repertoire'>
                 Repertoire
-              </a>
+              </Link>
             </div>
-            <div className={styles.menuItem}>
-              <a href='/galerie'>
+            <div className={styles.menuItem} onClick={closeBurger}>
+              <Link href='/galerie'>
                 Galerie
-              </a>
+              </Link>
             </div>
-            <div className={styles.menuItem}>
-              <a href='/kontakt'>
+            <div className={styles.menuItem} onClick={closeBurger}>
+              <Link href='/kontakt'>
                 Kontakt
-              </a>
+              </Link>
             </div>
           </div>
           : <></>

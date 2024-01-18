@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import TextLogo from './TextLogo'
 import styles from './TitleBar.module.css'
 
@@ -9,48 +10,48 @@ export default function TitleBar() {
         <header className={styles.titleBar}>
           <div className={styles.desktopLinks}>
             <div className={styles.desktopLink}>
-              <a href='/aktuelles'>
+              <Link href='/aktuelles'>
                 Aktuelles
-              </a>
+              </Link>
             </div>
             <div className={styles.desktopLink}>
-              <a href='/wir'>
+              <Link href='/wir'>
                 Über Uns
-              </a>
+              </Link>
             </div>
             <details className={styles.menu}>
               <summary>
                 Angebot
               </summary>
               <div className={styles.sub}>
-                <a href='/angebot/event'>
+                <Link href='/angebot/event'>
                   Eventband
-                </a>
-                <a href='/angebot/hochzeit'>
+                </Link>
+                <Link href='/angebot/hochzeit'>
                   Hochzeitsband
-                </a>
-                <a href='/angebot/party'>
+                </Link>
+                <Link href='/angebot/party'>
                   Partyband
-                </a>
+                </Link>
               </div>
             </details>
           </div>
           <TextLogo />
           <div className={styles.desktopLinks}>
             <div className={styles.desktopLink}>
-              <a href='/repertoire'>
+              <Link href='/repertoire'>
                 Repertoire
-              </a>
+              </Link>
             </div>
             <div className={styles.desktopLink}>
-              <a href='/galerie'>
+              <Link href='/galerie'>
                 Galerie
-              </a>
+              </Link>
             </div>
             <div className={styles.desktopLink}>
-              <a href='/kontakt'>
+              <Link href='/kontakt'>
                 Kontakt
-              </a>
+              </Link>
             </div>
           </div>
           <div className={styles.mobileIcons}>

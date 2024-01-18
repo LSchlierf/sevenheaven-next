@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './Footer.module.css'
 import TextLogo from './TextLogo'
 
@@ -24,12 +25,12 @@ export default function Footer() {
         </div>
         <div className={styles.gradient} />
         <div className={styles.legalLinks}>
-          <a className={styles.legalLink} href='/impressum'>
+          <Link className={styles.legalLink} href='/impressum'>
             Impressum
-          </a>
-          <a className={styles.legalLink} href='/datenschutz'>
+          </Link>
+          <Link className={styles.legalLink} href='/datenschutz'>
             Datenschutz
-          </a>
+          </Link>
         </div>
       </footer>
     </>

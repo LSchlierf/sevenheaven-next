@@ -1,0 +1,16 @@
+.textBox{
+    text-align: center;
+    padding: 0 10vw;
+    font-size: large;
+    font-weight: bold;
+}
+
+.spacer {
+    height: 40vh;
+}
+
+@media only screen and (min-width: 768px) {
+    .textBox {
+        font-size: x-large;
+    }
+}
