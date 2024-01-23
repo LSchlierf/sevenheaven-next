@@ -19,7 +19,7 @@ export async function POST(request: Request) {
 
   // verify credentials are set
   if (!secrets) {
-    console.log('no credentials')
+    console.log(' \u001b[31m✗\u001b[0m No mail credentials loaded for API')
     return NextResponse.json({ 'status': 'error', 'error': 'internal sever error' }, { status: 500 })
   }
 
