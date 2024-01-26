@@ -17,6 +17,8 @@ function updateScrolled() {
   }
 }
 
+updateScrolled()
+
 export default function BurgerMenu() {
   let [shown, setShown] = useState(false)
 

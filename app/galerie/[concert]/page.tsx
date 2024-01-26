@@ -11,6 +11,7 @@ import BackButton from '@/components/BackButton';
 
 export default function Page({ params }: { params: { concert: string } }) {
   let [largeImg, setLargeImg] = useState(<></>)
+  let [prefetch, setPrefetch] = useState(<></>)
   let [curIndex, setCurIndex] = useState(NaN)
 
   if (!params.concert || !concerts[params.concert as keyof Object]) {
@@ -25,9 +26,9 @@ export default function Page({ params }: { params: { concert: string } }) {
         setLargeImg(<></>)
         setCurIndex(NaN)
       }
-      else if(e.code === "ArrowRight" && !Number.isNaN(curIndex)) {
+      else if (e.code === "ArrowRight" && !Number.isNaN(curIndex)) {
         turnRight(curIndex)
-      } else if(e.code === "ArrowLeft" && !Number.isNaN(curIndex)) {
+      } else if (e.code === "ArrowLeft" && !Number.isNaN(curIndex)) {
         turnLeft(curIndex)
       }
     }
@@ -52,12 +53,12 @@ export default function Page({ params }: { params: { concert: string } }) {
   function makeLargeImg({ src }: { src: string }, index: number) {
     setCurIndex(index)
     setLargeImg(
-      <div className={styles.largeImg} onClick={() => {setLargeImg(<></>); setCurIndex(NaN)}}>
-        <div className={styles.right} onClick={(e) => {turnRight(index); e.stopPropagation()}} >
-          <img src='/triarrow.svg' alt='' height={50}/>
+      <div className={styles.largeImg} onClick={() => { setLargeImg(<></>); setPrefetch(<></>); setCurIndex(NaN) }}>
+        <div className={styles.right} onClick={(e) => { turnRight(index); e.stopPropagation() }} >
+          <img src='/triarrow.svg' alt='' height={50} />
         </div>
-        <div className={styles.left} onClick={(e) => {turnLeft(index); e.stopPropagation()}} >
-          <img src='/triarrow.svg' alt='' height={50}/>
+        <div className={styles.left} onClick={(e) => { turnLeft(index); e.stopPropagation() }} >
+          <img src='/triarrow.svg' alt='' height={50} />
         </div>
         <div className={styles.largeImgContainer}>
           <Image
@@ -72,6 +73,7 @@ export default function Page({ params }: { params: { concert: string } }) {
               maxWidth: '100%',
               boxSizing: 'border-box'
             }}
+            onLoad={() => prefetchImages(index)}
           />
         </div>
         <div className={styles.progress} >
@@ -81,13 +83,58 @@ export default function Page({ params }: { params: { concert: string } }) {
     )
   }
 
-  function turnRight(index : number) {
+  function prefetchImages(index: number) {
+    const indexL = (index - 1 + data.images.length) % data.images.length
+    const indexR = (index + 1) % data.images.length
+    const srcL = data.images[indexL].src
+    const srcR = data.images[indexR].src
+    setPrefetch(
+      <div className={styles.prefetch} >
+        <div className={styles.largeImg}>
+          <div className={styles.largeImgContainer} >
+            <Image
+              src={'/img/' + srcL}
+              fill
+              alt=''
+              quality={100}
+              style={{
+                objectFit: 'contain',
+                flexShrink: 0,
+                maxHeight: '100%',
+                maxWidth: '100%',
+                boxSizing: 'border-box'
+              }}
+            />
+          </div>
+        </div>
+        <div className={styles.largeImg}>
+          <div className={styles.largeImgContainer} >
+            <Image
+              src={'/img/' + srcR}
+              fill
+              alt=''
+              quality={100}
+              style={{
+                objectFit: 'contain',
+                flexShrink: 0,
+                maxHeight: '100%',
+                maxWidth: '100%',
+                boxSizing: 'border-box'
+              }}
+            />
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  function turnRight(index: number) {
     let newIndex = (index + 1) % data.images.length
     setCurIndex(newIndex)
     makeLargeImg(data.images[newIndex], newIndex)
   }
-  
-  function turnLeft(index : number) {
+
+  function turnLeft(index: number) {
     let newIndex = (index - 1 + data.images.length) % data.images.length
     setCurIndex(newIndex)
     makeLargeImg(data.images[newIndex], newIndex)
@@ -114,6 +161,7 @@ export default function Page({ params }: { params: { concert: string } }) {
   return (
     <>
       {largeImg}
+      {prefetch}
       <main style={{ position: 'relative' }}>
         <div className={styles.bgImgContainer} >
           <div className={styles.bgImg}>

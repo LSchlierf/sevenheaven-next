@@ -54,6 +54,10 @@
     line-height: 1.3;
 }
 
+.prefetch {
+    display: none;
+}
+
 @media only screen and (min-width: 768px) {
     .galleryContentDesktop {
         display: flow-root;
@@ -144,5 +148,18 @@
     .text {
         padding: 0 10vw 30px;
         font-size: x-large;
+    }
+
+    .prefetch {
+        display: unset;
+        position: fixed;
+        opacity: 0;
+        z-index: -100;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 }
