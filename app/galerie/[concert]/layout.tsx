@@ -7,13 +7,8 @@ import bgBW from '../../../public/img/bg_bw.jpg'
 import Image from 'next/image';
 import BackButton from '@/components/BackButton';
 
-type Props = {
-  params: { concert: string }
-  searchParams: { [key: string]: string | string[] | undefined }
-}
-
 export async function generateMetadata(
-  { params, searchParams }: Props,
+  { params }: { params: { concert: string } },
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   if (!params.concert || !concerts[params.concert as keyof Object]) {
@@ -38,31 +33,31 @@ export default function galleryLayout({
 }) {
   return (
     <>
-    <main style={{ position: 'relative' }}>
-      <div className={styles.bgImgContainer} >
-        <div className={styles.bgImg}>
-          <div style={{
-            position: 'relative',
-            top: '0',
-            width: '100vw',
-            height: '100vh',
-            objectFit: 'cover'
-          }}>
-            <Image
-              src={bgBW}
-              priority
-              alt=''
-              fill
-              sizes='100vw'
-              style={{
-                objectFit: 'cover',
-                filter: 'blur(15px) brightness(50%)'
-              }}
-            />
+      <main style={{ position: 'relative' }}>
+        <div className={styles.bgImgContainer} >
+          <div className={styles.bgImg}>
+            <div style={{
+              position: 'relative',
+              top: '0',
+              width: '100vw',
+              height: '100vh',
+              objectFit: 'cover'
+            }}>
+              <Image
+                src={bgBW}
+                priority
+                alt=''
+                fill
+                sizes='100vw'
+                style={{
+                  objectFit: 'cover',
+                  filter: 'blur(15px) brightness(50%)'
+                }}
+              />
+            </div>
           </div>
         </div>
-      </div>
-      {children}
+        {children}
       </main>
       <BackButton to='/galerie' text='Zurück zur Galerie' color='darkred' />
     </>
