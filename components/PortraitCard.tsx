@@ -8,6 +8,7 @@ export default function PortraitCard({ img, name, role, text }: { img: string, n
         src={'/img/band/' + img}
         alt=''
         fill
+        sizes='(max-width: 767px) 90vw 15vw'
         style={{
           objectFit: 'cover',
           objectPosition: 'top'

@@ -1,7 +1,12 @@
 import SubPage from "@/components/SubPage";
-import banner from '../../../public/img/2023-03-25/L1000620_mirror.jpg'
+import banner from './opengraph-image.jpg'
 import { H1, H2 } from "@/components/Header";
 import FAQ from "@/components/FAQ";
+import { Metadata } from "next";
+
+export const metadata : Metadata = {
+  title: 'Hochzeitsband - Seven Heaven'
+}
 
 export default function Hochzeit() {
   return (

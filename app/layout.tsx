@@ -4,9 +4,6 @@ import TitleBar from '@/components/TitleBar'
 import BurgerMenu from '@/components/BurgerMenu'
 import Footer from '@/components/Footer'
 import { Montserrat } from 'next/font/google'
-import background from '../public/img/bg_red.jpg'
-import Image from 'next/image'
-import { relative } from 'path'
 
 const montserrat = Montserrat({
   subsets: ['latin']

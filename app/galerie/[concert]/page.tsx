@@ -1,13 +1,11 @@
 "use client";
 
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import concerts from '../Gallery.json'
 import { notFound } from 'next/navigation'
 import styles from './page.module.css'
 import { H1 } from '@/components/Header';
-import bgBW from '../../../public/img/bg_bw.jpg'
 import Image from 'next/image';
-import BackButton from '@/components/BackButton';
 
 function setMargin() {
   if (typeof document !== 'undefined') {
@@ -16,7 +14,7 @@ function setMargin() {
   }
 }
 
-if(typeof document !== 'undefined') {
+if (typeof document !== 'undefined') {
   window.addEventListener('resize', setMargin)
 }
 
@@ -173,22 +171,8 @@ export default function Page({ params }: { params: { concert: string } }) {
 
   return (
     <>
-      {largeImg}
-      {prefetch}
-      <main style={{ position: 'relative' }}>
-        <div className={styles.bgImgContainer} >
-          <div className={styles.bgImg}>
-            <Image
-              src={bgBW}
-              alt=''
-              fill
-              style={{
-                objectFit: 'cover',
-                filter: 'blur(15px) brightness(50%)'
-              }}
-            />
-          </div>
-        </div>
+        {largeImg}
+        {prefetch}
         <H1 text={data.title} />
         <div className={styles.text}>
           {data.text}
@@ -199,8 +183,6 @@ export default function Page({ params }: { params: { concert: string } }) {
         <div className={styles.galleryContentDesktop} >
           {data.images.map(galleryCardDesktop)}
         </div>
-      </main>
-      <BackButton to='/galerie' text='Zurück zur Galerie' color='darkred' />
     </>
   )
 }

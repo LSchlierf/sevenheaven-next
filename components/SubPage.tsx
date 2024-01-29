@@ -12,6 +12,7 @@ export default function SubPage(props: any) {
           src={props.banner}
           alt='banner'
           fill
+          sizes='100vw'
           quality={100}
           placeholder='blur'
           style={{
@@ -44,19 +45,29 @@ export default function SubPage(props: any) {
             height: '100vh',
             objectFit: 'cover'
           }}>
-            <Image
-              className={styles.bgImg}
-              src={background}
-              alt='background'
-              fill
-              quality={100}
-              placeholder='blur'
-              style={{
-                zIndex: -1,
-                objectFit: 'cover',
-                filter: 'blur(15px)'
-              }}
-            />
+            <div style={{
+              position: 'relative',
+              top: '0',
+              width: '100vw',
+              height: '100vh',
+              objectFit: 'cover'
+            }}>
+              <Image
+                className={styles.bgImg}
+                src={background}
+                priority
+                alt='background'
+                fill
+                sizes='100vw'
+                quality={100}
+                placeholder='blur'
+                style={{
+                  zIndex: -1,
+                  objectFit: 'cover',
+                  filter: 'blur(15px)'
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>

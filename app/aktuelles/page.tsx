@@ -1,7 +1,12 @@
 import SubPage from "@/components/SubPage";
-import banner from '../../public/img/2023-11-11/Flo2.jpg'
+import banner from './opengraph-image.jpg'
 import { H1, H2 } from "@/components/Header";
 import styles from './page.module.css'
+import { Metadata } from "next";
+
+export const metadata : Metadata = {
+  title: 'Aktuelles - Seven Heaven'
+}
 
 export default function Aktuelles() {
   return (

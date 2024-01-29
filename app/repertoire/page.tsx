@@ -1,10 +1,15 @@
 import SubPage from '@/components/SubPage'
 import stlyes from './page.module.css'
-import banner from '../../public/img/2023-03-25/L1000673.jpg'
+import banner from './opengraph-image.jpg'
 import headliners from './RepertoireHeadliners.json'
 import repertoire from './Repertoire.json'
 import { H1, H2 } from '@/components/Header'
 import BackButton from '@/components/BackButton'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Repertoire - Seven Heaven'
+}
 
 export default function Repertoire() {
   function headlinerItem(item : {songs : string[], title: string}, index: number) {

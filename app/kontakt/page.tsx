@@ -6,6 +6,11 @@ import Juli from '../../public/img/kontakt/Juli.png'
 import styles from './page.module.css'
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Kontakt - Seven Heaven'
+}
 
 export default function Kontakt() {
   return (

@@ -1,7 +1,12 @@
 import SubPage from "@/components/SubPage";
-import banner from '../../../public/img/2023-05-25/itsMyLife.jpg'
+import banner from './opengraph-image.jpg'
 import { H1, H2 } from "@/components/Header";
 import FAQ from "@/components/FAQ";
+import { Metadata } from "next";
+
+export const metadata : Metadata = {
+  title: 'Eventband - Seven Heaven'
+}
 
 export default function Event() {
   return (

@@ -1,10 +1,15 @@
 import SubPage from "@/components/SubPage";
-import banner from '../../public/img/2023-11-11/Band.jpg'
+import banner from './opengraph-image.jpg'
 import { H1, H2 } from "@/components/Header";
 import styles from './page.module.css'
 import concerts from './Gallery.json'
 import Image from "next/image";
 import VideoCard from "@/components/VideoCard";
+import { Metadata } from "next";
+
+export const metadata : Metadata = {
+  title: 'Galerie - Seven Heaven'
+}
 
 function galleryPreview(concert: any, index: any) {
   return (
@@ -14,6 +19,7 @@ function galleryPreview(concert: any, index: any) {
           src={'/img/' + concert[1].thumbnail}
           alt='Konzertvorschau'
           fill
+          sizes='(ma-width: 767px) 80vw 29vw'
           style={{
             objectFit: 'cover'
           }}

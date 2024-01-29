@@ -27,6 +27,7 @@ export default function VideoCard({ src, thumbnail, text, domain }: { src: strin
         src={'/img/' + thumbnail}
         alt=''
         fill
+        sizes='(ma-width: 767px) 80vw 29vw'
         style={{
           objectFit: 'cover',
         }}
