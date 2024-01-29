@@ -112,6 +112,7 @@ html {
   width: 100vw;
   overflow-x: hidden;
   --scrolled: 0;
+  --gallery-margin: 0;
 }
 
 body {

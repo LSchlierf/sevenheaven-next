@@ -63,7 +63,8 @@
         display: flow-root;
         flex-direction: unset;
         align-items: unset;
-        margin: 0 calc(mod(100vw, 430px) / 2);
+        /* margin: 0 calc(mod(100vw, 430px) / 2); WHY WOULD CHROME NOT SUPPORT MOD */
+        margin: 0 var(--gallery-margin);
         columns: 400px;
         column-gap: 30px;
     }

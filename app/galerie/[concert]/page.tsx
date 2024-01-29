@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import concerts from '../Gallery.json'
 import { notFound } from 'next/navigation'
 import styles from './page.module.css'
@@ -8,6 +8,17 @@ import { H1 } from '@/components/Header';
 import bgBW from '../../../public/img/bg_bw.jpg'
 import Image from 'next/image';
 import BackButton from '@/components/BackButton';
+
+function setMargin() {
+  if (typeof document !== 'undefined') {
+    const margin = ((window.innerWidth % 430) + 30) / 2
+    document.documentElement.style.setProperty('--gallery-margin', String(margin) + 'px')
+  }
+}
+
+if(typeof document !== 'undefined') {
+  window.addEventListener('resize', setMargin)
+}
 
 export default function Page({ params }: { params: { concert: string } }) {
   let [largeImg, setLargeImg] = useState(<></>)
@@ -157,6 +168,8 @@ export default function Page({ params }: { params: { concert: string } }) {
       />
     )
   }
+
+  useEffect(setMargin, [])
 
   return (
     <>
