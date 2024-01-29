@@ -20,6 +20,8 @@ if(typeof document !== 'undefined') {
   window.addEventListener('resize', setMargin)
 }
 
+setMargin()
+
 export default function Page({ params }: { params: { concert: string } }) {
   let [largeImg, setLargeImg] = useState(<></>)
   let [prefetch, setPrefetch] = useState(<></>)
@@ -168,8 +170,6 @@ export default function Page({ params }: { params: { concert: string } }) {
       />
     )
   }
-
-  useEffect(setMargin, [])
 
   return (
     <>
