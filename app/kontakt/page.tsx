@@ -1,5 +1,5 @@
 import SubPage from "@/components/SubPage";
-import banner from '../../public/img/juha/L1000537.jpg'
+import banner from '../../public/img/2023-03-25/L1000537.jpg'
 import { H1, H2, H3 } from "@/components/Header";
 import Jakob from '../../public/img/kontakt/Jakob.png'
 import Juli from '../../public/img/kontakt/Juli.png'

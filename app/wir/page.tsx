@@ -1,6 +1,6 @@
 import SubPage from '@/components/SubPage'
 import styles from './page.module.css'
-import banner from '../../public/img/11-11-2023/IMG-20231124-WA0007.jpg'
+import banner from '../../public/img/2023-11-11/IMG-20231124-WA0007.jpg'
 import { H1, H2 } from '@/components/Header'
 import PortraitCard from '@/components/PortraitCard'
 

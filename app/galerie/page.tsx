@@ -1,5 +1,5 @@
 import SubPage from "@/components/SubPage";
-import banner from '../../public/img/11-11-2023/Band.jpg'
+import banner from '../../public/img/2023-11-11/Band.jpg'
 import { H1, H2 } from "@/components/Header";
 import styles from './page.module.css'
 import concerts from './Gallery.json'
