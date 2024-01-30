@@ -227,3 +227,81 @@
     transform: rotate(0deg);
   }
 } */
+
+.titleWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  z-index: 0;
+  position: absolute;
+}
+
+.titleText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titleText > h1, .titleText > h2 {
+  text-align: center;
+  font-family: Nexa Rust Sans Modified;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.titleText > h1 {
+  text-decoration: underline;
+  font-size: large;
+}
+
+.titleText > h2 {
+  font-size: small;
+}
+
+.gradientLeft, .gradientRight {
+  width: 10vw;
+  height: 5px;
+  margin: 0 5vw
+}
+
+.gradientLeft {
+  background: linear-gradient(to left, white 0%, transparent 100%);
+}
+
+.gradientRight {
+  background: linear-gradient(to right, white 0%, transparent 100%);
+}
+
+.contact {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  background-color: darkred;
+  padding: 15px;
+  border-radius: 10px;
+  height: fit-content;
+  position: absolute;
+  bottom: 20vh;
+}
+
+@media only screen and (min-width: 768px) {
+  .titleText > h1 {
+    font-size: xx-large;
+  }
+
+  .titleText > h2 {
+    font-size: x-large;
+  }
+
+  .contact {
+    bottom: 30vh;
+    font-size: xx-large;
+    transition: all 0.1s;
+  }
+
+  .contact:hover {
+    transform: scale(1.1);
+  }
+}

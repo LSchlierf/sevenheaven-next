@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import styles from "./Slider.module.css"
 import images from './Slider.json'
 import Image from "next/image";
@@ -23,7 +23,7 @@ function getImages(input: string[]) {
   )
 }
 
-export default function Slider() {
+export default function Slider({ children }: { children: React.ReactNode }) {
   let [imgM, setImgM] = useState(getImages(images.mobile))
   let [imgD, setImgD] = useState(getImages(images.desktop))
 
@@ -77,33 +77,26 @@ export default function Slider() {
   }
 
   return (
-    <>
+    <div className={styles.wrapper}>
       <div className={styles.sliderMobile}>
         {imgM}
-        <div className={styles.buttonRight} onClick={slideRight}>
-          <img src='/triarrow.svg'
-            height={30}
-          />
-        </div>
-        <div className={styles.buttonLeft} onClick={slideLeft}>
-          <img src='/triarrow.svg'
-            height={30}
-          />
-        </div>
       </div>
       <div className={styles.sliderDesktop}>
         {imgD}
-        <div className={styles.buttonRight} onClick={slideRight}>
-          <img src='/triarrow.svg'
-            height={50}
-          />
-        </div>
-        <div className={styles.buttonLeft} onClick={slideLeft}>
-          <img src='/triarrow.svg'
-            height={50}
-          />
-        </div>
       </div>
-    </>
+      <div className={styles.children}>
+        {children}
+      </div>
+      <div className={styles.buttonRight} onClick={slideRight}>
+        <img src='/triarrow.svg'
+          height={30}
+        />
+      </div>
+      <div className={styles.buttonLeft} onClick={slideLeft}>
+        <img src='/triarrow.svg'
+          height={30}
+        />
+      </div>
+    </div>
   )
 }
