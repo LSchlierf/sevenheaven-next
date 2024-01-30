@@ -4,6 +4,10 @@
         "preview": "JuHa Neuried 2024",
         "thumbnail":"2024-01-20/thumbnail.jpg",
         "text": "",
+        "thanks": {
+            "name": "Annalen Lucia Löffler",
+            "link": "https://www.instagram.com/aluciaphotos/"
+        },
         "images": [
             {"src": "2024-01-20/7H@aluciaphotos-60.jpg"},
             {"src": "2024-01-20/7H@aluciaphotos-9.jpg", "vert" : true},
@@ -208,6 +212,10 @@
         "preview": "Interim Laim 2022",
         "thumbnail": "2022-06-10/thumbnail.jpg",
         "text": "Unsere Premiere auf der Bühne. Von Nervosität und Ungewissheit zu sprechen wäre eine maßlose Untertreibung gewesen.\nEntgegen unserer Befürchtungen belohnte uns das Publikum mit hervorragender Stimmung und sorgte so für einen erfolgreichen Start in unsere „Karriere“.",
+        "thanks": {
+            "name": "Annalen Lucia Löffler",
+            "link": "https://www.instagram.com/aluciaphotos/"
+        },
         "images": [
             {"src": "2022-06-10/_DSB4913.jpg"},
             {"src": "2022-06-10/_DSB4957.jpg"},

@@ -60,6 +60,11 @@ export default function BurgerMenu() {
               </Link>
             </div>
             <div className={styles.menuItem} onClick={closeBurger}>
+              <Link href='/'>
+                Home
+              </Link>
+            </div>
+            <div className={styles.menuItem} onClick={closeBurger}>
               <Link href='/aktuelles'>
                 Aktuelles
               </Link>

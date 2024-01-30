@@ -112,7 +112,7 @@ export default function Kontakt() {
             />
             089 / 71034962
           </div>
-          <a className={styles.channel} href='https://instagram.com/sevenheaven.band'>
+          <a className={styles.channel} href='https://instagram.com/sevenheaven.band' target='_blank' rel='noopener noreferer'>
             <img
               src='/insta.svg'
               height={40}

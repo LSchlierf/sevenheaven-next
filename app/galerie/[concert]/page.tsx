@@ -171,18 +171,25 @@ export default function Page({ params }: { params: { concert: string } }) {
 
   return (
     <>
-        {largeImg}
-        {prefetch}
-        <H1 text={data.title} />
-        <div className={styles.text}>
-          {data.text}
+      {largeImg}
+      {prefetch}
+      <H1 text={data.title} />
+      <div className={styles.text}>
+        {data.text}
+      </div>
+      <div className={styles.galleryContentMobile} >
+        {data.images.map(galleryCardMobile)}
+      </div>
+      <div className={styles.galleryContentDesktop} >
+        {data.images.map(galleryCardDesktop)}
+      </div>
+      {data.thanks ?
+        <div className={styles.thanks}>
+          <a href={data.thanks.link} target='_blank' rel='noopener noreferer'>
+            Fotos von <u>{data.thanks.name}</u>
+          </a>
         </div>
-        <div className={styles.galleryContentMobile} >
-          {data.images.map(galleryCardMobile)}
-        </div>
-        <div className={styles.galleryContentDesktop} >
-          {data.images.map(galleryCardDesktop)}
-        </div>
+        : <></>}
     </>
   )
 }
