@@ -7,9 +7,8 @@ import Image from "next/image";
 
 function getImages(input: string[]) {
   return input.map((src, index) =>
-    <div className={styles.imgWrapper}>
+    <div className={styles.imgWrapper} key={src}>
       <Image
-        key={src}
         src={'/img/slider/' + src}
         alt=''
         fill
@@ -30,7 +29,7 @@ export default function Slider() {
 
   function slideLeft() {
     const list = Array.from(document.getElementsByClassName(styles.imgWrapper))
-    for(let item of list) {
+    for (let item of list) {
       item.classList.add(styles.animateToLeft)
     }
     const imagesMNew = [imgM[imgM.length - 1], ...imgM.slice(0, imgM.length - 1)]
@@ -47,7 +46,7 @@ export default function Slider() {
 
   function slideRight() {
     const list = Array.from(document.getElementsByClassName(styles.imgWrapper))
-    for(let item of list) {
+    for (let item of list) {
       item.classList.add(styles.animateToRight)
     }
     const imagesMNew = [...imgM.slice(1, imgM.length), imgM[0]]
@@ -80,25 +79,25 @@ export default function Slider() {
       <div className={styles.sliderMobile}>
         {imgM}
         <div className={styles.buttonRight} onClick={slideRight}>
-          <img src='/triarrow.svg' 
-            height={20}
+          <img src='/triarrow.svg'
+            height={30}
           />
         </div>
         <div className={styles.buttonLeft} onClick={slideLeft}>
-          <img src='/triarrow.svg' 
-            height={20}
+          <img src='/triarrow.svg'
+            height={30}
           />
         </div>
       </div>
       <div className={styles.sliderDesktop}>
         {imgD}
         <div className={styles.buttonRight} onClick={slideRight}>
-          <img src='/triarrow.svg' 
+          <img src='/triarrow.svg'
             height={50}
           />
         </div>
         <div className={styles.buttonLeft} onClick={slideLeft}>
-          <img src='/triarrow.svg' 
+          <img src='/triarrow.svg'
             height={50}
           />
         </div>
