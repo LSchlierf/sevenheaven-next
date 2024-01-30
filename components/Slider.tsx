@@ -61,16 +61,18 @@ export default function Slider() {
     }, 400)
   }
 
-  document.onkeydown = (e) => {
-    switch (e.code) {
-      case 'ArrowLeft':
-        slideLeft()
-        break
-      case 'ArrowRight':
-        slideRight()
-        break
-      default:
-        break
+  if (typeof document !== 'undefined') {
+    document.onkeydown = (e) => {
+      switch (e.code) {
+        case 'ArrowLeft':
+          slideLeft()
+          break
+        case 'ArrowRight':
+          slideRight()
+          break
+        default:
+          break
+      }
     }
   }
 
