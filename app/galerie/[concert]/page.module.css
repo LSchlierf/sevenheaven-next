@@ -67,6 +67,7 @@
         margin: 0 var(--gallery-margin);
         columns: 400px;
         column-gap: 30px;
+        font-size: 0; /* for some reason this gets rid of extra space between picture elements */
     }
 
     .image {
