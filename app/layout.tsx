@@ -12,7 +12,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: 'Seven Heaven',
   description: 'Seven Heaven - Partyband aus Muenchen - Beste Live Unterhaltung für Hochzeit, Bierzelt, Weinfest. Wir sorgen für Stimmung auf Ihrer Feier.',
-  metadataBase: new URL('https://sevenheaven-preview.vercel.app')
+  metadataBase: new URL('https://sevenheaven-preview.vercel.app') // TODO: replace before release
 }
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={montserrat.className}>
+    <html lang="de" className={montserrat.className}>
       <body>
           <TitleBar />
           <BurgerMenu />
