@@ -2,7 +2,7 @@
     "2023-11-11": {
         "title": "11. 11. 2023",
         "preview": "Perchalla 11. 11. 2023",
-        "thumbnail": "2023-11-11/Band.jpg",
+        "thumbnail": "2023-11-11/thumbnail.jpg",
         "text": "Unser erster Faschingsauftakt und dann ist die Bühne noch so groß, dass man seine Kollegen erst mal suchen muss...\nDoch nach kurzer Eingewöhnung konnten wir einen wunderschönen Abend gestalten und abwechselnd mit der Starnberger Faschingsgesellschaft Perchalla die Faschingssaison 2023/24 einläuten!",
         "images": [
             {"src": "2023-11-11/Band2.jpg"},
@@ -34,7 +34,7 @@
     "2023-09-23": {
         "title": "23. 09. 2023",
         "preview": "23. 09. 2023",
-        "thumbnail": "2023-09-23/IMG_8264.jpg",
+        "thumbnail": "2023-09-23/thumbnail.jpg",
         "text": "Können wir auch Geburtstag? Ich glaube schon. Ein bisschen Partystimmung hat noch keiner Jubiläumsfeier geschadet, so auch nicht auf dem 50. Geburtstag von zwei guten Freunden/Verwandten von uns.",
         "images": [
             {"src": "2023-09-23/IMG_7616.jpg"},
@@ -61,7 +61,7 @@
     "2023-07-22": {
         "title": "Westparkjubiläum",
         "preview": "40. Westparkjubiläum 2023",
-        "thumbnail": "2023-07-22/20230722_215033.jpg",
+        "thumbnail": "2023-07-22/thumbnail.jpg",
         "text": "Wir sind zwar eine Münchner Band, aber da (fast) alle mittlerweile in bzw. in der Nähe von Sendling wohnen, könnte man uns fast schon Sendlinger Band nennen. So war es für uns eigentlich Pflicht zum 40 jährigen Jubiläum des Westparks zu spielen. Und sind wir mal ehrlich: Wer spielte nicht gerne mal vor und auf einer Open-Air-Kinoleinwand?",
         "images": [
             {"src": "2023-07-22/20230722_215033.jpg"},
@@ -81,7 +81,7 @@
     "2023-05-25": {
         "title": "Musikalisches Weinfest",
         "preview": "Musikalisches Weinfest 2023",
-        "thumbnail": "2023-05-25/itsMyLife.jpg",
+        "thumbnail": "2023-05-25/thumbnail.jpg",
         "text": "An einem schönen Donnerstag Abend treten wir das erste Mal vor fremdem Publikum auf. Beim musikalischen Weinfest auf der Seebühne im Westpark spielen über mehrere Tage verschiedene Bands für das Publikum. Als Auftakt des Festes (und das noch unter der Woche) haben wir mit allem gerechnet, nur nicht mit knapp 300 Menschen, die zu unserer Musik tanzen.",
         "images": [
             {"src": "2023-05-25/band.jpg"},
@@ -104,7 +104,7 @@
     "2023-03-25": {
         "title": "JuHa Neuried",
         "preview": "JuHa Neuried 2023",
-        "thumbnail": "2023-03-25/L1000673.jpg",
+        "thumbnail": "2023-03-25/thumbnail.jpg",
         "text": "Dieses Konzert lässt sich mit einem einzigen Wort perfekt beschreiben: Party. Mit viel Nebel und überwältigender Stimmung vom ersten Moment an erleben wir einen sehr gelungenen Abend. Ach, und haben wir schon Nebel erwähnt? Es war neblig.",
         "images": [
             {"src": "2023-03-25/L1000615.jpg"},
@@ -140,7 +140,7 @@
     "2022-06-10": {
         "title": "Interim",
         "preview": "Interim Laim 2022",
-        "thumbnail": "interim.jpg",
+        "thumbnail": "2022-06-10/thumbnail.jpg",
         "text": "An einem schönen Donnerstag Abend treten wir das erste Mal vor fremdem Publikum auf. Beim musikalischen Weinfest auf der Seebühne im Westpark spielen über mehrere Tage verschiedene Bands für das Publikum. Als Auftakt des Festes (und das noch unter der Woche) haben wir mit allem gerechnet, nur nicht mit knapp 300 Menschen, die zu unserer Musik tanzen.",
         "images": [
             {"src": "2022-06-10/_DSB4913.jpg"},
@@ -162,7 +162,7 @@
             {"src": "2022-06-10/_DSB5218.jpg"},
             {"src": "2022-06-10/_DSB5269.jpg"},
             {"src": "2022-06-10/_DSB5403.jpg"},
-            {"src": "interim.jpg"},
+            {"src": "2022-06-10/thumbnail.jpg"},
             {"src": "2022-06-10/_DSB5457.jpg"},
             {"src": "2022-06-10/_DSB5538.jpg"},
             {"src": "2022-06-10/_DSB5653.jpg"},

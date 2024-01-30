@@ -1,5 +1,5 @@
 import SubPage from "@/components/SubPage";
-import banner from './opengraph-image.jpg'
+import banner from '../../../public/img/2023-03-25/L1000678.jpg'
 import { H1, H2 } from "@/components/Header";
 import FAQ from "@/components/FAQ";
 import { Metadata } from "next";

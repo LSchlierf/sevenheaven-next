@@ -1,6 +1,6 @@
 import SubPage from '@/components/SubPage'
 import styles from './page.module.css'
-import banner from './opengraph-image.jpg'
+import banner from '../../public/img/2023-11-11/banner.jpg'
 import { H1, H2 } from '@/components/Header'
 import PortraitCard from '@/components/PortraitCard'
 import { Metadata } from 'next'
