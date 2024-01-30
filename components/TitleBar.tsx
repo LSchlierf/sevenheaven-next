@@ -8,6 +8,11 @@ export default function TitleBar() {
       <div className={styles.spacer} />
       <div className={styles.wrapper}>
         <header className={styles.titleBar}>
+          <div className={styles.home}>
+            <Link href='/' >
+              <img src='/home.svg' />
+            </Link>
+          </div>
           <div className={styles.desktopLinks}>
             <div className={styles.desktopLink}>
               <Link href='/aktuelles'>
