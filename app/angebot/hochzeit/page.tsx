@@ -20,10 +20,10 @@ export default function Hochzeit() {
         hier zum stöbern? Streich in dem Fall den Teil mit der Verlobung.
         <br />
         <br />
-        Was gibt es zu einer Hochzeitsband großartig zu sagen? "Wir
-        spielen <b>hochwertige Tanzmusik</b>." Gut, das sagt eigentlich jeder. "Wir 
-        bringen <b>beste Laune</b> zu deiner Hochzeit." Auch irgendwie nichts außergewöhnliches.
-        "Wir machen euren Abend <b>unvergesslich</b>." Schon tausend Mal gehört. Versuchen wir es doch mal anders:
+        Was gibt es zu einer Hochzeitsband großartig zu sagen? &quot;Wir
+        spielen <b>hochwertige Tanzmusik</b>.&quot; Gut, das sagt eigentlich jeder. &quot;Wir 
+        bringen <b>beste Laune</b> zu deiner Hochzeit.&quot; Auch irgendwie nichts außergewöhnliches.
+        &quot;Wir machen euren Abend <b>unvergesslich</b>.&quot; Schon tausend Mal gehört. Versuchen wir es doch mal anders:
         <br />
         <br />
         Stell Dir vor deine Hochzeitsgäste wollen spürbar schon in Partystimmung wechseln,
