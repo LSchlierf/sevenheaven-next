@@ -3,7 +3,7 @@ import type { Metadata, ResolvingMetadata } from 'next'
 import concerts from '../Gallery.json'
 import { notFound } from "next/navigation";
 import styles from './page.module.css'
-import bgBW from '../../../public/img/bg_bw.jpg'
+import bgBW from '@/public/img/bg_bw.jpg'
 import Image from 'next/image';
 import BackButton from '@/components/BackButton';
 

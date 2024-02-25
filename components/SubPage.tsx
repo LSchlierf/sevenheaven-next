@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './SubPage.module.css'
-import background from '../public/img/bg_red.jpg'
+import background from '@/public/img/bg_red.jpg'
 import BackButton from './BackButton'
 
 export default function SubPage(props: any) {
@@ -24,7 +24,10 @@ export default function SubPage(props: any) {
       </div>
       <div className={styles.spacer} />
       <div style={{
-        position: 'relative'
+        position: 'relative',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center'
       }} >
         {props.children}
         <BackButton text='Zurück zur Startseite' to='/' />

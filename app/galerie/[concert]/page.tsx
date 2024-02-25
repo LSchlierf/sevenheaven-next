@@ -77,6 +77,7 @@ export default function Page({ params }: { params: { concert: string } }) {
             fill
             alt=''
             quality={100}
+            priority
             style={{
               objectFit: 'contain',
               flexShrink: 0,
@@ -108,6 +109,7 @@ export default function Page({ params }: { params: { concert: string } }) {
               fill
               alt=''
               quality={100}
+              loading='eager'
               style={{
                 objectFit: 'contain',
                 flexShrink: 0,
@@ -115,7 +117,7 @@ export default function Page({ params }: { params: { concert: string } }) {
                 maxWidth: '100%',
                 boxSizing: 'border-box'
               }}
-            />
+              />
           </div>
         </div>
         <div className={styles.largeImg}>
@@ -125,6 +127,7 @@ export default function Page({ params }: { params: { concert: string } }) {
               fill
               alt=''
               quality={100}
+              loading='eager'
               style={{
                 objectFit: 'contain',
                 flexShrink: 0,

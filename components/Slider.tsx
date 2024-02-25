@@ -88,12 +88,16 @@ export default function Slider({ children }: { children: React.ReactNode }) {
         {children}
       </div>
       <div className={styles.buttonRight} onClick={slideRight}>
-        <img src='/triarrow.svg'
+        <img
+          src='/triarrow.svg'
+          alt=''
           height={30}
         />
       </div>
       <div className={styles.buttonLeft} onClick={slideLeft}>
-        <img src='/triarrow.svg'
+        <img
+          src='/triarrow.svg'
+          alt=''
           height={30}
         />
       </div>

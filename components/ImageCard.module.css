@@ -1,0 +1,44 @@
+.wrapper {
+    width: 90vw;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.image {
+    object-fit: cover;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+    filter: brightness(50%);
+}
+
+.children {
+    text-align: center;
+    z-index: 3;
+    position: relative;
+    line-height: 1.5;
+    padding: 30px; 
+}
+
+@media only screen and (min-width: 768px) {
+    .imageWrapper {
+        position: absolute;
+        width: 50%;
+        min-height: 100%;
+    }
+
+    .image {
+        filter: none;
+    }
+
+    .children {
+        position: relative;
+        width: 50%;
+        box-sizing: border-box;
+        right: 0;
+        left: 50%;
+        background-color: black;
+        text-align: left;
+    }
+}

@@ -10,7 +10,10 @@ export default function TitleBar() {
         <header className={styles.titleBar}>
           <div className={styles.home}>
             <Link href='/' >
-              <img src='/home.svg' />
+              <img
+                src='/home.svg'
+                alt=''
+              />
             </Link>
           </div>
           <div className={styles.desktopLinks}>
