@@ -4,7 +4,9 @@ import { H1, H2 } from "@/components/Header";
 import FAQ from "@/components/FAQ";
 import { Metadata } from "next";
 import ImageCard from "@/components/ImageCard";
-import image from '@/public/img/cards/event.jpg'
+import image from '@/public/img/cards/event.jpg';
+import styles from '../angebot.module.css'
+import LinkButton from "@/components/LinkButton";
 
 export const metadata: Metadata = {
   title: 'Eventband - Seven Heaven'
@@ -34,6 +36,14 @@ export default function Event() {
         <br />
         Willst Du Dich von unserem Sound überzeugen?
         Schau doch in unserer Galerie vorbei.
+        <div className={styles.center}>
+          <LinkButton href='/galerie' text='Zur Galerie' />
+        </div>
+        Kontaktiere uns doch einfach unverbindlich. Zusammen stellen wir mit Dir das
+        perfekte Event für Dich und Deine Gäste zusammen.
+        <div className={styles.center}>
+          <LinkButton href='/kontakt' text='Anfragen' />
+        </div>
       </ImageCard >
       <H2 text='Häufig gestellte Fragen' />
       <FAQ />

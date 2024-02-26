@@ -5,6 +5,8 @@ import FAQ from "@/components/FAQ";
 import { Metadata } from "next";
 import image from '@/public/img/cards/hochzeit.jpg'
 import ImageCard from "@/components/ImageCard";
+import styles from '../angebot.module.css'
+import LinkButton from "@/components/LinkButton";
 
 export const metadata: Metadata = {
   title: 'Hochzeitsband - Seven Heaven'
@@ -21,7 +23,7 @@ export default function Hochzeit() {
         <br />
         <br />
         Was gibt es zu einer Hochzeitsband großartig zu sagen? &quot;Wir
-        spielen <b>hochwertige Tanzmusik</b>.&quot; Gut, das sagt eigentlich jeder. &quot;Wir 
+        spielen <b>hochwertige Tanzmusik</b>.&quot; Gut, das sagt eigentlich jeder. &quot;Wir
         bringen <b>beste Laune</b> zu deiner Hochzeit.&quot; Auch irgendwie nichts außergewöhnliches.
         &quot;Wir machen euren Abend <b>unvergesslich</b>.&quot; Schon tausend Mal gehört. Versuchen wir es doch mal anders:
         <br />
@@ -34,6 +36,14 @@ export default function Hochzeit() {
         zusammenzustellen. (Musst du aber natürlich nicht) Es sind Songs, die du
         hören willst nicht dabei? Gib uns Bescheid, wie nehmen sie mit in unsere
         Songliste auf.
+        <div className={styles.center}>
+          <LinkButton href='/galerie' text='Zur Galerie' />
+        </div>
+        Bei spezifischeren Wünschen kontaktiere und gerne unverbindlich.
+        Wir freuen uns auf Deine Nachricht!
+        <div className={styles.center}>
+          <LinkButton href='/kontakt' text='Anfragen' />
+        </div>
       </ImageCard>
       <H2 text='Häufig gestellte Fragen' />
       <FAQ />

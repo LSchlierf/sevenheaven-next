@@ -5,6 +5,8 @@ import FAQ from "@/components/FAQ";
 import { Metadata } from "next";
 import image from '@/public/img/cards/party.jpg'
 import ImageCard from "@/components/ImageCard";
+import styles from '../angebot.module.css'
+import LinkButton from "@/components/LinkButton";
 
 export const metadata: Metadata = {
   title: 'Partyband - Seven Heaven'
@@ -35,6 +37,18 @@ export default function Party() {
         Außerdem ist das bei uns keine One-Band-Show. Wir laden euch als Zuschauer ein
         mit uns Musik zu machen, indem wir mit euch interagieren oder sogar
         Background-Gesang übernehmen lassen.
+        <br />
+        <br />
+        Schau dir gerne unser Highlight-Video einer Party aus dem Frühjahr 2023 an,
+        um dich zu überzeugen.
+        <div className={styles.center}>
+          <LinkButton href='https://youtu.be/urSar1gnXOQ?si=AZqWX8_H355gS5TX' text="Hier geht's zum Video" newPage />
+        </div>
+        Keine Überzeugung nötig? Kontaktiere uns unverbindlich und erzähl uns,
+        was du Dir vorstellst. Wir freuen uns auf Dich!
+        <div className={styles.center}>
+          <LinkButton href='/kontakt' text='Anfragen' />
+        </div>
       </ImageCard>
       <H2 text='Häufig gestellte Fragen' />
       <FAQ />

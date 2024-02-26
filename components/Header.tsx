@@ -7,6 +7,7 @@ function H1({ text }: { text: String }) {
       <h1 style={{
         fontFamily: 'Nexa Rust Sans Modified',
         // fontSize: 'xxx-large',
+        // padding: '0 20px',
         fontWeight: 400
       }}>
         {text}
@@ -22,6 +23,7 @@ function H2({ text }: { text: String }) {
       <h2 style={{
         fontFamily: 'Nexa Rust Sans Modified',
         // fontSize: 'xx-large',
+        padding: '0 20px',
         fontWeight: 400
       }}>
         {text}
@@ -35,6 +37,7 @@ function H3({ text }: { text: String }) {
     <div className={styles.headerContainer}>
       <h3 style={{
         fontFamily: 'Nexa Rust Sans Modified',
+        padding: '0 20px',
         fontWeight: 400
       }}>
         {text}

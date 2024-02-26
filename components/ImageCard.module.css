@@ -1,4 +1,4 @@
-.wrapper {
+.wrapper, .wrapperNarrow {
     width: 90vw;
     overflow: hidden;
     position: relative;
@@ -40,5 +40,9 @@
         left: 50%;
         background-color: black;
         text-align: left;
+    }
+
+    .wrapperNarrow {
+        width: 70vw;
     }
 }

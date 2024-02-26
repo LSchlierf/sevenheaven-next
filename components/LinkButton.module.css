@@ -1,0 +1,26 @@
+.wrapper {
+    background-color: darkred;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 15px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-family: 'Nexa Rust Sans Modified';
+    font-weight: 400;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        transition: all 0.2s;
+    }
+
+    .wrapper:hover {
+        transform: scale(1.1);
+    }
+}

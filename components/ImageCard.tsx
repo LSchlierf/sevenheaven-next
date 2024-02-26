@@ -3,7 +3,9 @@ import styles from './ImageCard.module.css'
 
 export default function ImageCard(props: any) {
   return (
-    <div className={styles.wrapper}>
+    <div
+      className={props.narrow ? styles.wrapperNarrow : styles.wrapper}
+    >
       <div className={styles.imageWrapper}>
         <Image
           src={props.image}
