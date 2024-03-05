@@ -49,10 +49,10 @@ export default function Home() {
           <br />
           Keine Sorge, nicht mit uns! Mit der Perspektive einer
           komplett neuen Generation bringen wir mithilfe
-          vierstimmiger Gesangssätze, neuen Interpretationen und
-          natürlich auch alten Klassikern ein einzigartiges
+          vierstimmiger Gesangssätze, neuer Interpretationen und
+          natürlich auch alter Klassiker ein einzigartiges
           Partyerlebnis auf die Bühne, beziehungsweise zu Deiner
-          Feier/Deinem Event.
+          Feier / Deinem Event.
           <br />
           <br />
           Unsere Markenzeichen: Qualitativ hochwertige Musik,

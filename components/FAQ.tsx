@@ -5,7 +5,7 @@ export default function FAQ() {
   return (
     <div className={styles.container} >
       <H3 text='"Muss ich Equipment zur Verfügung stellen?"' />
-      Keine Sorge, um das Tonequipment, die sog. PA kümmern wir uns selbst. Das einzige was wir von Dir brauchen ist
+      Keine Sorge, um das Tonequipment, die sog. PA können wir uns selbst kümmern. Das einzige was wir zwingend von Dir brauchen ist
       Zugang zu Strom, am besten in Form von Steckdosen. (Dabei reichen handelsübliche Haushalts-Steckdosen.)
       Wenn Du dann noch in etwa 6 mal 4 Meter Platz für uns hast (am besten in Form
       einer Bühne), steht Deinem Event nichts mehr im Weg.
