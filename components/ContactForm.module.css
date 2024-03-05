@@ -27,8 +27,9 @@
     box-sizing: border-box;
     padding: 15px;
     border-radius: 10px;
-    font-weight: bold;
+    font-family: inherit;
     border: none;
+    font-size: small;
 }
 
 .contactMsg {

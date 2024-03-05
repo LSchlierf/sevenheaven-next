@@ -6,7 +6,8 @@ import Footer from '@/components/Footer'
 import { Montserrat } from 'next/font/google'
 
 const montserrat = Montserrat({
-  subsets: ['latin']
+  subsets: ['latin'],
+  weight: '700'
 })
 
 export const metadata: Metadata = {
