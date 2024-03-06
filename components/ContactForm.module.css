@@ -51,6 +51,7 @@
     padding-left: 20px;
     padding-right: 20px;
     cursor: pointer;
+    font-family: inherit;
 }
 
 .contactMailWrapper {

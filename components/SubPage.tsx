@@ -2,8 +2,9 @@ import Image from 'next/image'
 import styles from './SubPage.module.css'
 import background from '@/public/img/bg_red.jpg'
 import BackButton from './BackButton'
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 
-export default function SubPage(props: any) {
+export default function SubPage(props: {banner : StaticImport, children: React.ReactNode, offset? : string | undefined}) {
   return (
     <main>
       <div className={styles.bannerContainer}>

@@ -1,0 +1,26 @@
+.wrapper {
+    width: 80vw;
+    text-decoration: none;
+    padding-bottom: 10vw;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    position: relative;
+    font-size: 0;
+}
+
+.text {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    line-height: 1.35;
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        width: 25vw;
+        padding-bottom: 50px;
+    }
+}

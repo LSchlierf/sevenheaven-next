@@ -11,7 +11,6 @@
     .container {
         margin: 0 10vw 50px;
         padding: 0 80px 50px;
-        font-size: larger;
     }
 
     .container > *:not(:nth-child(1)) {

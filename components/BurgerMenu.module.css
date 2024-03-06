@@ -182,7 +182,8 @@
     padding-top: 2vw;
     text-align: center;
     font-size: x-large;
-    font-family: 'Nexa Rust Sans';
+    font-family: 'Nexa Rust Sans Modified';
+    font-weight: 400;
     display: flex;
     flex-direction: column;
 }
@@ -204,11 +205,6 @@
     text-decoration: none;
     color: white;
 }
-
-/* .menuItem summary::marker, .menuItem summary::-webkit-details-marker {
-    display: none;
-    content: '';
-} */
 
 /* only show burger menu for mobile */
 
