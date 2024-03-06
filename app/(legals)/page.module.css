@@ -1,0 +1,25 @@
+.background {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 80%, transparent 100%);
+}
+
+.text {
+    padding: 10vw;
+    font-size: x-large;
+}
+
+.gradient {
+    width: 100vw;
+    height: 5vh;
+    background: linear-gradient(to bottom, transparent 0%, black 75%);
+}
+
+@media only screen and (min-width: 768px) {
+    .text {
+        padding: 0 15vw 50px;
+    }
+}
