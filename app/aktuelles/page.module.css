@@ -15,8 +15,74 @@
     width: 100%;
 }
 
+.history {
+    width: 80vw;
+    margin: 0 10vw 10vw;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.blogSeparator {
+    margin: 30px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.blogTitle {
+    font-family: Nexa Rust Sans;
+    font-weight: 400;
+}
+
+.blogItem:last-child > .blogSeparator {
+    display: none;
+}
+
+.blogText, .blogTitle {
+    padding: 10px;
+}
+
+.blogText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: pre-wrap;
+}
+
 @media only screen and (min-width: 768px) {
     .textBox {
         font-size: x-large;
+        padding-bottom: 50px;
+    }
+
+    .history {
+        margin-bottom: 50px;
+    }
+
+    .blogContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .blogSeparator {
+        width: 200px;
+    }
+
+    .blogItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blogTitle {
+        font-size: large;
+    }
+
+    .blogText {
+        font-size: large;
+        align-items: end;
     }
 }
