@@ -8,6 +8,7 @@ import ImageCard from '@/components/ImageCard'
 import image from '@/public/img/cards/main.jpg'
 import LinkButton from '@/components/LinkButton'
 import VideoCard from '@/components/VideoCard'
+import Review from '@/components/Review'
 
 export default function Home() {
   return (
@@ -67,9 +68,37 @@ export default function Home() {
           </div> */}
         </ImageCard>
         <H2 text='Mal reinhören?' />
+        <div className={styles.text} >
+          Sieh Dir gerne einen Zusammenschnitt zweier Konzerte an. <br /> So bekommst Du einen guten Eindruck von unserer Art, Musik zu machen.
+        </div>
         <div className={styles.videos} >
           <VideoCard src='https://www.youtube.com/embed/urSar1gnXOQ?si=DQh8lAVymiEx-CFJ' text={<>Konzert Jugendhaus Neuried 2023<br />(Highlights)</>} thumbnail='thumbnails/juha.jpg' domain='YouTube' />
           <VideoCard src='https://www.youtube.com/embed/j6pDTYMMN7o?si=mEWEJK5ZGlRIHqyF' text={<>40-jähriges Westpark Jubiläum 2023<br />(Highlights)</>} thumbnail='thumbnails/westpark.jpg' domain='YouTube' />
+        </div>
+        <H2 text='Das sagen unsere Kunden' />
+        <div className={styles.reviews} >
+          <Review name='Lena Johanna' rating={5} link='https://g.co/kgs/ZtetMxR' review={
+            <>
+              Auf allen Konzerten ist immer eine super Stimmung. Haben ein tolles Reportoire und schaffen es ihr Publikum zum Tanzen zu animieren. Man merkt die Freude die sie alle dabei haben und diesen Spaß übertragen sie auf alle anderen. Jedes Konzert ist ein denkwürdiger Abend und ein Riesenspaß.
+              <br />
+              Eine große Empfehlung!!
+            </>
+          } />
+          <Review name='Queller man' rating={5} link='https://g.co/kgs/68bGvK1' review={
+            <>
+              SevenHeaven war der Hammer! Die Energie auf der Bühne hat mich und meine Freunde voll mitgerissen. Die Songauswahl war top, von alten Klassikern bis zu aktuellen Hits.
+              <br />
+              <br />
+              Ich hatte mega Spaß und würde definitiv wieder hingehen! 🎉
+            </>
+          } />
+          <Review name='Elias Wolf' rating={5} link='https://g.co/kgs/ZY9KNVs' review={
+            <>
+              Ich war schon auf mehreren Konzerten von Seven Heaven und es war jedes mal ein Highlight. Das Konzert beim Weinfest im Westpark hat mir richtig gut gefallen. Die Stimmung war super, sowohl bei Jugendlichen und Kindern als auch beim erwachsenen Publikum. Die Songs waren vielseitig und wurden auch sehr gut aufgeführt. Ich bemühe mich auf jedes öffentliche Konzert zu gehen und bis jetzt war es immer ein wundervoller Abend.
+              <br/>
+              Alles in allem ist die Band auf jeden Fall zu empfehlen.
+            </>
+          } />
         </div>
 
         {/* <div className={styles.spacer} /> */}
