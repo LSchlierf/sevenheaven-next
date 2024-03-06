@@ -212,4 +212,8 @@
     .burger {
         display: none;
     }
+
+    .menu {
+        display: none;
+    }
 }
