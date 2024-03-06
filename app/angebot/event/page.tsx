@@ -37,7 +37,7 @@ export default function Event() {
         Willst Du Dich von unserem Sound überzeugen?
         Schau doch in unserer Galerie vorbei.
         <div className={styles.center}>
-          <LinkButton href='/galerie' text='Zur Galerie' />
+          <LinkButton href='/galerie#videos' text='Zur Galerie' />
         </div>
         Kontaktiere uns doch einfach unverbindlich. Zusammen stellen wir mit Dir das
         perfekte Event für Dich und Deine Gäste zusammen.

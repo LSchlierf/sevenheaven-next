@@ -53,6 +53,10 @@
         justify-content: center;
     }
 
+    .body {
+        width: 90%;
+    }
+
     .head, .body {
         padding: 40px;
     }

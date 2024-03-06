@@ -7,7 +7,7 @@ import Image from "next/image";
 import VideoCard from "@/components/VideoCard";
 import { Metadata } from "next";
 
-export const metadata : Metadata = {
+export const metadata: Metadata = {
   title: 'Galerie - Seven Heaven'
 }
 
@@ -45,8 +45,9 @@ export default function Galerie() {
       <div className={styles.concertList}>
         {Object.entries(concerts).map(galleryPreview)}
       </div>
+      <div id='videos' />
       <H2 text='Videos' />
-      <div className={styles.videos}>
+      <div className={styles.videos} >
         <VideoCard src='https://www.youtube.com/embed/qWwdPrLqDso?si=fCnIT9igCO999ylX' text={<>Inside Seven Heaven<br />(Part 1)</>} thumbnail='thumbnails/inside1.jpg' domain='YouTube' />
         <VideoCard src='https://www.youtube.com/embed/fqxEIZ4eg38?si=SgePP1OxdlPuEnjp' text={<>Inside Seven Heaven<br />(Part 2)</>} thumbnail='thumbnails/inside2.jpg' domain='YouTube' />
         <VideoCard src='https://www.youtube.com/embed/9AU7nnl1-mk?si=QQ-UNfkHshuFIaMr' text={<>Inside Seven Heaven<br />(Part 3)</>} thumbnail='thumbnails/inside3.jpg' domain='YouTube' />

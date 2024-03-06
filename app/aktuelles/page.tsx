@@ -27,16 +27,10 @@ export default function Aktuelles() {
         <br />
         Nach nun fast 2 Jahren sind wir endlich wieder zurück im Interim!! Das heißt für euch: Schnappt euch Karten unter diesem Link, um uns wieder mit frischem Repertoire zu erleben!! 👀
       </>} />
-      <H2 text='Vergangene Gigs' />
-      <Poster image={poster_2024_01_20} href='/galerie/2024-01-20' text={<>
-        Das Jugendhaus Neuried gehört für uns inzwischen zu den sehr vertrauten Locations.
-        <br />
-        Das Konzert war wieder mal eine richtige Party, wie ihr in der Galerie sehen könnt. 👀
-        <br />
-        <br />
-        Vielen Dank an alle, die da waren!
-      </>} />
       <H2 text='Historie' />
+      <div className={styles.textBox}>
+        Hier bleibst du up-to-date über die aktuellen Entwicklungen.
+      </div>
       <div className={styles.history} >
         {Object.entries(blog).map(([title, content]) => <div className={styles.blogItem} key={title}>
           <div className={styles.blogContent} >
@@ -51,6 +45,15 @@ export default function Aktuelles() {
           <div className={styles.blogSeparator} />
         </div>)}
       </div>
+      <H2 text='Vergangene Gigs' />
+      <Poster image={poster_2024_01_20} href='/galerie/2024-01-20' text={<>
+        Das Jugendhaus Neuried gehört für uns inzwischen zu den sehr vertrauten Locations.
+        <br />
+        Das Konzert war wieder mal eine richtige Party, wie ihr in der Galerie sehen könnt. 👀
+        <br />
+        <br />
+        Vielen Dank an alle, die da waren!
+      </>} />
     </SubPage>
   )
 }

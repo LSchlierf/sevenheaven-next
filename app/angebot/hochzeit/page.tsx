@@ -37,7 +37,7 @@ export default function Hochzeit() {
         hören willst nicht dabei? Gib uns Bescheid, wie nehmen sie mit in unsere
         Songliste auf.
         <div className={styles.center}>
-          <LinkButton href='/galerie' text='Zur Galerie' />
+          <LinkButton href='/galerie#videos' text='Zur Galerie' />
         </div>
         Bei spezifischeren Wünschen kontaktiere und gerne unverbindlich.
         Wir freuen uns auf Deine Nachricht!
