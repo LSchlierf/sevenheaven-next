@@ -17,7 +17,8 @@
 
 .history {
     width: 80vw;
-    margin: 0 10vw 10vw;
+    /* margin: 0 10vw 10vw; */
+    margin-bottom: 10vw;
     padding: 30px;
     box-sizing: border-box;
     background-color: rgba(0,0,0,0.5);
@@ -57,6 +58,7 @@
     }
 
     .history {
+        width: 60vw;
         margin-bottom: 50px;
     }
 
@@ -78,11 +80,13 @@
     }
 
     .blogTitle {
-        font-size: large;
+        font-size: xx-large;
     }
 
     .blogText {
         font-size: large;
         align-items: end;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
