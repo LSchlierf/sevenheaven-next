@@ -18,6 +18,7 @@ export default function LegalLayout(props: { children: React.ReactNode }) {
           alt=''
           fill
           placeholder='blur'
+          quality={10}
           style={{
             objectFit: 'cover',
             flexShrink: 0,

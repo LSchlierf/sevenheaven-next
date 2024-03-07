@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import styles from './VideoCard.module.css'
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function VideoCard({ src, thumbnail, text, domain }: { src: string, thumbnail: string, text: string | React.ReactNode, domain: string }) {
 
@@ -15,9 +16,11 @@ export default function VideoCard({ src, thumbnail, text, domain }: { src: strin
   const disclaimer = (
     <div className={styles.disclaimer}>
       <div className={styles.disclaimerBlur}>
-
         <div className={styles.disclaimerText} >
           Externer Inhalt von {domain}.
+          <br />
+          Indem Sie den Inhalt laden, bestätigen Sie, dass Ihre Daten an {domain} übermittelt werden dürfen, und
+          dass Sie die <Link href='/datenschutz' className={styles.disclaimerButton}>Datenschutzerklärung</Link> gelesen haben.
         </div>
         <div className={styles.disclaimerButton} onClick={() => setContent(video)} >
           Anzeigen
@@ -27,6 +30,7 @@ export default function VideoCard({ src, thumbnail, text, domain }: { src: strin
         src={'/img/' + thumbnail}
         alt=''
         fill
+        quality={5}
         sizes='(ma-width: 767px) 80vw 29vw'
         style={{
           objectFit: 'cover',

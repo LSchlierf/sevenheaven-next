@@ -63,7 +63,7 @@ export default function SubPage(props: {banner : StaticImport, children: React.R
                 alt='background'
                 fill
                 sizes='100vw'
-                quality={100}
+                quality={10}
                 placeholder='blur'
                 style={{
                   zIndex: -1,

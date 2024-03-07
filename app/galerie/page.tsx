@@ -48,11 +48,11 @@ export default function Galerie() {
       <div id='videos' />
       <H2 text='Videos' />
       <div className={styles.videos} >
-        <VideoCard src='https://www.youtube.com/embed/qWwdPrLqDso?si=fCnIT9igCO999ylX' text={<>Inside Seven Heaven<br />(Part 1)</>} thumbnail='thumbnails/inside1.jpg' domain='YouTube' />
-        <VideoCard src='https://www.youtube.com/embed/fqxEIZ4eg38?si=SgePP1OxdlPuEnjp' text={<>Inside Seven Heaven<br />(Part 2)</>} thumbnail='thumbnails/inside2.jpg' domain='YouTube' />
-        <VideoCard src='https://www.youtube.com/embed/9AU7nnl1-mk?si=QQ-UNfkHshuFIaMr' text={<>Inside Seven Heaven<br />(Part 3)</>} thumbnail='thumbnails/inside3.jpg' domain='YouTube' />
-        <VideoCard src='https://www.youtube.com/embed/j6pDTYMMN7o?si=mEWEJK5ZGlRIHqyF' text={<>40-jähriges Westpark Jubiläum 2023<br />(Highlights)</>} thumbnail='thumbnails/westpark.jpg' domain='YouTube' />
-        <VideoCard src='https://www.youtube.com/embed/urSar1gnXOQ?si=DQh8lAVymiEx-CFJ' text={<>Konzert Jugendhaus Neuried 2023<br />(Highlights)</>} thumbnail='thumbnails/juha.jpg' domain='YouTube' />
+        <VideoCard src='https://www.youtube-nocookie.com/embed/qWwdPrLqDso?autoplay=1' text={<>Inside Seven Heaven<br />(Part 1)</>} thumbnail='thumbnails/inside1.jpg' domain='YouTube' />
+        <VideoCard src='https://www.youtube-nocookie.com/embed/fqxEIZ4eg38?autoplay=1' text={<>Inside Seven Heaven<br />(Part 2)</>} thumbnail='thumbnails/inside2.jpg' domain='YouTube' />
+        <VideoCard src='https://www.youtube-nocookie.com/embed/9AU7nnl1-mk?autoplay=1' text={<>Inside Seven Heaven<br />(Part 3)</>} thumbnail='thumbnails/inside3.jpg' domain='YouTube' />
+        <VideoCard src='https://www.youtube-nocookie.com/embed/j6pDTYMMN7o?autoplay=1' text={<>40-jähriges Westpark Jubiläum 2023<br />(Highlights)</>} thumbnail='thumbnails/westpark.jpg' domain='YouTube' />
+        <VideoCard src='https://www.youtube-nocookie.com/embed/urSar1gnXOQ?autoplay=1' text={<>Konzert Jugendhaus Neuried 2023<br />(Highlights)</>} thumbnail='thumbnails/juha.jpg' domain='YouTube' />
       </div>
     </SubPage>
   )

@@ -72,8 +72,8 @@ export default function Home() {
           Sieh Dir gerne einen Zusammenschnitt zweier Konzerte an. <br /> So bekommst Du einen guten Eindruck von unserer Art, Musik zu machen.
         </div>
         <div className={styles.videos} >
-          <VideoCard src='https://www.youtube.com/embed/urSar1gnXOQ?si=DQh8lAVymiEx-CFJ' text={<>Konzert Jugendhaus Neuried 2023<br />(Highlights)</>} thumbnail='thumbnails/juha.jpg' domain='YouTube' />
-          <VideoCard src='https://www.youtube.com/embed/j6pDTYMMN7o?si=mEWEJK5ZGlRIHqyF' text={<>40-jähriges Westpark Jubiläum 2023<br />(Highlights)</>} thumbnail='thumbnails/westpark.jpg' domain='YouTube' />
+          <VideoCard src='https://www.youtube-nocookie.com/embed/urSar1gnXOQ?autoplay=1' text={<>Konzert Jugendhaus Neuried 2023<br />(Highlights)</>} thumbnail='thumbnails/juha.jpg' domain='YouTube' />
+          <VideoCard src='https://www.youtube-nocookie.com/embed/j6pDTYMMN7o?autoplay=1' text={<>40-jähriges Westpark Jubiläum 2023<br />(Highlights)</>} thumbnail='thumbnails/westpark.jpg' domain='YouTube' />
         </div>
         <H2 text='Das sagen unsere Kunden' />
         <div className={styles.reviews} >
@@ -133,7 +133,7 @@ export default function Home() {
                 alt='background'
                 fill
                 sizes='100vw'
-                quality={100}
+                quality={10}
                 placeholder='blur'
                 style={{
                   zIndex: -1,
