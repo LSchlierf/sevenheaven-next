@@ -15,7 +15,18 @@ export default function VideoCard({ src, thumbnail, text, domain }: { src: strin
 
   const disclaimer = (
     <div className={styles.disclaimer}>
-      <div className={styles.disclaimerBlur}>
+      <div className={styles.disclaimerBlur} id={src}
+        onMouseEnter={() => {
+          if (typeof document !== 'undefined') {
+            setTimeout(() => document.getElementById(src)?.classList.add(styles.active), 10)
+          }
+        }}
+        onMouseLeave={() => {
+          if (typeof document !== 'undefined') {
+            document.getElementById(src)?.classList.remove(styles.active)
+          }
+        }}
+      >
         <div className={styles.disclaimerText} >
           Externer Inhalt von {domain}.
           <br />
@@ -26,11 +37,11 @@ export default function VideoCard({ src, thumbnail, text, domain }: { src: strin
           Anzeigen
         </div>
       </div>
+      <img src='/play.svg' alt='' className={styles.play} />
       <Image
         src={'/img/' + thumbnail}
         alt=''
         fill
-        quality={5}
         sizes='(ma-width: 767px) 80vw 29vw'
         style={{
           objectFit: 'cover',

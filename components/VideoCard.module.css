@@ -25,8 +25,7 @@
 }
 
 .disclaimerBlur {
-    z-index: 1;
-    backdrop-filter: blur(5px) brightness(50%);
+    z-index: 2;
     width: 100%;
     max-height: 100%;
     display: flex;
@@ -34,6 +33,29 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 10px;
+    transition: backdrop-filter 0.1s;
+}
+
+.disclaimerBlur:not(.active) {
+    backdrop-filter: none;
+}
+
+.active {
+    backdrop-filter: blur(5px) brightness(50%);
+}
+
+.disclaimerBlur:not(.active)>* {
+    pointer-events: none;
+    opacity: 0;
+}
+
+.active>* {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.disclaimerBlur>* {
+    transition: opacity 0.1s;
 }
 
 .disclaimerText {
@@ -50,6 +72,24 @@
     color: white;
 }
 
+.play {
+    z-index: 1;
+    position: absolute;
+    width: 20%;
+    left: 40%;
+    right: 40%;
+    top: 40%;
+    background-color: rgba(0,0,0,0.75);
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: opacity 0.1s;
+}
+
+.active ~ .play {
+    opacity: 0
+}
+
 @media only screen and (min-width: 768px) {
     .videoCard {
         width: 29vw;
@@ -58,8 +98,16 @@
         padding-bottom: 0;
     }
 
-    .disclaimer, .video {
+    .disclaimer,
+    .video {
         width: 29vw;
         height: 16.3vw;
+    }
+
+    .play {
+        width: 10%;
+        left: 45%;
+        right: 45%;
+        top: 45%;
     }
 }

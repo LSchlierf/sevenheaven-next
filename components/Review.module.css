@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     text-decoration: none;
-    padding-bottom: 10vw;
+    margin-bottom: 10vw;
 }
 
 .head {
@@ -40,7 +40,7 @@
 
     .wrapper {
         flex-direction: row;
-        padding-bottom: 50px;
+        margin-bottom: 50px;
     }
 
     .head {

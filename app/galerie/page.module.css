@@ -61,6 +61,10 @@
         margin: 2vw;
     }
 
+    .concertPreview > .preview > .galleryIcon {
+        transition: opacity 0.1s;
+    }
+
     .concertPreview:hover > .preview > .galleryIcon {
         opacity: 100%;
     }
