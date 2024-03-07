@@ -183,6 +183,11 @@
         position: absolute;
         left: 10;
         top: 2.6vw;
+        transition: transform 0.1s;
+    }
+
+    .home:hover {
+        transform: scale(1.15);
     }
 
     .home img {

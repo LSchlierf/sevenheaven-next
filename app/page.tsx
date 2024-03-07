@@ -75,7 +75,7 @@ export default function Home() {
           <VideoCard src='https://www.youtube-nocookie.com/embed/urSar1gnXOQ?autoplay=1' text={<>Konzert Jugendhaus Neuried 2023<br />(Highlights)</>} thumbnail='thumbnails/juha.jpg' domain='YouTube' />
           <VideoCard src='https://www.youtube-nocookie.com/embed/j6pDTYMMN7o?autoplay=1' text={<>40-jähriges Westpark Jubiläum 2023<br />(Highlights)</>} thumbnail='thumbnails/westpark.jpg' domain='YouTube' />
         </div>
-        <H2 text='Das sagen unsere Kunden' />
+        <H2 text='Das sagen unsere Gäste' />
         <div className={styles.reviews} >
           <Review name='Lena Johanna' rating={5} link='https://g.co/kgs/ZtetMxR' review={
             <>

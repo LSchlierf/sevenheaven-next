@@ -1,7 +1,7 @@
 .wrapper {
     width: 80vw;
     text-decoration: none;
-    padding-bottom: 10vw;
+    margin-bottom: 10vw;
 }
 
 .image {
@@ -21,6 +21,13 @@
 @media only screen and (min-width: 768px) {
     .wrapper {
         width: 25vw;
-        padding-bottom: 50px;
+        margin-bottom: 50px;
+        margin-left: 25px;
+        margin-right: 25px;
+        /* transition: transform 0.1s ease-out; */
     }
+
+    /* .wrapper:hover {
+        transform: scale(1.02);
+    } */
 }

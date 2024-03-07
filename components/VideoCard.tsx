@@ -36,14 +36,16 @@ export default function VideoCard({ src, thumbnail, text, domain }: { src: strin
   function showDisclaimer() {
     setContent(makeDisclaimer(
       <>
-        <div className={styles.disclaimerBlur + ' ' + styles.disclaimerNotHover + ' ' + styles.active} >
+        <div className={styles.disclaimerBlur + ' ' + styles.disclaimerNotHover + ' ' + styles.active}
+          onClick={() => setContent(disclaimer)}
+        >
           <div className={styles.disclaimerText} >
             Externer Inhalt von {domain}.
             <br />
             Indem Sie den Inhalt laden, bestätigen Sie, dass Ihre Daten an {domain} übermittelt werden dürfen, und
-            dass Sie die <Link href='/datenschutz' className={styles.disclaimerButton}>Datenschutzerklärung</Link> gelesen haben.
+            dass Sie die <Link href='/datenschutz' className={styles.disclaimerButton} onClick={(e) => e.stopPropagation()} >Datenschutzerklärung</Link> gelesen haben.
           </div>
-          <div className={styles.disclaimerButton} onClick={() => setContent(video)} >
+          <div className={styles.disclaimerButton} onClick={(e) => { e.stopPropagation(); setContent(video) }} >
             Anzeigen
           </div>
         </div>

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styles from './Poster.module.css'
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 
-export default function Poster(props: {image : StaticImport, text: string | React.ReactNode, href? : string | undefined, external? : boolean | undefined}) {
+export default function Poster(props: { image: StaticImport, text?: string | React.ReactNode | undefined, href?: string | undefined, external?: boolean | undefined }) {
   return (
     <a className={styles.wrapper} href={props.href} target={!!props.external ? '_blank' : ''} rel={!!props.external ? 'noopen noreferer' : ''}>
       <div className={styles.image}>
@@ -18,9 +18,11 @@ export default function Poster(props: {image : StaticImport, text: string | Reac
           }}
         />
       </div>
-      <div className={styles.text}>
-        {props.text}
-      </div>
+      {!!props.text &&
+        <div className={styles.text}>
+          {props.text}
+        </div>
+      }
     </a>
   )
 }
