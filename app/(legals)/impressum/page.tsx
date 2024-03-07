@@ -12,7 +12,7 @@ export default function Impressum() {
       81369
 
       <h2 id="m56">Kontaktmöglichkeiten</h2>
-      E-Mail-Adresse: admin@sevenheaven
+      E-Mail-Adresse: <a href="mailto:kontakt@sevenheaven.band">kontakt@sevenheaven.band</a>
       <br />
       Telefon: 089/71034962
 
