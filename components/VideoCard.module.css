@@ -27,16 +27,18 @@
 .disclaimerBlur {
     z-index: 2;
     width: 100%;
+    height: 100%;
     max-height: 100%;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     padding: 10px;
     transition: backdrop-filter 0.1s;
+    box-sizing: border-box;
 }
 
-.disclaimerBlur:not(.active) {
+/* .disclaimerBlur:not(.active) {
     backdrop-filter: none;
 }
 
@@ -56,7 +58,7 @@
 
 .disclaimerBlur>* {
     transition: opacity 0.1s;
-}
+} */
 
 .disclaimerText {
     z-index: inherit;
@@ -90,6 +92,58 @@
     opacity: 0
 }
 
+.active {
+    backdrop-filter: blur(5px) brightness(50%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .active ~ .play {
+        opacity: 1;
+        animation: fadeOut 0.2s forwards;
+    }
+    
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    .active {
+        backdrop-filter: none;
+        animation: darkenBackground 0.2s forwards;
+    }
+    
+    @keyframes darkenBackground {
+        from {
+            backdrop-filter: none;
+        }
+        to {
+            backdrop-filter: blur(5px) brightness(50%);
+        }
+    }
+
+    .active > * {
+        opacity: 0;
+        animation: fadeIn 0.2s forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+/* .active ~ .play {
+    opacity: 0;
+} */
+
 @media only screen and (min-width: 768px) {
     .videoCard {
         width: 29vw;
@@ -109,5 +163,46 @@
         left: 45%;
         right: 45%;
         top: 45%;
+    }
+
+    .disclaimerBlur {
+        padding: 20px;
+    }
+}
+
+.disclaimerHover {
+    display: none;
+}
+
+.disclaimerNotHover {
+    display: flex;
+}
+
+@media (hover : hover) {
+    .disclaimerHover {
+        display: flex;
+        transition: all 0.1s;
+        backdrop-filter: none;
+    }
+    
+    .disclaimerNotHover {
+        display: none;
+    }
+    
+    .disclaimerHover > * {
+        transition: all 0.1s;
+        opacity: 0;
+    }
+    
+    .disclaimerHover:hover {
+        backdrop-filter: blur(5px) brightness(50%);
+    }
+
+    .disclaimerHover:hover >* {
+        opacity: 1;
+    }
+
+    .disclaimerHover:hover ~ .play {
+        opacity: 0;
     }
 }

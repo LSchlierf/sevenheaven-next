@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import styles from './VideoCard.module.css'
 import Image from 'next/image';
 import Link from 'next/link';
@@ -13,20 +13,47 @@ export default function VideoCard({ src, thumbnail, text, domain }: { src: strin
     </div>
   )
 
-  const disclaimer = (
-    <div className={styles.disclaimer}>
-      <div className={styles.disclaimerBlur} id={src}
-        onMouseEnter={() => {
-          if (typeof document !== 'undefined') {
-            setTimeout(() => document.getElementById(src)?.classList.add(styles.active), 10)
-          }
-        }}
-        onMouseLeave={() => {
-          if (typeof document !== 'undefined') {
-            document.getElementById(src)?.classList.remove(styles.active)
-          }
-        }}
-      >
+  function makeDisclaimer(warning: React.ReactNode) {
+    return (
+      <>
+        <div className={styles.disclaimer}>
+          {warning}
+          < img src='/play.svg' alt='' className={styles.play} />
+          <Image
+            src={'/img/' + thumbnail}
+            alt=''
+            fill
+            sizes='(ma-width: 767px) 80vw 29vw'
+            style={{
+              objectFit: 'cover',
+            }}
+          />
+        </div >
+      </>
+    )
+  }
+
+  function showDisclaimer() {
+    setContent(makeDisclaimer(
+      <>
+        <div className={styles.disclaimerBlur + ' ' + styles.disclaimerNotHover + ' ' + styles.active} >
+          <div className={styles.disclaimerText} >
+            Externer Inhalt von {domain}.
+            <br />
+            Indem Sie den Inhalt laden, bestätigen Sie, dass Ihre Daten an {domain} übermittelt werden dürfen, und
+            dass Sie die <Link href='/datenschutz' className={styles.disclaimerButton}>Datenschutzerklärung</Link> gelesen haben.
+          </div>
+          <div className={styles.disclaimerButton} onClick={() => setContent(video)} >
+            Anzeigen
+          </div>
+        </div>
+      </>
+    ))
+  }
+
+  const disclaimer = makeDisclaimer(
+    <>
+      <div className={styles.disclaimerBlur + ' ' + styles.disclaimerHover} >
         <div className={styles.disclaimerText} >
           Externer Inhalt von {domain}.
           <br />
@@ -37,20 +64,14 @@ export default function VideoCard({ src, thumbnail, text, domain }: { src: strin
           Anzeigen
         </div>
       </div>
-      <img src='/play.svg' alt='' className={styles.play} />
-      <Image
-        src={'/img/' + thumbnail}
-        alt=''
-        fill
-        sizes='(ma-width: 767px) 80vw 29vw'
-        style={{
-          objectFit: 'cover',
-        }}
-      />
-    </div>
+      <div className={styles.disclaimerBlur + ' ' + styles.disclaimerNotHover}
+        onClick={showDisclaimer}>
+      </div >
+    </>
   )
 
   const [content, setContent] = useState(disclaimer)
+
   return (
     <div className={styles.videoCard} >
       <div className={styles.contentWrapper}>
