@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
-    "next": "14.0.4",
+    "next": "14.0.5-canary.60",
     "nodemailer": "^6.9.8",
     "react": "^18",
     "react-device-detect": "^2.2.3",
