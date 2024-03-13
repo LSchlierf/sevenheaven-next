@@ -21,7 +21,7 @@ export default function Event() {
         der Suche nach einer Eventband zu sein, richtig? Was darf es denn sein?
         Brauchst Du gute Unterhaltung für ein <b>Weinfest</b>? Möchtest du auf
         Deinem <b>Dorffest</b> so richtig einheizen? Oder vielleicht doch etwas Tanzmusik für
-        Deine <b>Tanzveranstaltung</b>? Sag uns einfach was du brauchst, wir kümmern uns darum.
+        Deine <b>Tanzveranstaltung</b>? Sag uns einfach was Du brauchst, wir kümmern uns darum.
         <br />
         <br />
         Durch unser breites und immer breiter werdendes Repertoire sind wir

@@ -28,13 +28,13 @@ export default function Hochzeit() {
         &quot;Wir machen euren Abend <b>unvergesslich</b>.&quot; Schon tausend Mal gehört. Versuchen wir es doch mal anders:
         <br />
         <br />
-        Stell Dir vor deine Hochzeitsgäste wollen spürbar schon in Partystimmung wechseln,
+        Stell Dir vor Deine Hochzeitsgäste wollen spürbar schon in Partystimmung wechseln,
         die Band spielt aber immer noch einen Walzer nach dem anderen. Nicht mit uns!
         Wir bereiten unser Repertoire so vor, dass wir schnell auf die Wünsche Deiner
         Gäste <b>reagieren</b> können.
         Noch dazu hast Du die Möglichkeit Dir Dein Wunsch-Repertoire
-        zusammenzustellen. (Musst du aber natürlich nicht) Es sind Songs, die du
-        hören willst nicht dabei? Gib uns Bescheid, wie nehmen sie mit in unsere
+        zusammenzustellen. (Musst Du aber natürlich nicht) Es sind Songs, die Du
+        hören willst nicht dabei? Gib uns Bescheid, wir nehmen sie mit in unsere
         Songliste auf.
         <div className={styles.center}>
           <LinkButton href='/galerie#videos' text='Zur Galerie' />

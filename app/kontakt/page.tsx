@@ -81,7 +81,7 @@ export default function Kontakt() {
       </div>
       <H2 text='Deine Nachricht' />
       <div className={styles.textBox} >
-        Kontaktiere uns gerne und lass uns wissen, wonach du suchst.
+        Kontaktiere uns gerne und lass uns wissen, wonach Du suchst.
         <br />
         Wir freuen uns auf Deine Nachricht.
       </div>

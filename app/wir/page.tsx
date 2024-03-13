@@ -31,13 +31,13 @@ export default function Wir() {
         zusammen musiziert/komponiert. Aber lass Dich von der kurzen musikalischen
         Laufbahn nicht täuschen, Du hast sehr erfahrene Musiker vor dir.
         Von Auftritten auf großen Opernbühnen bis hin zur Komposition eines ganzen
-        Musicals...Du hast es hier mit Profis zu tun. (Falls Dich die einzelnen Mitglieder
-        interessieren, kannst Du <u>unten</u> genaueres über sie erfahren)
+        Musicals... (Falls Dich die einzelnen Mitglieder
+        interessieren, kannst Du unten genaueres über sie erfahren)
         <br />
         <br />
         Wir sind nicht nur eine Ansammlung von Musikern, sondern eine
         Freundesgruppe, die es liebt zusammen zu musizieren. Du fragst Dich vielleicht,
-        warum ich das so betone? Weil diese Liebe zur und der Spaß an der Musik
+        warum wir das so betonen? Weil diese Liebe zur und der Spaß an der Musik
         unsere Auftritte bestimmt. Vom ersten bis zum letzten Akkord strahlen
         wir eine Freude aus, die Euch - das Publikum - in den Bann zieht.
         Unabhängig vom Anlass und der Menge der Zuschauer.
@@ -60,7 +60,7 @@ export default function Wir() {
       </ImageCard>
       <H2 text='Die Mitglieder' />
       <div className={styles.portraits}>
-        <PortraitCard img='Luisa.png' name='Luisa Loher' role='Leadgesang' text={<>Mit ihrer natürlichen und ansteckend gut gelaunten Art ist es ein Genuss Luisa beim Performen zuzusehen.<br /><br />Neben ihrer Gesangsausbildung hat sie sich das Klavierspielen selbst beigebracht.<br /><br />Auf der Bühne entfaltet sich ihre Stimme besonders bei anspruchsvollen Künstlerinnen, wie Adele oder Gloria Gaynor.</>} />
+        <PortraitCard img='Luisa.png' name='Luisa Loher' role='Leadgesang' text={<>Mit ihrer natürlichen und ansteckend gut gelaunten Art ist es ein Genuss Luisa beim Performen zuzusehen.<br /><br />Die erfahrene Sängerin hat zusätzlich 6 Jahre lang Klavierunterricht genossen.<br /><br />Auf der Bühne entfaltet sich ihre Stimme besonders bei anspruchsvollen Künstlerinnen, wie Adele oder Gloria Gaynor.</>} />
         <PortraitCard img='Lucas.png' name='Lucas Schlierf' role='Leadgesang' text={<>Mit seiner Gesangsausbildung beim Tölzer Knabenchor füllt Lucas mit seiner Stimmgewalt den ganzen Saal.<br /><br />Besonders bei Peter Schilling oder Green Day lässt der außerhalb der Bühne sonst ruhige Sänger die Sau raus.</>} />
         <PortraitCard img='Florian.png' name='Florian Döhr' role='Leadgitarre' text={<>Florian ist einer unserer Allrounder.<br /><br />Mit acht beginnt er Gitarre, mit 13 Jahren Schlagzeug und mit 20 Jahren Trompete zu spielen.<br /><br />Besonders zu spüren ist seine Erfahrung bei seinen virtuosen Soli, aber auch bei seiner Coolness auf der Bühne.</>} />
         <PortraitCard img='Leo.png' name='Leo Hellerer' role='Rhythmusgitarre + Bass' text={<>Leo könnte man als Ruhepol der Band bezeichnen.<br /><br />Als Rhythmusgitarrist ist er für den vollen Klang verantwortlich.<br /><br />Seit er acht Jahre alt ist spielt er Gitarre. Und wenn Julian sich gerade als Front-Sänger versucht, übernimmt er nahtlos die Rolle des Bassisten.</>} />

@@ -92,6 +92,10 @@
   box-sizing: border-box;
 }
 
+.text a {
+  color: inherit;
+}
+
 .reviews {
   width: 100vw;
   display: flex;

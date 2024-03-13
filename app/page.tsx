@@ -6,7 +6,6 @@ import Image from 'next/image'
 import background from '@/public/img/bg_red.jpg'
 import ImageCard from '@/components/ImageCard'
 import image from '@/public/img/cards/main.jpg'
-import LinkButton from '@/components/LinkButton'
 import VideoCard from '@/components/VideoCard'
 import Review from '@/components/Review'
 
@@ -62,10 +61,7 @@ export default function Home() {
           <br />
           <br />
           Haben wir dein Interesse geweckt?
-          Melde dich gerne bei uns!
-          {/* <div className={styles.center}>
-            <LinkButton href='/kontakt' text='Anfragen' />
-          </div> */}
+          Melde Dich gerne bei uns!
         </ImageCard>
         <H2 text='Mal reinhören?' />
         <div className={styles.text} >
@@ -95,10 +91,13 @@ export default function Home() {
           <Review name='Elias Wolf' rating={5} link='https://g.co/kgs/ZY9KNVs' review={
             <>
               Ich war schon auf mehreren Konzerten von Seven Heaven und es war jedes mal ein Highlight. Das Konzert beim Weinfest im Westpark hat mir richtig gut gefallen. Die Stimmung war super, sowohl bei Jugendlichen und Kindern als auch beim erwachsenen Publikum. Die Songs waren vielseitig und wurden auch sehr gut aufgeführt. Ich bemühe mich auf jedes öffentliche Konzert zu gehen und bis jetzt war es immer ein wundervoller Abend.
-              <br/>
+              <br />
               Alles in allem ist die Band auf jeden Fall zu empfehlen.
             </>
           } />
+        </div>
+        <div className={styles.text} >
+          Du warst auch auf einem Konzert von uns? <a href='https://g.page/r/Cc-5aioIdsr_EB0/review' target='_blank' rel='noopen noreferer'>Hier</a> kannst du eine Bewertung hinterlassen. Vielen Dank!
         </div>
 
         {/* <div className={styles.spacer} /> */}
