@@ -13,7 +13,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: 'Seven Heaven',
   description: 'Seven Heaven - Partyband aus Muenchen - Beste Live Unterhaltung für Hochzeit, Bierzelt, Weinfest. Wir sorgen für Stimmung auf Ihrer Feier.',
-  metadataBase: new URL('https://sevenheaven-preview.vercel.app') // TODO: replace before release
+  metadataBase: new URL('https://www.sevenheaven.band')
 }
 
 export default function RootLayout({
