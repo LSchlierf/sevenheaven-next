@@ -3,7 +3,7 @@ import { metadata } from './layout'
 import concerts from './galerie/Gallery.json'
 
 export default function sitemap() : MetadataRoute.Sitemap {
-    const baseURL = metadata.metadataBase?.toString() || 'https://www.sevenheaven.band'
+    const baseURL = metadata.metadataBase?.toString() || 'https://www.sevenheaven.band/'
 
     return [
         {
@@ -11,50 +11,50 @@ export default function sitemap() : MetadataRoute.Sitemap {
             priority: 1
         },
         {
-            url: baseURL + '/aktuelles',
+            url: baseURL + 'aktuelles',
             changeFrequency: 'weekly',
             priority: 1
         },
         {
-            url: baseURL + '/wir',
+            url: baseURL + 'wir',
             priority: 0.8
         },
         {
-            url: baseURL + '/angebot/event',
+            url: baseURL + 'angebot/event',
             priority: 0.9
         },
         {
-            url: baseURL + '/angebot/hochzeit',
+            url: baseURL + 'angebot/hochzeit',
             priority: 0.9
         },
         {
-            url: baseURL + '/angebot/party',
+            url: baseURL + 'angebot/party',
             priority: 0.9
         },
         {
-            url: baseURL + '/repertoire',
+            url: baseURL + 'repertoire',
             changeFrequency: 'monthly',
             priority: 0.5
         },
         {
-            url: baseURL + '/galerie',
+            url: baseURL + 'galerie',
             changeFrequency: 'monthly'
         },
         ...Object.entries(concerts).map((tag) => {
             return {
-                url: baseURL + '/galerie/' + tag[0]
+                url: baseURL + 'galerie/' + tag[0]
             }
         }),
         {
-            url: baseURL + '/kontakt',
+            url: baseURL + 'kontakt',
             priority: 0.8
         },
         {
-            url: baseURL + '/impressum',
+            url: baseURL + 'impressum',
             priority: 0
         },
         {
-            url: baseURL + '/datenschutz',
+            url: baseURL + 'datenschutz',
             priority: 0
         }
     ]
