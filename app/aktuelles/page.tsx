@@ -12,7 +12,8 @@ import poster_2023_03_25 from '@/public/img/posters/2023-03-25.jpg'
 import poster_2022_06_10 from '@/public/img/posters/2022-06-10.png'
 
 export const metadata: Metadata = {
-  title: 'Aktuelles - Seven Heaven'
+  title: 'Aktuelles - Seven Heaven',
+  description: 'Seven Heaven - Hier erfährst Du alles über anstehende Konzerte und was uns sonst so herumtreibt.'
 }
 
 export default function Aktuelles() {
@@ -20,7 +21,7 @@ export default function Aktuelles() {
     <SubPage banner={banner} offset='top'>
       <H1 text='Aktuelles' />
       <div className={styles.textBox}>
-        Hier erfährst du alles über anstehende Konzerte und was uns sonst so herumtreibt.
+        Hier erfährst Du alles über anstehende Konzerte und was uns sonst so herumtreibt.
       </div>
       <H2 text='Kommende Gigs' />
       <Poster image={poster_2024_04_13} href='http://interim-kultur.de/Programm/?dfxid=491' external text={<>

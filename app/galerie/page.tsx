@@ -8,7 +8,8 @@ import VideoCard from "@/components/VideoCard";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Galerie - Seven Heaven'
+  title: 'Galerie - Seven Heaven',
+  description: 'Seven Heaven - Hier kannst Du die Fotos unserer Konzerte sowie Videos von uns ansehen.'
 }
 
 function galleryPreview(concert: any, index: any) {

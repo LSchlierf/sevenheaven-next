@@ -9,7 +9,8 @@ import styles from '../angebot.module.css'
 import LinkButton from "@/components/LinkButton";
 
 export const metadata: Metadata = {
-  title: 'Hochzeitsband - Seven Heaven'
+  title: 'Hochzeitsband - Seven Heaven',
+  description: 'Seven Heaven - Du suchst noch eine Band für Deine Hochzeit? Dann bist Du hier richtig!'
 }
 
 export default function Hochzeit() {

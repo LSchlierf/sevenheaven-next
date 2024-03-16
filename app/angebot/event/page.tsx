@@ -9,7 +9,8 @@ import styles from '../angebot.module.css'
 import LinkButton from "@/components/LinkButton";
 
 export const metadata: Metadata = {
-  title: 'Eventband - Seven Heaven'
+  title: 'Eventband - Seven Heaven',
+  description: 'Seven Heaven - Du suchst noch eine Band für Dein nächstes Event? Dann bist Du hier richtig!'
 }
 
 export default function Event() {

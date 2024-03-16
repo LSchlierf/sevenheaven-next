@@ -9,7 +9,8 @@ import ImageCard from '@/components/ImageCard'
 import LinkButton from '@/components/LinkButton'
 
 export const metadata: Metadata = {
-  title: 'Über uns - Seven Heaven'
+  title: 'Über uns - Seven Heaven',
+  description: 'Seven Heaven - Hier kannst Du mehr über die einzelnen Mitglieder sowie unseren Werdegang als Band erfahren.'
 }
 
 export default function Wir() {
@@ -66,7 +67,7 @@ export default function Wir() {
         <PortraitCard img='Leo.png' name='Leo Hellerer' role='Rhythmusgitarre + Bass' text={<>Leo könnte man als Ruhepol der Band bezeichnen.<br /><br />Als Rhythmusgitarrist ist er für den vollen Klang verantwortlich.<br /><br />Seit er acht Jahre alt ist spielt er Gitarre. Und wenn Julian sich gerade als Front-Sänger versucht, übernimmt er nahtlos die Rolle des Bassisten.</>} />
         <PortraitCard img='Julian.png' name='Julian Höflmaier' role='Bass + Gesang' text={<>Julian beginnt seine musikalische Laufbahn wie Lucas beim Tölzer Knabenchor. Neben Gesang lernt er außerdem Klavier.<br /><br />Da uns zu unserer Gründung noch ein Bassist fehlt, beschließt er kurzerhand, sich das Bassspielen selbst beizubringen.<br /><br />Gesanglich ist er für die Alpengegend und Backing-Vocals zuständig.</>} />
         <PortraitCard img='Jakob.png' name='Jakob Friederich' role='Piano + Gesang' text={<>Jakob ist unser Musikgenie.<br /><br />Neben seinem absoluten Gehör spielt er seit er sechs Jahre alt ist Klavier, beherrscht das Saxophon, die Klarinette und nimmt Gesangsunterricht.<br /><br />Er kümmert sich um die Arrangements der Stücke und hat auch sonst überall seine Finger im Spiel.</>} />
-        <PortraitCard img='Daniel.png' name='Daniel Bopp' role='Schlagzeug + Gesang' text={<>Mit seinen vielen Jahren Schagzeug-Erfahrung bildet Daniel das rhythmische Fundament der Band.<br /><br />Neben seinen Beats unterstützt er die Frontsänger mit Backing-Vocals.</>} />
+        <PortraitCard img='Daniel.png' name='Daniel Bopp' role='Schlagzeug + Gesang' text={<>Mit seinen vielen Jahren Schlagzeug-Erfahrung bildet Daniel das rhythmische Fundament der Band.<br /><br />Neben seinen Beats unterstützt er die Frontsänger mit Backing-Vocals.</>} />
       </div>
       <H2 text='Die Crew' />
       <div className={styles.portraits}>

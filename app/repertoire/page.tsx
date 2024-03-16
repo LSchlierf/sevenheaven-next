@@ -8,7 +8,8 @@ import BackButton from '@/components/BackButton'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Repertoire - Seven Heaven'
+  title: 'Repertoire - Seven Heaven',
+  description: 'Seven Heaven - Hier siehst Du unser aktuelles Repertoire. Vielleicht sind ja auch einige Deiner Lieblingssongs dabei.'
 }
 
 export default function Repertoire() {
