@@ -10,7 +10,7 @@
 .text {
     padding: 5vw;
     font-size: large;
-    text-align: justify;
+    text-align: left;
 }
 
 .gradient {
@@ -34,5 +34,6 @@
 @media only screen and (min-width: 768px) {
     .text {
         padding: 0 15vw 50px;
+        text-align: justify;
     }
 }

@@ -27,7 +27,7 @@ export default function Impressum() {
 
       <h2 id="m65">Haftungs- und Schutzrechtshinweise</h2><p>Urheberrechte und Markenrechte: Alle auf dieser Website dargestellten Inhalte, wie Texte, Fotografien, Grafiken, Marken und Warenzeichen sind durch die jeweiligen Schutzrechte (Urheberrechte, Markenrechte) geschützt. Die Verwendung, Vervielfältigung usw. unterliegen unseren Rechten oder den Rechten der jeweiligen Urheber bzw. Rechteinhaber.</p>
 
-      <h2>Design und Betrieb</h2><p>Website designt von Julian Höflmaier, gebaut von Lucas Schlierf.</p>
+      <h2>Design und Betrieb</h2><p>Website designt von Julian Höflmaier, gebaut von Lucas Schlierf, mit allgemeiner Unterstützung von Jakob Friederich.</p>
 
       <p><a href="https://datenschutz-generator.de/" title="Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken." target="_blank" rel="noopener noreferrer nofollow">Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas Schwenke</a></p>
     </>
