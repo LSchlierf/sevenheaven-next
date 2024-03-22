@@ -83,6 +83,7 @@
 .name {
     font-size: large;
     font-family: 'Nexa Rust Sans';
+    font-weight: 400;
 }
 
 .role {
