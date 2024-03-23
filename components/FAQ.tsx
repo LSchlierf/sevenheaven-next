@@ -22,7 +22,7 @@ export default function FAQ() {
       da unser Repertoire auf Party-/Gute Laune Songs spezialisiert ist und sich dementsprechend im Normalfall
       nicht für den Hintergrund von beispielsweise Empfängen eignet.
       Kontaktiere uns gerne diesbezüglich und wir helfen Dir da gerne beratend weiter.
-      <H3 text='"Gibt es euch auch in kleinerer Besetzung?' />
+      <H3 text='"Gibt es euch auch in kleinerer Besetzung?"' />
       Seven Heaven besteht aus sieben Leuten, keinem weniger. Unser Klang ist von einer vollen Besetzung abhängig,
       da jeder einzelne auf der Bühne eine wichtige Rolle spielt. Eine Komprimierung würde dem Sound schaden.
       Das können wir weder vor Euch als Zuschauer noch vor uns rechtfertigen.
