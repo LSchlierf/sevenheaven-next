@@ -9,7 +9,7 @@ import styles from '../angebot.module.css'
 import LinkButton from "@/components/LinkButton";
 
 export const metadata: Metadata = {
-  title: 'Partyband - Seven Heaven',
+  title: 'Partyband - Seven Heaven | Der perfekte Sound für Deine Party',
   description: 'Seven Heaven - Du suchst noch eine Band für Deine nächste Feier? Dann bist Du hier richtig!'
 }
 

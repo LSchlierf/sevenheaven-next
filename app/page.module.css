@@ -103,6 +103,13 @@
   align-items: center;
 }
 
+.link {
+  color: white;
+  padding-bottom: 40px;
+  max-width: 80vw;
+  text-align: center;
+}
+
 @media only screen and (min-width: 768px) {
   .titleWrapper {
     margin-top: 20px;
@@ -139,5 +146,10 @@
   .text {
     padding: 0 30px 30px;
     font-size: x-large;
+  }
+
+  .link {
+    font-size: x-large;
+    padding-bottom: 60px;
   }
 }

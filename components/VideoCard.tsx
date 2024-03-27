@@ -9,7 +9,7 @@ export default function VideoCard({ src, thumbnail, text, domain }: { src: strin
 
   const video = (
     <div className={styles.video}>
-      <iframe width="100%" height="100%" src={src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowFullScreen />
+      <iframe width="100%" height="100%" src={src} title="Video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowFullScreen />
     </div>
   )
 
@@ -39,6 +39,9 @@ export default function VideoCard({ src, thumbnail, text, domain }: { src: strin
         <div className={styles.disclaimerBlur + ' ' + styles.disclaimerNotHover + ' ' + styles.active}
           onClick={() => setContent(disclaimer)}
         >
+          <div className={styles.x}>
+            X
+          </div>
           <div className={styles.disclaimerText} >
             Externer Inhalt von {domain}.
             <br />

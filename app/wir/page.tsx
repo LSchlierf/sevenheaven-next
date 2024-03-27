@@ -9,7 +9,7 @@ import ImageCard from '@/components/ImageCard'
 import LinkButton from '@/components/LinkButton'
 
 export const metadata: Metadata = {
-  title: 'Über uns - Seven Heaven',
+  title: 'Über uns - Seven Heaven | Hier erfährst du mehr über die Mitglieder',
   description: 'Seven Heaven - Hier kannst Du mehr über die einzelnen Mitglieder sowie unseren Werdegang als Band erfahren.'
 }
 

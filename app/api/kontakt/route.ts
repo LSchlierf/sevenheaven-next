@@ -23,20 +23,9 @@ export async function POST(request: Request) {
     return NextResponse.json({ 'status': 'error', 'error': 'internal sever error' }, { status: 500 })
   }
 
-  // create mail transport
-  const transporter = nodemailer.createTransport({
-    host: "smtppro.zoho.com",
-    port: 465,
-    secure: true,
-    auth: {
-      user: secrets.MAIL,
-      pass: secrets.PASS
-    }
-  })
-
   const json = await request.json()
 
-  // verify requesst fields
+  // verify request fields
   if (!json) {
     return NextResponse.json({ 'status': 'error', 'error': 'missing request body' }, { status: 400 })
   }
@@ -57,6 +46,17 @@ export async function POST(request: Request) {
     return NextResponse.json({ 'status': 'error', 'error': 'missing message' }, { status: 400 })
   }
 
+  // create mail transport
+  const transporter = nodemailer.createTransport({
+    host: "smtppro.zoho.com",
+    port: 465,
+    secure: true,
+    auth: {
+      user: secrets.MAIL,
+      pass: secrets.PASS
+    }
+  })
+
   try {
 
     // send mails
@@ -71,7 +71,35 @@ export async function POST(request: Request) {
         from: "Seven Heaven <kontakt@sevenheaven.band>",
         to: mail,
         subject: "Deine Kontaktanfrage",
-        html: "Hi!<br/>Vielen Dank für deine Kontaktanfrage:<br/>" + htmlencode(mesg) + "<br/><br/>Wir melden uns so schnell wie möglich!<br/><br/>Mit freundlichen Grüßen<br/>Seven Heaven"
+        text: `Hi!\nVielen Dank für deine Kontaktanfrage:\n${mesg}\n\nWir melden uns so schnell wie möglich!\n\nMit freundlichen Grüßen\nSeven Heaven`,
+        html: `
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <meta content="text/html; charset=utf-8"/>
+            <style>
+            body {background-color: lightgray; display: flex; justify-content: center}
+            #text {background-color: white; color: black; width: 100vmin}
+            </style>
+          </head>
+          <body>
+          <div id='text'>
+            Hi!
+            <br/>
+            Vielen Dank für Deine Kontaktanfrage:
+            <br/>
+            ${mesg}
+            <br/>
+            <br/>
+            Wir melden uns so schnell wie möglich!
+            <br/>
+            Mit freundlichen Grüßen
+            <br/>
+            Seven Heaven
+          </div>
+          </body>
+        </html>
+        `
       })
     ])
 
@@ -82,7 +110,7 @@ export async function POST(request: Request) {
 
     return Response.json({ status: 'success' })
 
-  } catch(e) {
+  } catch (e) {
     console.log(e)
     return NextResponse.json({ 'status': 'error', 'error': 'internal sever error' }, { status: 500 })
   }

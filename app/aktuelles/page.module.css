@@ -22,7 +22,7 @@
     padding: 30px;
     box-sizing: border-box;
     background-color: rgba(0,0,0,0.5);
-    text-align: justify;
+    text-align: left;
 }
 
 .blogSeparator {
@@ -72,6 +72,7 @@
     .history {
         width: 60vw;
         margin-bottom: 50px;
+        text-align: justify;
     }
 
     .blogContent {

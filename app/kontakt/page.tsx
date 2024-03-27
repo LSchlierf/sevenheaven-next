@@ -9,7 +9,7 @@ import ContactForm from "@/components/ContactForm";
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Kontakt - Seven Heaven',
+  title: 'Kontakt - Seven Heaven | Hier erreichst du uns',
   description: 'Seven Heaven - Kontaktiere uns doch gerne per Mail, Telefon, oder über unser Kontaktformular. Wir freuen uns auf Deine Anfrage.'
 }
 

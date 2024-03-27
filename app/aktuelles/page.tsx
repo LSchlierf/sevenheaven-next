@@ -12,7 +12,7 @@ import poster_2023_03_25 from '@/public/img/posters/2023-03-25.jpg'
 import poster_2022_06_10 from '@/public/img/posters/2022-06-10.png'
 
 export const metadata: Metadata = {
-  title: 'Aktuelles - Seven Heaven',
+  title: 'Aktuelles - Seven Heaven | Hier siehst du unsere kommenden Konzerte',
   description: 'Seven Heaven - Hier erfährst Du alles über anstehende Konzerte und was uns sonst so herumtreibt.'
 }
 
@@ -35,12 +35,6 @@ export default function Aktuelles() {
         Hier bleibst du up-to-date über die aktuellen Entwicklungen.
       </div>
       <div className={styles.history} >
-        {/* <div className={styles.blogItem}>
-          <div className={styles.blogText}>
-            Hallo. Schön dass du dich auf diese Website verirrt hast. Ich möchte mich kurz vorstellen: Ich bin die Band. Also keine spezifische Person aus der Band, sondern einfach die Band. Ich leite Dich ein wenig durch diese Seite und erzähle Dir ein bisschen was über uns. Zum Beispiel in Form dieses Blogs hier, wenn Du es so nennen willst. Klicke Dich gerne durch diese Seite und lerne uns besser kennen, vielleicht sind wir ja was für deine kommende Feier. Viel Spaß!
-          </div>
-          <div className={styles.blogSeparator} />
-        </div> */}
         {Object.entries(blog).map(([title, content]) => <div className={styles.blogItem} key={title}>
           <div className={styles.blogContent} >
             <div className={styles.blogTitle} >

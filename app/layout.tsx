@@ -11,7 +11,7 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: 'Seven Heaven',
+  title: 'Seven Heaven | Deine Partyband für jeden Anlass',
   description: 'Seven Heaven - Partyband aus Muenchen - Beste Live Unterhaltung für Hochzeit, Bierzelt, Weinfest. Wir sorgen für Stimmung auf Ihrer Feier.',
   metadataBase: new URL('https://www.sevenheaven.band')
 }

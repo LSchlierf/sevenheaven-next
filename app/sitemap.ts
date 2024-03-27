@@ -51,11 +51,11 @@ export default function sitemap() : MetadataRoute.Sitemap {
         },
         {
             url: baseURL + 'impressum',
-            priority: 0
+            priority: 0.1
         },
         {
             url: baseURL + 'datenschutz',
-            priority: 0
+            priority: 0.1
         }
     ]
 }

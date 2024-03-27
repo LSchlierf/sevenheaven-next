@@ -63,6 +63,9 @@ export default function Home() {
           Haben wir dein Interesse geweckt?
           Melde Dich gerne bei uns!
         </ImageCard>
+        <Link href='/wir' className={styles.link}>
+          Hier erfährst Du mehr über uns als Band.
+        </Link>
         <H2 text='Mal reinhören?' />
         <div className={styles.text} >
           Sieh Dir gerne einen Zusammenschnitt zweier Konzerte an. <br /> So bekommst Du einen guten Eindruck von unserer Art, Musik zu machen.
@@ -71,6 +74,9 @@ export default function Home() {
           <VideoCard src='https://www.youtube-nocookie.com/embed/urSar1gnXOQ?autoplay=1' text={<>Konzert Jugendhaus Neuried 2023<br />(Highlights)</>} thumbnail='thumbnails/juha.jpg' domain='YouTube' />
           <VideoCard src='https://www.youtube-nocookie.com/embed/j6pDTYMMN7o?autoplay=1' text={<>40-jähriges Westpark Jubiläum 2023<br />(Highlights)</>} thumbnail='thumbnails/westpark.jpg' domain='YouTube' />
         </div>
+        <Link href='/galerie' className={styles.link} >
+          Hier siehst Du weitere Fotos und Aufnahmen.
+        </Link>
         <H2 text='Das sagen unsere Gäste' />
         <div className={styles.reviews} >
           <Review name='Lena Johanna' rating={5} link='https://g.co/kgs/ZtetMxR' review={
@@ -99,6 +105,9 @@ export default function Home() {
         <div className={styles.text} >
           Du warst auch auf einem Konzert von uns? <a href='https://g.page/r/Cc-5aioIdsr_EB0/review' target='_blank' rel='noopen noreferer'>Hier</a> kannst du eine Bewertung hinterlassen. Vielen Dank!
         </div>
+        <Link href='/aktuelles' className={styles.link}>
+          Hier siehst Du unsere nächsten Konzerttermine.
+        </Link>
 
         {/* <div className={styles.spacer} /> */}
         <div className={styles.gradient} />

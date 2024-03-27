@@ -64,6 +64,14 @@ export default function ContactForm() {
     checkMail()
   }
 
+  function validateMail() {
+    const mailInput: any = document.getElementsByClassName(styles.contactMail)[0]
+    const mail = mailInput.value
+    if(mailRegex.test(mail)) {
+      setForm(formTemplateValid)
+    }
+  }
+
   function formTemplate(mailInputField: React.ReactNode) {
     return (
       <form className={styles.contactForm} onSubmit={(event) => { event.preventDefault(); submit() }}>
@@ -81,7 +89,7 @@ export default function ContactForm() {
   }
 
   const formTemplateDefault = formTemplate(
-    <input type='email' placeholder='Deine Mail-Adresse...' className={styles.contactMail} onBlur={mailFinished} />
+    <input type='email' placeholder='Deine Mail-Adresse...' className={styles.contactMail} onBlur={mailFinished} onInput={validateMail} />
   )
 
   const formTemplateValid = formTemplate(

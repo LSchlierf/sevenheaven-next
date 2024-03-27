@@ -96,6 +96,13 @@
     backdrop-filter: blur(5px) brightness(50%);
 }
 
+.x {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    user-select: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .active ~ .play {
         opacity: 1;
@@ -204,5 +211,9 @@
 
     .disclaimerHover:hover ~ .play {
         opacity: 0;
+    }
+
+    .x {
+        display: none;
     }
 }
