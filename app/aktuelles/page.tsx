@@ -29,7 +29,7 @@ export default function Aktuelles() {
       Auch dieses Jahr sind wir wieder beim Musikalischen Weinfest im Westpark vertreten.
       <br/>
       <br/>
-      Letztes jahr hatten wir als Opener schon sehr viel Spaß beim Eröffnen der Feierlichkeiten, dieses Jahr freuen wir uns auf einen schönen Freitag Abend.
+      Letztes Jahr hatten wir als Opener schon sehr viel Spaß beim Eröffnen der Feierlichkeiten, dieses Jahr freuen wir uns auf einen schönen Freitag Abend.
       <br/>
       <br/>
       Also kommt am 17. Mai zur Seebühne im Westpark und bringt Durst mit, für die Stimmung sorgen wir! 😉
