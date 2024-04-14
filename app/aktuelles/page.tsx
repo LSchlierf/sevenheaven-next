@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import blog from './blog.json'
 import LinkButton from "@/components/LinkButton";
 import Poster from "@/components/Poster";
+import poster_2024_05_17 from '@/public/img/posters/2024-05-17.jpg'
 import poster_2024_04_13 from '@/public/img/posters/2024-04-13.png'
 import poster_2024_01_20 from '@/public/img/posters/2024-01-20.jpg'
 import poster_2023_03_25 from '@/public/img/posters/2023-03-25.jpg'
@@ -24,11 +25,14 @@ export default function Aktuelles() {
         Hier erfährst Du alles über anstehende Konzerte und was uns sonst so herumtreibt.
       </div>
       <H2 text='Kommende Gigs' />
-      <Poster image={poster_2024_04_13} href='http://interim-kultur.de/Programm/?dfxid=491' external text={<>
-        &quot;Endlich ist es wieder soweit&quot; passt diesmal gar nicht so gut, schließlich war das letzte Konzert erst Ende Januar, trotzdem können wir es kaum noch erwarten... 🎤🔜
-        <br />
-        <br />
-        Nach nun fast 2 Jahren sind wir endlich wieder zurück im Interim!! Das heißt für euch: Schnappt euch Karten unter diesem Link, um uns wieder mit frischem Repertoire zu erleben!! 👀
+      <Poster image={poster_2024_05_17} href='https://musikalisches-weinfest.de/' external text={<>
+      Auch dieses Jahr sind wir wieder beim Musikalischen Weinfest im Westpark vertreten.
+      <br/>
+      <br/>
+      Letztes jahr hatten wir als Opener schon sehr viel Spaß beim Eröffnen der Feierlichkeiten, dieses Jahr freuen wir uns auf einen schönen Freitag Abend.
+      <br/>
+      <br/>
+      Also kommt am 17. Mai zur Seebühne im Westpark und bringt Durst mit, für die Stimmung sorgen wir! 😉
       </>} />
       <H2 text='Historie' />
       <div className={styles.textBox}>
@@ -50,6 +54,7 @@ export default function Aktuelles() {
       </div>
       <H2 text='Vergangene Gigs' />
       <div className={styles.posters}>
+        <Poster image={poster_2024_04_13} />
         <Poster image={poster_2024_01_20} href='/galerie/2024-01-20' />
         <Poster image={poster_2023_03_25} href='/galerie/2023-03-25' />
         <Poster image={poster_2022_06_10} href='/galerie/2022-06-10' />
