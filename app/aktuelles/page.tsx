@@ -54,7 +54,7 @@ export default function Aktuelles() {
       </div>
       <H2 text='Vergangene Gigs' />
       <div className={styles.posters}>
-        <Poster image={poster_2024_04_13} />
+        <Poster image={poster_2024_04_13} href='/galerie/2024-04-13' />
         <Poster image={poster_2024_01_20} href='/galerie/2024-01-20' />
         <Poster image={poster_2023_03_25} href='/galerie/2023-03-25' />
         <Poster image={poster_2022_06_10} href='/galerie/2022-06-10' />
