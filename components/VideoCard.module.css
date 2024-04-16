@@ -185,7 +185,7 @@
     display: flex;
 }
 
-@media (hover : hover) {
+@media (hover : hover) and (min-width: 768px) {
     .disclaimerHover {
         display: flex;
         transition: all 0.1s;
