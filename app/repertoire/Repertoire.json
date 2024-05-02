@@ -54,6 +54,10 @@
         "letter": "D",
         "songs": [
             {
+                "title": "Dance with Somebody",
+                "artist": "Mando Diao"
+            },
+            {
                 "title": "Dancing Queen",
                 "artist": "ABBA"
             },
@@ -190,6 +194,18 @@
                 "artist": "Peter Schilling"
             },
             {
+                "title": "Mamma Mia",
+                "artist": "ABBA"
+            },
+            {
+                "title": "Mit 66 Jahren",
+                "artist": "Udo J\u00fcrgens"
+            },
+            {
+                "title": "Money for Nothing",
+                "artist": "Dire Straits"
+            },
+            {
                 "title": "More Than You Know",
                 "artist": "Axwell /\\ Ingrosso"
             }
@@ -223,6 +239,10 @@
             {
                 "title": "Perfekte Welle",
                 "artist": "Juli"
+            },
+            {
+                "title": "Piano Man",
+                "artist": "Billy Joel"
             }
         ]
     },
@@ -296,6 +316,10 @@
                 "artist": "Adele"
             },
             {
+                "title": "Stermenhimmel",
+                "artist": "Hubert Kah"
+            },
+            {
                 "title": "Summer of '69",
                 "artist": "Bryan Adams"
             },
@@ -315,6 +339,10 @@
             {
                 "title": "Tage wie diese",
                 "artist": "Die Toten Hosen"
+            },
+            {
+                "title": "The Greatest Show",
+                "artist": "The Greatest Showman"
             },
             {
                 "title": "This Is The Life",
@@ -340,6 +368,10 @@
             {
                 "title": "Viva La Vida",
                 "artist": "Coldplay"
+            },
+            {
+                "title": "Vo Mello bis ge Schoppornou",
+                "artist": "Holstuonarmusicbigbandclub"
             }
         ]
     },
