@@ -63,9 +63,9 @@ export default function TitleBar() {
             </div>
           </div>
           <div className={styles.mobileIcons}>
-            <a href='tel:+498971034962'>
+            {/* <a href='tel:+498971034962'>
               <img src='/phone.svg' alt='' />
-            </a>
+            </a> */}
             <a href='mailto:kontakt@sevenheaven.band'>
               <img src='/mail.svg' alt='' />
             </a>
