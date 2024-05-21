@@ -316,6 +316,10 @@
                 "artist": "Adele"
             },
             {
+                "title": "Sommer in der Stadt",
+                "artist": "Spider Murphy Gang"
+            },
+            {
                 "title": "Stermenhimmel",
                 "artist": "Hubert Kah"
             },
@@ -410,7 +414,12 @@
     },
     {
         "letter": "Z",
-        "songs": []
+        "songs": [
+            {
+                "title": "Zruck zu dir (Hallo Klaus)",
+                "artist": "Nickerbocker & Biene"
+            }
+        ]
     },
     {
         "letter": "#",
