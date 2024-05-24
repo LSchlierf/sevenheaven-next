@@ -24,16 +24,16 @@ export default function Aktuelles() {
       <div className={styles.textBox}>
         Hier erfährst Du alles über anstehende Konzerte und was uns sonst so herumtreibt.
       </div>
-      <H2 text='Kommende Gigs' />
+      {/* <H2 text='Kommende Gigs' />
       <Poster image={poster_2024_05_17} href='https://musikalisches-weinfest.de/' external text={<>
-      Auch dieses Jahr sind wir wieder beim Musikalischen Weinfest im Westpark vertreten.
-      <br/>
-      <br/>
-      Letztes Jahr hatten wir als Opener schon sehr viel Spaß beim Eröffnen der Feierlichkeiten, dieses Jahr freuen wir uns auf einen schönen Freitag Abend.
-      <br/>
-      <br/>
-      Also kommt am 17. Mai zur Seebühne im Westpark und bringt Durst mit, für die Stimmung sorgen wir! 😉
-      </>} />
+        Auch dieses Jahr sind wir wieder beim Musikalischen Weinfest im Westpark vertreten.
+        <br />
+        <br />
+        Letztes Jahr hatten wir als Opener schon sehr viel Spaß beim Eröffnen der Feierlichkeiten, dieses Jahr freuen wir uns auf einen schönen Freitag Abend.
+        <br />
+        <br />
+        Also kommt am 17. Mai zur Seebühne im Westpark und bringt Durst mit, für die Stimmung sorgen wir! 😉
+      </>} /> */}
       <H2 text='Historie' />
       <div className={styles.textBox}>
         Hier bleibst du up-to-date über die aktuellen Entwicklungen.
