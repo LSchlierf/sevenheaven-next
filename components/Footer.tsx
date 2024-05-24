@@ -17,12 +17,12 @@ export default function Footer() {
         </a>
         <br />
         <br />
-        {/* <a className={styles.phoneMobile} href='tel:+498971034962' >
+        <a className={styles.phoneMobile} href='tel:+498971034962' >
           089 / 71034962
         </a>
         <div className={styles.phoneDesktop}>
           089 / 71034962
-        </div> */}
+        </div>
         <div className={styles.gradient} />
         <div className={styles.legalLinks}>
           <Link className={styles.legalLink} href='/impressum'>

@@ -14,7 +14,7 @@ export default function Impressum() {
       <h2 id="m56">Kontaktmöglichkeiten</h2>
       E-Mail-Adresse: <a href="mailto:kontakt@sevenheaven.band">kontakt@sevenheaven.band</a>
       <br />
-      {/* Telefon: 089/71034962 */}
+      Telefon: 089/71034962
 
       <h2 id="m153">Vertretungsberechtigte Personen</h2>Vertretungsberechtigt: Lucas Schlierf
 

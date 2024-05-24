@@ -97,7 +97,7 @@ export default function Kontakt() {
             />
             kontakt@sevenheaven.band
           </a>
-          {/* <a className={styles.channelPhoneMobile} href='tel:+498971034962'>
+          <a className={styles.channelPhoneMobile} href='tel:+498971034962'>
             <img
               src='/phone.svg'
               height={40}
@@ -112,7 +112,7 @@ export default function Kontakt() {
               alt=''
             />
             089 / 71034962
-          </div> */}
+          </div>
           <a className={styles.channel} href='https://instagram.com/sevenheaven.band' target='_blank' rel='noopener noreferer'>
             <img
               src='/insta.svg'

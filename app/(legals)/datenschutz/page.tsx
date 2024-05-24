@@ -9,7 +9,7 @@ export default function Datenschutz() {
       <p>Stand: 7. März 2024</p><h2>Inhaltsübersicht</h2> <ul ><li><a href="#m716">Präambel</a></li><li><a href="#m3">Verantwortlicher</a></li><li><a href="#mOverview">Übersicht der Verarbeitungen</a></li><li><a href="#m2427">Maßgebliche Rechtsgrundlagen</a></li><li><a href="#m25">Übermittlung von personenbezogenen Daten</a></li><li><a href="#m24">Internationale Datentransfers</a></li><li><a href="#m134">Einsatz von Cookies</a></li><li><a href="#m317">Geschäftliche Leistungen</a></li><li><a href="#m225">Bereitstellung des Onlineangebotes und Webhosting</a></li><li><a href="#m182">Kontakt- und Anfragenverwaltung</a></li><li><a href="#m136">Präsenzen in sozialen Netzwerken (Social Media)</a></li><li><a href="#m328">Plugins und eingebettete Funktionen sowie Inhalte</a></li><li><a href="#m42">Begriffsdefinitionen</a></li></ul><h2 id="m3">Verantwortlicher</h2><p>Seven Heaven GbR<br />Lucas Schlierf<br />Klingerstraße 31<br />81369 München</p>
       E-Mail-Adresse: <a href="mailto:kontakt@sevenheaven.band">kontakt@sevenheaven.band</a>
       <br />
-      {/* Telefon: 089/71034962 */}
+      Telefon: 089/71034962
       <br />
       Impressum: <a href="/impressum">www.sevenheaven.band/impressum</a>
 
