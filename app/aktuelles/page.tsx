@@ -6,11 +6,12 @@ import { Metadata } from "next";
 import blog from './blog.json'
 import LinkButton from "@/components/LinkButton";
 import Poster from "@/components/Poster";
-import poster_2024_05_17 from '@/public/img/posters/2024-05-17.jpg'
+import poster_2024_07_21 from '@/public/img/posters/2024-07-21.png'
 import poster_2024_04_13 from '@/public/img/posters/2024-04-13.png'
 import poster_2024_01_20 from '@/public/img/posters/2024-01-20.jpg'
 import poster_2023_03_25 from '@/public/img/posters/2023-03-25.jpg'
 import poster_2022_06_10 from '@/public/img/posters/2022-06-10.png'
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 export const metadata: Metadata = {
   title: 'Aktuelles - Seven Heaven | Hier siehst du unsere kommenden Konzerte',
@@ -24,16 +25,22 @@ export default function Aktuelles() {
       <div className={styles.textBox}>
         Hier erfährst Du alles über anstehende Konzerte und was uns sonst so herumtreibt.
       </div>
-      {/* <H2 text='Kommende Gigs' />
-      <Poster image={poster_2024_05_17} href='https://musikalisches-weinfest.de/' external text={<>
-        Auch dieses Jahr sind wir wieder beim Musikalischen Weinfest im Westpark vertreten.
-        <br />
-        <br />
-        Letztes Jahr hatten wir als Opener schon sehr viel Spaß beim Eröffnen der Feierlichkeiten, dieses Jahr freuen wir uns auf einen schönen Freitag Abend.
-        <br />
-        <br />
-        Also kommt am 17. Mai zur Seebühne im Westpark und bringt Durst mit, für die Stimmung sorgen wir! 😉
-      </>} /> */}
+      <H2 text='Kommende Gigs' />
+      <Poster image={poster_2024_07_21} text={<>
+        Die Zeit der Open-Air Konzerte ist da!🔥
+        <br/>
+        <br/>
+        Wir freuen uns darauf zusammen mit euch den Sommer zu feiern.
+        <br/>
+        <br/>
+        Im Rahmen des Laimer Open-Air Sommerfestes gestalten wir einen der Nachmittage mit. Bei Erfrischungen, Essen und Musik könnt ihr dort für ein paar Stunden sämtliche Vorzüge des Sommers genießen.
+        Wir sehen uns dort!
+      </>} />
+      {/* <H2 text='Newsletter' />
+      <div className={styles.textBox}>
+        Melde dich zu unserem Newsletter an, um keine Neuigkeiten mehr zu verpassen.
+      </div>
+      {NewsletterSignup()} */}
       <H2 text='Historie' />
       <div className={styles.textBox}>
         Hier bleibst du up-to-date über die aktuellen Entwicklungen.
