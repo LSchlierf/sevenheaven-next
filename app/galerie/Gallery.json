@@ -1,4 +1,28 @@
 {
+    "2024-05-17": {
+        "title": "Musikalisches Weinfest",
+        "preview": "Musikalisches Weinfest 2024",
+        "thumbnail": "2024-05-17/thumbnail.jpg",
+        "text": "Und zum dritten Mal finden wir uns auf der Seebühne im Münchner Westpark wieder, zum zweiten Mal im Rahmen des musikalischen Weinfestes. Trotz des kalten Wetters gleicht das Ganze mehr einer Party als einem Konzert.\nFür uns Musiker gibt es nichts schöneres als mit und für Euch Zuschauer das machen zu können, was uns Freude bereitet: Musik. Gerne wieder, es war uns ein Fest.",
+        "images": [
+            {"src": "2024-05-17/image00001.jpeg", "vert" : true},
+            {"src": "2024-05-17/image00003.jpeg"},
+            {"src": "2024-05-17/IMG_8539.jpg", "vert" : true},
+            {"src": "2024-05-17/IMG_8540.jpg", "vert" : true},
+            {"src": "2024-05-17/IMG_8547.jpg", "vert" : true},
+            {"src": "2024-05-17/IMG_8542.jpg", "vert" : true},
+            {"src": "2024-05-17/IMG_8551.jpg", "vert" : true},
+            {"src": "2024-05-17/IMG_8556(1).jpg", "vert" : true},
+            {"src": "2024-05-17/IMG_8567(1).jpg", "vert" : true},
+            {"src": "2024-05-17/wa0.jpg", "vert" : true},
+            {"src": "2024-05-17/wa1.jpg"},
+            {"src": "2024-05-17/IMG_8570(1).jpg", "vert" : true},
+            {"src": "2024-05-17/wa2.jpg", "vert" : true},
+            {"src": "2024-05-17/wa3.jpg"},
+            {"src": "2024-05-17/wa4.jpg", "vert" : true},
+            {"src": "2024-05-17/wa5.jpg", "vert" : true}
+        ]
+    },
     "2024-04-13": {
         "title": "Interim",
         "preview": "Interim Laim 2024",
