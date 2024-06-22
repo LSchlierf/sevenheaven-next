@@ -1,4 +1,16 @@
 .container {
-    width: 350px;
-    height: 300px;
+    width: 80vw;
+    text-align: center;
+    padding-bottom: 10vw;
+    font-size: medium;
+}
+
+.container > a {
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        padding-bottom: 50px;;
+    }
 }

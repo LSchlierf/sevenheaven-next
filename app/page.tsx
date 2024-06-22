@@ -8,6 +8,7 @@ import ImageCard from '@/components/ImageCard'
 import image from '@/public/img/cards/main.jpg'
 import VideoCard from '@/components/VideoCard'
 import Review from '@/components/Review'
+import NewsletterSignup from '@/components/NewsletterSignup'
 
 export default function Home() {
   return (
@@ -105,8 +106,13 @@ export default function Home() {
         <div className={styles.text} >
           Du warst auch auf einem Konzert von uns? <a href='https://g.page/r/Cc-5aioIdsr_EB0/review' target='_blank' rel='noopen noreferer'>Hier</a> kannst du eine Bewertung hinterlassen. Vielen Dank!
         </div>
+        <H2 text='Newsletter' />
+        <div className={styles.text}>
+          Melde dich zu unserem Newsletter an, um keine Neuigkeiten mehr zu verpassen.
+        </div>
+        {NewsletterSignup()}
         <Link href='/aktuelles' className={styles.link}>
-          Hier siehst Du unsere nächsten Konzerttermine.
+          Hier siehst Du alternativ unsere nächsten Konzerttermine.
         </Link>
 
         {/* <div className={styles.spacer} /> */}

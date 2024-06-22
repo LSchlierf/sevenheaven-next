@@ -36,11 +36,11 @@ export default function Aktuelles() {
         Im Rahmen des Laimer Open-Air Sommerfestes gestalten wir einen der Nachmittage mit. Bei Erfrischungen, Essen und Musik könnt ihr dort für ein paar Stunden sämtliche Vorzüge des Sommers genießen.
         Wir sehen uns dort!
       </>} />
-      {/* <H2 text='Newsletter' />
+      <H2 text='Newsletter' />
       <div className={styles.textBox}>
         Melde dich zu unserem Newsletter an, um keine Neuigkeiten mehr zu verpassen.
       </div>
-      {NewsletterSignup()} */}
+      {NewsletterSignup()}
       <H2 text='Historie' />
       <div className={styles.textBox}>
         Hier bleibst du up-to-date über die aktuellen Entwicklungen.
@@ -59,7 +59,7 @@ export default function Aktuelles() {
           <div className={styles.blogSeparator} />
         </div>)}
       </div>
-      <H2 text='Vergangene Gigs' />
+      <H2 text='Presented by Seven Heaven' />
       <div className={styles.posters}>
         <Poster image={poster_2024_04_13} href='/galerie/2024-04-13' />
         <Poster image={poster_2024_01_20} href='/galerie/2024-01-20' />
