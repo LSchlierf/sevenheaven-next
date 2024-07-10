@@ -73,7 +73,7 @@ export default function Wir() {
       <div className={styles.portraits}>
         <PortraitCard img='Patrick.png' name='Patrick Friemelt' role='Tontechnik' text={<>Patrick ist studierter Audio-Ingenieur.<br /><br />Er spielt selbst virtuos Gitarre und beschäftigt sich auch sonst viel mit Musik.<br /><br />Sein Know-How liefert uns den perfekten Sound für unsere Gigs.</>} />
         <PortraitCard img='Ylai.png' name='Ylai Elsler' role='Tontechnik' text={<>Der gelernte Audio-Ingenieur ist jetzt als erfolgreicher DJ, sowie Musikproduzent tätig.<br /><br />Auch auf wiederholte Rückfrage möchte er uns partout nicht verraten für wen er schon produziert hat.<br />&quot;Berufsgeheimnis&quot;, sagt er.</>} />
-        <PortraitCard img='Lena.png' name='Lena Strauss' role='Social Media' text={<>Lena ist eure Augen und Ohren wenn es darum geht hinter unsere Kulissen zu blicken.<br /><br />Mit ihrer Kamera begleitet sie uns auf Konzerte und Proben, immer auf der Suche nach den perfekten Bildern.</>} />
+        <PortraitCard img='Lena.png' name='Lena Strauss' role='Social Media' text={<>Lena ist eure Augen und Ohren wenn es darum geht hinter unsere Kulissen zu blicken.<br /><br />Mit ihrer Kamera begleitet sie uns bei Konzerten und Proben, immer auf der Suche nach den perfekten Bildern.</>} />
       </div>
     </SubPage>
   )
