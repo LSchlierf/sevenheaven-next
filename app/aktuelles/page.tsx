@@ -25,7 +25,7 @@ export default function Aktuelles() {
       <div className={styles.textBox}>
         Hier erfährst Du alles über anstehende Konzerte und was uns sonst so herumtreibt.
       </div>
-      <H2 text='Kommende Gigs' />
+      {/* <H2 text='Kommende Gigs' />
       <Poster image={poster_2024_07_21} text={<>
         Die Zeit der Open-Air Konzerte ist da!🔥
         <br/>
@@ -35,7 +35,7 @@ export default function Aktuelles() {
         <br/>
         Im Rahmen des Laimer Open-Air Sommerfestes gestalten wir einen der Nachmittage mit. Bei Erfrischungen, Essen und Musik könnt ihr dort für ein paar Stunden sämtliche Vorzüge des Sommers genießen.
         Wir sehen uns dort!
-      </>} />
+      </>} /> */}
       <H2 text='Newsletter' />
       <div className={styles.textBox}>
         Melde dich zu unserem Newsletter an, um keine Neuigkeiten mehr zu verpassen.
