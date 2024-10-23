@@ -275,6 +275,10 @@
         "letter": "R",
         "songs": [
             {
+                "title": "Rock Around The Clock",
+                "artist": "Bill Haley & His Comets"
+            },
+            {
                 "title": "Rockin' All Over The World",
                 "artist": "Status Quo"
             },

@@ -80,26 +80,27 @@ export default function Home() {
         </Link>
         <H2 text='Das sagen unsere Gäste' />
         <div className={styles.reviews} >
+          <Review name='Ralf Isermann' rating={5} link='https://maps.app.goo.gl/zBGMYh6uMcgTrDRA9' review={
+            <>
+              Eine herausragende Band! Seven Heaven haben auf unserer Silberhochzeit in München gespielt und hatten sehr großen Anteil daran, dass es ein rauschendes Fest wurde. Freunde und Familie, aus ganz Deutschland angereist, schwärmen auch Wochen später.
+              <br />
+              Nur ein Beispiel: Es ist ein klares Statement des Selbstbewusstseins einen Auftritt mit den Dire Straits zu eröffnen. Damit sagst du, du kannst sowohl instrumental als auch gesanglich richtig was - und bei Seven Heaven stimmen Instrumente und Gesang perfekt. Die Musiker unter unseren Gästen waren beeindruckt, alle Gäste haben sich praktisch durchgehend zum Tanzen animieren lassen. Wir haben selten erlebt, dass bei den letzten Liedern die Tanzfläche noch genauso voll ist wie zu Beginn. Hier war es so.
+              <br />
+              Auch organisatorisch lief alles einwandfrei. Die Band kümmert sich um alles, Absprachen waren reibungslos. Und auf der Party wurde immer flexibel und schnell auf Wünsche reagiert, zum Beispiel wenn Gäste kurz was aufführen wollten. Insgesamt wunderbar, wir sind ewig dankbar für den tollen Abend.
+            </>
+          } />
+          <Review name='Annalen Löffler' rating={5} link='https://maps.app.goo.gl/jmSeHVTNNMReb3uY8' review={
+            <>
+              7heaven hat von Beginn an mit ihrer unglaublichen Stimmung gepunktet. Ich freue mich zudem jedes Mal über die Möglichkeit, neue Leute kennenzulernen und interessante Gespräche zu führen - natürlich in den Pausen, denn während der Auftritte wird ordentlich gesungen, getanzt und gelacht.
+              <br />
+              10/10 Punkte und eine große Empfehlung für jeden, der seinen Hinterhof mit einer großartigen Stimmung erfüllen möchte.
+            </>
+          } />
           <Review name='Lena Johanna' rating={5} link='https://g.co/kgs/ZtetMxR' review={
             <>
               Auf allen Konzerten ist immer eine super Stimmung. Haben ein tolles Reportoire und schaffen es ihr Publikum zum Tanzen zu animieren. Man merkt die Freude die sie alle dabei haben und diesen Spaß übertragen sie auf alle anderen. Jedes Konzert ist ein denkwürdiger Abend und ein Riesenspaß.
               <br />
               Eine große Empfehlung!!
-            </>
-          } />
-          <Review name='Queller man' rating={5} link='https://g.co/kgs/68bGvK1' review={
-            <>
-              SevenHeaven war der Hammer! Die Energie auf der Bühne hat mich und meine Freunde voll mitgerissen. Die Songauswahl war top, von alten Klassikern bis zu aktuellen Hits.
-              <br />
-              <br />
-              Ich hatte mega Spaß und würde definitiv wieder hingehen! 🎉
-            </>
-          } />
-          <Review name='Elias Wolf' rating={5} link='https://g.co/kgs/ZY9KNVs' review={
-            <>
-              Ich war schon auf mehreren Konzerten von Seven Heaven und es war jedes mal ein Highlight. Das Konzert beim Weinfest im Westpark hat mir richtig gut gefallen. Die Stimmung war super, sowohl bei Jugendlichen und Kindern als auch beim erwachsenen Publikum. Die Songs waren vielseitig und wurden auch sehr gut aufgeführt. Ich bemühe mich auf jedes öffentliche Konzert zu gehen und bis jetzt war es immer ein wundervoller Abend.
-              <br />
-              Alles in allem ist die Band auf jeden Fall zu empfehlen.
             </>
           } />
         </div>
