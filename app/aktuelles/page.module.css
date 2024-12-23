@@ -17,7 +17,6 @@
 
 .history {
     width: 80vw;
-    /* margin: 0 10vw 10vw; */
     margin-bottom: 10vw;
     padding: 30px;
     box-sizing: border-box;
@@ -33,13 +32,9 @@
 }
 
 .blogTitle {
-    font-family: Nexa Rust Sans;
+    font-family: nexa-rust-sans-black-2, sans-serif;
     font-weight: 400;
 }
-
-/* .blogItem:first-child > .blogSeparator {
-    margin: 30px 0;
-} */
 
 .blogItem:last-child > .blogSeparator {
     display: none;
@@ -85,10 +80,6 @@
     .blogSeparator {
         width: 200px;
     }
-
-    /* .blogItem:first-child > .blogSeparator {
-        width: 400px;
-    } */
 
     .blogItem {
         display: flex;

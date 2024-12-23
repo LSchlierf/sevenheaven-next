@@ -38,7 +38,7 @@
 }
 
 .repertoireTitle {
-    font-family: 'Nexa Rust Sans Modified';
+    font-family: nexa-rust-sans-black-2, sans-serif;
     font-weight: 400;
     font-size: 60px;
 }

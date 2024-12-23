@@ -17,8 +17,8 @@
 .titleText>h1,
 .titleText>h2 {
   text-align: center;
-  font-family: Nexa Rust Sans Modified;
-  font-weight: 400;
+  font-family: nexa-rust-sans-black-2, sans-serif;
+  font-weight: 900;
   margin: 5px 0;
 }
 
@@ -117,7 +117,6 @@
   
   .titleText>h1 {
     font-size: 70px;
-    /* color: darkred; */
   }
 
   .titleText>h2 {

@@ -182,7 +182,7 @@
     padding-top: 2vw;
     text-align: center;
     font-size: x-large;
-    font-family: 'Nexa Rust Sans Modified';
+    font-family: nexa-rust-sans-black-2, sans-serif;
     font-weight: 400;
     display: flex;
     flex-direction: column;

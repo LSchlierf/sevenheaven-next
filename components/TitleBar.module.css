@@ -30,7 +30,7 @@
 .desktopLink a, .menu summary, .menu a {
     text-decoration: none;
     color: white;
-    font-family: 'Nexa Rust Sans Modified';
+    font-family: nexa-rust-sans-black-2, sans-serif;
     font-size: medium;
 }
 
@@ -89,7 +89,6 @@
 
     .desktopLinks {
         display: flex;
-        /* justify-content: space-around; */
         align-items: center;
         width: 40vw;
     }
@@ -153,11 +152,6 @@
     .menu summary:hover {
         transform: scale(1.1);
     }
-
-    /* .menu summary::marker, .menu summary::-webkit-details-marker {
-        display: none;
-        content: '';
-    } */
 
     .sub {
         position: absolute;
