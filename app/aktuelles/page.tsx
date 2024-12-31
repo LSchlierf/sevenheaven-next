@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import blog from './blog.json'
 import LinkButton from "@/components/LinkButton";
 import Poster from "@/components/Poster";
+import poster_2025_03_21 from '@/public/img/posters/2025-03-21.jpeg'
 import poster_2024_07_21 from '@/public/img/posters/2024-07-21.png'
 import poster_2024_04_13 from '@/public/img/posters/2024-04-13.png'
 import poster_2024_01_20 from '@/public/img/posters/2024-01-20.jpg'
@@ -25,17 +26,25 @@ export default function Aktuelles() {
       <div className={styles.textBox}>
         Hier erfährst Du alles über anstehende Konzerte und was uns sonst so herumtreibt.
       </div>
-      {/* <H2 text='Kommende Gigs' />
-      <Poster image={poster_2024_07_21} text={<>
-        Die Zeit der Open-Air Konzerte ist da!🔥
-        <br/>
-        <br/>
-        Wir freuen uns darauf zusammen mit euch den Sommer zu feiern.
-        <br/>
-        <br/>
-        Im Rahmen des Laimer Open-Air Sommerfestes gestalten wir einen der Nachmittage mit. Bei Erfrischungen, Essen und Musik könnt ihr dort für ein paar Stunden sämtliche Vorzüge des Sommers genießen.
-        Wir sehen uns dort!
-      </>} /> */}
+      <H2 text='Kommende Gigs' />
+      <Poster href='https://www.interim-kultur.de' external image={poster_2025_03_21} text={<>Jetzt haben wir Euch aber zappeln lassen, meine Güte. Nun freuen wir uns aber, endlich unser nächstes Konzert anküdigen zu können. 🎤🔜
+        <br />
+        <br />
+        Wir werden den Winter für eine kleine Pause nutzen, um an unserem Repertoire zu schrauben. Und Ihr seid die ersten, die die Früchte dieser Arbeit ernten dürfen. 😮🔥
+        <br />
+        <br />
+        Für Euch bedeutet das:
+        <br />
+        <br />
+        - euren Leuten Bescheid geben
+        <br />
+        - Karten sichern (Vorverkauf demnächst){/* add link and change this line */}
+        <br />
+        - den Abend zu einer großen Party werden lassen 🎉
+        <br />
+        <br />
+        Wir freuen uns auf Euch! Bis dann.
+      </>} />
       <H2 text='Newsletter' />
       <div className={styles.textBox}>
         Melde dich zu unserem Newsletter an, um keine Neuigkeiten mehr zu verpassen.
@@ -61,6 +70,7 @@ export default function Aktuelles() {
       </div>
       <H2 text='Presented by Seven Heaven' />
       <div className={styles.posters}>
+        <Poster image={poster_2024_07_21} href='/galerie/2024-07-21' />
         <Poster image={poster_2024_04_13} href='/galerie/2024-04-13' />
         <Poster image={poster_2024_01_20} href='/galerie/2024-01-20' />
         <Poster image={poster_2023_03_25} href='/galerie/2023-03-25' />
