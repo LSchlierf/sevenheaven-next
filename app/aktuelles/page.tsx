@@ -6,7 +6,7 @@ import { Metadata } from "next";
 import blog from './blog.json'
 import LinkButton from "@/components/LinkButton";
 import Poster from "@/components/Poster";
-import poster_2025_03_21 from '@/public/img/posters/2025-03-21.jpeg'
+import poster_2025_03_21 from '@/public/img/posters/2025-03-21.png'
 import poster_2024_07_21 from '@/public/img/posters/2024-07-21.png'
 import poster_2024_04_13 from '@/public/img/posters/2024-04-13.png'
 import poster_2024_01_20 from '@/public/img/posters/2024-01-20.jpg'
@@ -27,7 +27,7 @@ export default function Aktuelles() {
         Hier erfährst Du alles über anstehende Konzerte und was uns sonst so herumtreibt.
       </div>
       <H2 text='Kommende Gigs' />
-      <Poster href='https://www.interim-kultur.de' external image={poster_2025_03_21} text={<>Jetzt haben wir Euch aber zappeln lassen, meine Güte. Nun freuen wir uns aber, endlich unser nächstes Konzert anküdigen zu können. 🎤🔜
+      <Poster href='https://www.interim-kultur.de/Programm/?dfxid=584' external image={poster_2025_03_21} text={<>Jetzt haben wir Euch aber zappeln lassen, meine Güte. Nun freuen wir uns aber, endlich unser nächstes Konzert anküdigen zu können. 🎤🔜
         <br />
         <br />
         Wir werden den Winter für eine kleine Pause nutzen, um an unserem Repertoire zu schrauben. Und Ihr seid die ersten, die die Früchte dieser Arbeit ernten dürfen. 😮🔥
