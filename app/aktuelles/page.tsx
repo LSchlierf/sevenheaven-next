@@ -38,7 +38,7 @@ export default function Aktuelles() {
         <br />
         - euren Leuten Bescheid geben
         <br />
-        - Karten sichern (Vorverkauf demnächst){/* add link and change this line */}
+        - Karten sichern (hier klicken)
         <br />
         - den Abend zu einer großen Party werden lassen 🎉
         <br />
