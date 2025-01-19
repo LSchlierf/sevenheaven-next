@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import blog from './blog.json'
 import LinkButton from "@/components/LinkButton";
 import Poster from "@/components/Poster";
+import poster_2025_02_21 from '@/public/img/posters/2025-02-21.png'
 import poster_2025_03_21 from '@/public/img/posters/2025-03-21.png'
 import poster_2024_07_21 from '@/public/img/posters/2024-07-21.png'
 import poster_2024_04_13 from '@/public/img/posters/2024-04-13.png'
@@ -27,6 +28,19 @@ export default function Aktuelles() {
         Hier erfährst Du alles über anstehende Konzerte und was uns sonst so herumtreibt.
       </div>
       <H2 text='Kommende Gigs' />
+      <Poster image={poster_2025_02_21} text={<>Im Februar fängt für uns die Saison wieder an, und was gäbe es da schöneres als einen Fasching! 🎉🎉
+        <br />
+        <br />
+        Ihr könnt euch auf einen langen Abend Tanz, Spaß und guter Musik freuen. ✨🎶🎙️
+        <br />
+        <br />
+        Also: 
+        <br />
+        kramt die Kostüme raus, holt die Hüte aus dem Keller, und reserviert euch Karten im Pfarrbüro! 🤠🤡
+        <br />
+        <br />
+        Wir freuen uns auf Euch!
+      </>} />
       <Poster href='https://www.interim-kultur.de/Programm/?dfxid=584' external image={poster_2025_03_21} text={<>Jetzt haben wir Euch aber zappeln lassen, meine Güte. Nun freuen wir uns aber, endlich unser nächstes Konzert anküdigen zu können. 🎤🔜
         <br />
         <br />
