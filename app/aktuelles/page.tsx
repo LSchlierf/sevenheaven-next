@@ -27,7 +27,7 @@ export default function Aktuelles() {
       <div className={styles.textBox}>
         Hier erfährst Du alles über anstehende Konzerte und was uns sonst so herumtreibt.
       </div>
-      <H2 text='Kommende Gigs' />
+      {/* <H2 text='Kommende Gigs' />
       <Poster href='https://www.interim-kultur.de/Programm/?dfxid=584' external image={poster_2025_03_21} text={<>Jetzt haben wir Euch aber zappeln lassen, meine Güte. Nun freuen wir uns aber, endlich unser nächstes Konzert anküdigen zu können. 🎤🔜
         <br />
         <br />
@@ -45,7 +45,7 @@ export default function Aktuelles() {
         <br />
         <br />
         Wir freuen uns auf Euch! Bis dann.
-      </>} />
+      </>} /> */}
       <H2 text='Newsletter' />
       <div className={styles.textBox}>
         Melde dich zu unserem Newsletter an, um keine Neuigkeiten mehr zu verpassen.
@@ -71,6 +71,8 @@ export default function Aktuelles() {
       </div>
       <H2 text='Presented by Seven Heaven' />
       <div className={styles.posters}>
+        <Poster image={poster_2025_03_21} />
+        <Poster image={poster_2025_02_21} />
         <Poster image={poster_2024_07_21} href='/galerie/2024-07-21' />
         <Poster image={poster_2024_04_13} href='/galerie/2024-04-13' />
         <Poster image={poster_2024_01_20} href='/galerie/2024-01-20' />
