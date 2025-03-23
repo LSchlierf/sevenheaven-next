@@ -3,6 +3,14 @@
         "letter": "A",
         "songs": [
             {
+                "title": "Aber bitte mit Sahne",
+                "artist": "Udo J\u00fcrgens"
+            },
+            {
+                "title": "All Star",
+                "artist": "Smash Mouth"
+            },
+            {
                 "title": "Alles neu",
                 "artist": "Peter Fox"
             },
@@ -63,7 +71,7 @@
             },
             {
                 "title": "Disney Medley",
-                "artist": "Sevenheaven"
+                "artist": "Seven Heaven"
             },
             {
                 "title": "Don't Stop Believin'",
@@ -87,7 +95,7 @@
                 "artist": "Sportfreunde Stiller"
             },
             {
-                "title": "Expresso und Tschianti",
+                "title": "Expresso & Tschianti",
                 "artist": "Josh."
             }
         ]
@@ -95,6 +103,10 @@
     {
         "letter": "F",
         "songs": [
+            {
+                "title": "Fireflies",
+                "artist": "Owl City"
+            },
             {
                 "title": "F\u00fcrstenfeld",
                 "artist": "S.T.S"
@@ -111,6 +123,10 @@
             {
                 "title": "Grace Kelly",
                 "artist": "MIKA"
+            },
+            {
+                "title": "Great Balls of Fire",
+                "artist": "Jerry Lee Lewis"
             },
             {
                 "title": "Griechischer Wein",
@@ -148,10 +164,6 @@
             {
                 "title": "Hotel California",
                 "artist": "Eagles"
-            },
-            {
-                "title": "Hurra, hurra, die Schule brennt",
-                "artist": "Extrabreit"
             }
         ]
     },
@@ -197,6 +209,10 @@
         "letter": "L",
         "songs": [
             {
+                "title": "Levitating",
+                "artist": "Dua Lipa"
+            },
+            {
                 "title": "Little Talks",
                 "artist": "Of Monsters and Men"
             }
@@ -240,7 +256,7 @@
         "letter": "O",
         "songs": [
             {
-                "title": "Ohne dich",
+                "title": "Ohne Dich",
                 "artist": "M\u00fcnchener Freiheit"
             }
         ]
@@ -275,7 +291,7 @@
         "letter": "R",
         "songs": [
             {
-                "title": "Rock Around The Clock",
+                "title": "Rock Around the Clock",
                 "artist": "Bill Haley & His Comets"
             },
             {
@@ -296,6 +312,10 @@
         "letter": "S",
         "songs": [
             {
+                "title": "S&M",
+                "artist": "Rihanna"
+            },
+            {
                 "title": "Schickeria",
                 "artist": "Spider Murphy Gang"
             },
@@ -309,7 +329,7 @@
             },
             {
                 "title": "Seven Nation Army (Walzer)",
-                "artist": "The White Stripes"
+                "artist": "Seven Heaven"
             },
             {
                 "title": "Seven Nation Army",
@@ -373,6 +393,10 @@
                 "artist": "The Greatest Showman"
             },
             {
+                "title": "The best",
+                "artist": "Tina Turner"
+            },
+            {
                 "title": "This Is The Life",
                 "artist": "Amy Macdonald"
             },
@@ -411,6 +435,10 @@
                 "artist": "ABBA"
             },
             {
+                "title": "Westerland",
+                "artist": "Die \u00c4rzte"
+            },
+            {
                 "title": "Weus'd a Herz hast wia a Bergwerk",
                 "artist": "Rainhard Fendrich"
             },
@@ -421,6 +449,10 @@
             {
                 "title": "Whatever It Takes",
                 "artist": "Imagine Dragons"
+            },
+            {
+                "title": "Willst du",
+                "artist": "Alligatoah"
             },
             {
                 "title": "Wonderwall",
