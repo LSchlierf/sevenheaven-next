@@ -9,7 +9,7 @@ export default function Impressum() {
       <br />
       Klingerstraße 31
       <br />
-      81369
+      81369 München
 
       <h2 id="m56">Kontaktmöglichkeiten</h2>
       E-Mail-Adresse: <a href="mailto:kontakt@sevenheaven.band">kontakt@sevenheaven.band</a>
