@@ -61,7 +61,7 @@ export default function Wir() {
       </ImageCard>
       <H2 text='Die Mitglieder' />
       <div className={styles.portraits}>
-        <PortraitCard img='Luisa.png' name='Luisa Loher' role='Leadgesang' text={<>Mit ihrer natürlichen und ansteckend gut gelaunten Art ist es ein Genuss Luisa beim Performen zuzusehen.<br /><br />Die erfahrene Sängerin hat zusätzlich 6 Jahre lang Klavierunterricht genossen.<br /><br />Auf der Bühne entfaltet sich ihre Stimme besonders bei anspruchsvollen Künstlerinnen, wie Adele oder Gloria Gaynor.</>} />
+        <PortraitCard img='Mary.png' name='Mary Witzigmann' role='Leadgesang' text={<>Mary beginnt mit 11 Jahren aktiv zu singen und hat seitdem nicht mehr aufgehört.<br/><br/>Seit sie 16 ist nimmt sie Gesangsunterricht, ist Teil einer Jazz- und einer Blues-Band und wird später in Musical-Gesang ausgebildet.<br/><br/>Ihre Bühnenerfahrung ist bei jedem Ton auch noch in der letzten Reihe zu spüren.</>} />
         <PortraitCard img='Lucas.png' name='Lucas Schlierf' role='Leadgesang' text={<>Mit seiner Gesangsausbildung beim Tölzer Knabenchor füllt Lucas mit seiner Stimmgewalt den ganzen Saal.<br /><br />Besonders bei Peter Schilling oder Green Day lässt der außerhalb der Bühne sonst ruhige Sänger die Sau raus.</>} />
         <PortraitCard img='Florian.png' name='Florian Döhr' role='Leadgitarre' text={<>Florian ist einer unserer Allrounder.<br /><br />Mit acht beginnt er Gitarre, mit 13 Jahren Schlagzeug und mit 20 Jahren Trompete zu spielen.<br /><br />Besonders zu spüren ist seine Erfahrung bei seinen virtuosen Soli, aber auch bei seiner Coolness auf der Bühne.</>} />
         <PortraitCard img='Leo.png' name='Leo Hellerer' role='Rhythmusgitarre + Bass' text={<>Leo könnte man als Ruhepol der Band bezeichnen.<br /><br />Als Rhythmusgitarrist ist er für den vollen Klang verantwortlich.<br /><br />Seit er acht Jahre alt ist spielt er Gitarre. Und wenn Julian sich gerade als Front-Sänger versucht, übernimmt er nahtlos die Rolle des Bassisten.</>} />
@@ -75,6 +75,10 @@ export default function Wir() {
         <PortraitCard img='Ylai.png' name='Ylai Elsler' role='Tontechnik' text={<>Der gelernte Audio-Ingenieur ist jetzt als erfolgreicher DJ, sowie Musikproduzent tätig.<br /><br />Auch auf wiederholte Rückfrage möchte er uns partout nicht verraten für wen er schon produziert hat.<br />&quot;Berufsgeheimnis&quot;, sagt er.</>} />
         <PortraitCard img='Lena.png' name='Lena Strauss' role='Social Media' text={<>Lena ist eure Augen und Ohren wenn es darum geht hinter unsere Kulissen zu blicken.<br /><br />Mit ihrer Kamera begleitet sie uns bei Konzerten und Proben, immer auf der Suche nach den perfekten Bildern.</>} />
       </div>
+      {/* <H2 text='Ehemalige Mitglieder' />
+      <div className={styles.portraits}>
+        <PortraitCard img='Luisa.png' name='Luisa Loher' role='Leadgesang' text={<>Mit ihrer natürlichen und ansteckend gut gelaunten Art ist es ein Genuss Luisa beim Performen zuzusehen.<br /><br />Die erfahrene Sängerin hat zusätzlich 6 Jahre lang Klavierunterricht genossen.<br /><br />Auf der Bühne entfaltet sich ihre Stimme besonders bei anspruchsvollen Künstlerinnen, wie Adele oder Gloria Gaynor.</>} />
+      </div> */}
     </SubPage>
   )
 }
