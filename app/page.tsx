@@ -9,6 +9,7 @@ import image from '@/public/img/cards/main.jpg'
 import VideoCard from '@/components/VideoCard'
 import Review from '@/components/Review'
 import NewsletterSignup from '@/components/NewsletterSignup'
+import upcoming from '@/components/upcoming'
 
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
             </Link>
           </div>
         </Slider>
+        {upcoming()}
         <H2 text='Frischer Wind für München und Umgebung' />
         <ImageCard image={image} narrow>
           Servus zusammen, wir sind Seven Heaven! Eine

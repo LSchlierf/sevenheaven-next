@@ -6,14 +6,15 @@ import { Metadata } from "next";
 import blog from './blog.json'
 import LinkButton from "@/components/LinkButton";
 import Poster from "@/components/Poster";
-import poster_2025_02_21 from '@/public/img/posters/2025-02-21.png'
 import poster_2025_03_21 from '@/public/img/posters/2025-03-21.png'
+import poster_2025_02_21 from '@/public/img/posters/2025-02-21.png'
 import poster_2024_07_21 from '@/public/img/posters/2024-07-21.png'
 import poster_2024_04_13 from '@/public/img/posters/2024-04-13.png'
 import poster_2024_01_20 from '@/public/img/posters/2024-01-20.jpg'
 import poster_2023_03_25 from '@/public/img/posters/2023-03-25.jpg'
 import poster_2022_06_10 from '@/public/img/posters/2022-06-10.png'
 import NewsletterSignup from "@/components/NewsletterSignup";
+import upcoming from "@/components/upcoming";
 
 export const metadata: Metadata = {
   title: 'Aktuelles - Seven Heaven | Hier siehst du unsere kommenden Konzerte',
@@ -27,25 +28,7 @@ export default function Aktuelles() {
       <div className={styles.textBox}>
         Hier erfährst Du alles über anstehende Konzerte und was uns sonst so herumtreibt.
       </div>
-      {/* <H2 text='Kommende Gigs' />
-      <Poster href='https://www.interim-kultur.de/Programm/?dfxid=584' external image={poster_2025_03_21} text={<>Jetzt haben wir Euch aber zappeln lassen, meine Güte. Nun freuen wir uns aber, endlich unser nächstes Konzert anküdigen zu können. 🎤🔜
-        <br />
-        <br />
-        Wir werden den Winter für eine kleine Pause nutzen, um an unserem Repertoire zu schrauben. Und Ihr seid die ersten, die die Früchte dieser Arbeit ernten dürfen. 😮🔥
-        <br />
-        <br />
-        Für Euch bedeutet das:
-        <br />
-        <br />
-        - euren Leuten Bescheid geben
-        <br />
-        - Karten sichern (hier klicken)
-        <br />
-        - den Abend zu einer großen Party werden lassen 🎉
-        <br />
-        <br />
-        Wir freuen uns auf Euch! Bis dann.
-      </>} /> */}
+      {upcoming()}
       <H2 text='Newsletter' />
       <div className={styles.textBox}>
         Melde dich zu unserem Newsletter an, um keine Neuigkeiten mehr zu verpassen.
