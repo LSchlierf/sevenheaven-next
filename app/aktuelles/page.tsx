@@ -14,7 +14,7 @@ import poster_2024_01_20 from '@/public/img/posters/2024-01-20.jpg'
 import poster_2023_03_25 from '@/public/img/posters/2023-03-25.jpg'
 import poster_2022_06_10 from '@/public/img/posters/2022-06-10.png'
 import NewsletterSignup from "@/components/NewsletterSignup";
-import upcoming from "@/components/upcoming";
+import upcoming from "@/components/Upcoming";
 
 export const metadata: Metadata = {
   title: 'Aktuelles - Seven Heaven | Hier siehst du unsere kommenden Konzerte',

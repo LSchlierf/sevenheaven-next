@@ -9,7 +9,7 @@ import image from '@/public/img/cards/main.jpg'
 import VideoCard from '@/components/VideoCard'
 import Review from '@/components/Review'
 import NewsletterSignup from '@/components/NewsletterSignup'
-import upcoming from '@/components/upcoming'
+import upcoming from '@/components/Upcoming'
 
 export default function Home() {
   return (

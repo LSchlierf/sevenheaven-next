@@ -13,7 +13,7 @@ export default function upcoming() {
       Letztes und vorletztes Jahr hatten wir super viel Spaß, dieses Jahr freuen wir uns darauf, der letzte Act sein zu dürfen und damit das Weinfest abzurunden!
       <br />
       <br />
-      Also kommt am <b>9. Juni</b> zur Seebühne im Westpark und bringt Durst und eure Liebsten mit, für die Stimmung sorgen wir! 😉
+      Also kommt am <b>Pfingstmontag, den 9. Juni</b> zur Seebühne im Westpark und bringt Durst und eure Liebsten mit, für die Stimmung sorgen wir! 😉
     </>} />
   </>
 }
