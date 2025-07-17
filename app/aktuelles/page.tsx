@@ -55,8 +55,6 @@ export default function Aktuelles() {
       <H2 text='Presented by Seven Heaven' />
       <div className={styles.posters}>
         <Poster image={poster_2025_03_21} />
-        <Poster image={poster_2025_02_21} />
-        <Poster image={poster_2024_07_21} href='/galerie/2024-07-21' />
         <Poster image={poster_2024_04_13} href='/galerie/2024-04-13' />
         <Poster image={poster_2024_01_20} href='/galerie/2024-01-20' />
         <Poster image={poster_2023_03_25} href='/galerie/2023-03-25' />

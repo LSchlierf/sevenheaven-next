@@ -19,7 +19,7 @@
 }
 
 .gradient {
-    height: 5vw;
+    height: 10vh;
     background: linear-gradient(black 0%, black 25%, transparent 100%);
 }
 

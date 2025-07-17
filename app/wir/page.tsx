@@ -1,6 +1,6 @@
 import SubPage from '@/components/SubPage'
 import styles from './page.module.css'
-import banner from '@/public/img/2023-11-11/banner.jpg'
+import banner from '@/public/img/band/Gruppe.jpg'
 import { H1, H2 } from '@/components/Header'
 import PortraitCard from '@/components/PortraitCard'
 import { Metadata } from 'next'
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function Wir() {
   return (
-    <SubPage banner={banner} offset='-12vw'>
+    <SubPage banner={banner} offset='center'>
       <H1 text='Über uns' />
       <H2 text='Die Band' />
       <ImageCard image={image}>
@@ -61,13 +61,13 @@ export default function Wir() {
       </ImageCard>
       <H2 text='Die Mitglieder' />
       <div className={styles.portraits}>
-        <PortraitCard img='Mary.png' name='Mary Witzigmann' role='Leadgesang' text={<>Mary beginnt mit 11 Jahren aktiv zu singen und hat seitdem nicht mehr aufgehört.<br/><br/>Seit sie 16 ist nimmt sie Gesangsunterricht, ist Teil einer Jazz- und einer Blues-Band und wird später in Musical-Gesang ausgebildet.<br/><br/>Ihre Bühnenerfahrung ist bei jedem Ton auch noch in der letzten Reihe zu spüren.</>} />
-        <PortraitCard img='Lucas.png' name='Lucas Schlierf' role='Leadgesang' text={<>Mit seiner Gesangsausbildung beim Tölzer Knabenchor füllt Lucas mit seiner Stimmgewalt den ganzen Saal.<br /><br />Besonders bei Peter Schilling oder Green Day lässt der außerhalb der Bühne sonst ruhige Sänger die Sau raus.</>} />
-        <PortraitCard img='Florian.png' name='Florian Döhr' role='Leadgitarre' text={<>Florian ist einer unserer Allrounder.<br /><br />Mit acht beginnt er Gitarre, mit 13 Jahren Schlagzeug und mit 20 Jahren Trompete zu spielen.<br /><br />Besonders zu spüren ist seine Erfahrung bei seinen virtuosen Soli, aber auch bei seiner Coolness auf der Bühne.</>} />
-        <PortraitCard img='Leo.png' name='Leo Hellerer' role='Rhythmusgitarre + Bass' text={<>Leo könnte man als Ruhepol der Band bezeichnen.<br /><br />Als Rhythmusgitarrist ist er für den vollen Klang verantwortlich.<br /><br />Seit er acht Jahre alt ist spielt er Gitarre. Und wenn Julian sich gerade als Front-Sänger versucht, übernimmt er nahtlos die Rolle des Bassisten.</>} />
-        <PortraitCard img='Julian.png' name='Julian Höflmaier' role='Bass + Gesang' text={<>Julian beginnt seine musikalische Laufbahn wie Lucas beim Tölzer Knabenchor. Neben Gesang lernt er außerdem Klavier.<br /><br />Da uns zu unserer Gründung noch ein Bassist fehlt, beschließt er kurzerhand, sich das Bassspielen selbst beizubringen.<br /><br />Gesanglich ist er für die Alpengegend und Backing-Vocals zuständig.</>} />
-        <PortraitCard img='Jakob.png' name='Jakob Friederich' role='Piano + Gesang' text={<>Jakob ist unser Musikgenie.<br /><br />Neben seinem absoluten Gehör spielt er seit er sechs Jahre alt ist Klavier, beherrscht das Saxophon, die Klarinette und nimmt Gesangsunterricht.<br /><br />Er kümmert sich um die Arrangements der Stücke und hat auch sonst überall seine Finger im Spiel.</>} />
-        <PortraitCard img='Daniel.png' name='Daniel Bopp' role='Schlagzeug + Gesang' text={<>Mit seinen vielen Jahren Schlagzeug-Erfahrung bildet Daniel das rhythmische Fundament der Band.<br /><br />Neben seinen Beats unterstützt er die Frontsänger mit Backing-Vocals.</>} />
+        <PortraitCard img='Mary.jpg' name='Mary Witzigmann' role='Leadgesang' text={<>Mary beginnt mit 11 Jahren aktiv zu singen und hat seitdem nicht mehr aufgehört.<br/><br/>Seit sie 16 ist nimmt sie Gesangsunterricht, ist Teil einer Jazz- und einer Blues-Band und wird später in Musical-Gesang ausgebildet.<br/><br/>Ihre Bühnenerfahrung ist bei jedem Ton auch noch in der letzten Reihe zu spüren.</>} />
+        <PortraitCard img='Lucas.jpg' name='Lucas Schlierf' role='Leadgesang' text={<>Mit seiner Gesangsausbildung beim Tölzer Knabenchor füllt Lucas mit seiner Stimmgewalt den ganzen Saal.<br /><br />Besonders bei Peter Schilling oder Green Day lässt der außerhalb der Bühne sonst ruhige Sänger die Sau raus.</>} />
+        <PortraitCard img='Flo.jpg' name='Florian Döhr' role='Leadgitarre' text={<>Florian ist einer unserer Allrounder.<br /><br />Mit acht beginnt er Gitarre, mit 13 Jahren Schlagzeug und mit 20 Jahren Trompete zu spielen.<br /><br />Besonders zu spüren ist seine Erfahrung bei seinen virtuosen Soli, aber auch bei seiner Coolness auf der Bühne.</>} />
+        <PortraitCard img='Leo.jpg' name='Leo Hellerer' role='Rhythmusgitarre + Bass' text={<>Leo könnte man als Ruhepol der Band bezeichnen.<br /><br />Als Rhythmusgitarrist ist er für den vollen Klang verantwortlich.<br /><br />Seit er acht Jahre alt ist spielt er Gitarre. Und wenn Julian sich gerade als Front-Sänger versucht, übernimmt er nahtlos die Rolle des Bassisten.</>} />
+        <PortraitCard img='Juli.jpg' name='Julian Höflmaier' role='Bass + Gesang' text={<>Julian beginnt seine musikalische Laufbahn wie Lucas beim Tölzer Knabenchor. Neben Gesang lernt er außerdem Klavier.<br /><br />Da uns zu unserer Gründung noch ein Bassist fehlt, beschließt er kurzerhand, sich das Bassspielen selbst beizubringen.<br /><br />Gesanglich ist er für die Alpengegend und Backing-Vocals zuständig.</>} />
+        <PortraitCard img='Jakob.jpg' name='Jakob Friederich' role='Piano + Gesang' text={<>Jakob ist unser Musikgenie.<br /><br />Neben seinem absoluten Gehör spielt er seit er sechs Jahre alt ist Klavier, beherrscht das Saxophon, die Klarinette und nimmt Gesangsunterricht.<br /><br />Er kümmert sich um die Arrangements der Stücke und hat auch sonst überall seine Finger im Spiel.</>} />
+        <PortraitCard img='Daniel.jpg' name='Daniel Bopp' role='Schlagzeug + Gesang' text={<>Mit seinen vielen Jahren Schlagzeug-Erfahrung bildet Daniel das rhythmische Fundament der Band.<br /><br />Neben seinen Beats unterstützt er die Frontsänger mit Backing-Vocals.</>} />
       </div>
       <H2 text='Die Crew' />
       <div className={styles.portraits}>

@@ -1,9 +1,9 @@
 import SubPage from "@/components/SubPage";
-import banner from '@/public/img/2023-03-25/L1000678.jpg'
+import banner from '@/public/img/2024-01-20/7H@aluciaphotos-92.jpg'
 import { H1, H2 } from "@/components/Header";
 import FAQ from "@/components/FAQ";
 import { Metadata } from "next";
-import image from '@/public/img/cards/party.jpg'
+import image from '@/public/img/2024-01-20/7H@aluciaphotos-91.jpg'
 import ImageCard from "@/components/ImageCard";
 import styles from '../angebot.module.css'
 import LinkButton from "@/components/LinkButton";
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function Party() {
   return (
-    <SubPage banner={banner} offset='-7vw'>
+    <SubPage banner={banner} offset='bottom'>
       <H1 text='Partyband' />
       <ImageCard image={image} >
         Servus! Du bist auf der Seite gelandet, bei der sich alles um Deine perfekte Party dreht.

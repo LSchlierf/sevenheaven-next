@@ -1,5 +1,5 @@
 import SubPage from "@/components/SubPage";
-import banner from '@/public/img/2023-05-25/itsMyLife.jpg'
+import banner from '@/public/img/2025-06-09/nelehollandmoritz-20250609-sevenheaven-213.jpg'
 import { H1, H2 } from "@/components/Header";
 import FAQ from "@/components/FAQ";
 import { Metadata } from "next";
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function Event() {
   return (
-    <SubPage banner={banner} offset='center'>
+    <SubPage banner={banner} offset='bottom'>
       <H1 text='Eventband' />
       <ImageCard image={image}>
         Servus, willkommen auf dieser Seite. Wenn Du hier gelandet bist, scheinst Du auf

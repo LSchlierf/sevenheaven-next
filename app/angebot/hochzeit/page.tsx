@@ -1,9 +1,9 @@
 import SubPage from "@/components/SubPage";
-import banner from '@/public/img/2024-01-20/7H@aluciaphotos-67.jpg'
+import banner from '@/public/img/2025-02-21/20250221_235017.jpg'
 import { H1, H2 } from "@/components/Header";
 import FAQ from "@/components/FAQ";
 import { Metadata } from "next";
-import image from '@/public/img/cards/hochzeit.jpg'
+import image from '@/public/img/2025-06-09/nelehollandmoritz-20250609-sevenheaven-243.jpg'
 import ImageCard from "@/components/ImageCard";
 import styles from '../angebot.module.css'
 import LinkButton from "@/components/LinkButton";
