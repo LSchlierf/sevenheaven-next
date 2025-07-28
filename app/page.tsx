@@ -71,11 +71,10 @@ export default function Home() {
         </Link>
         <H2 text='Mal reinhören?' />
         <div className={styles.text} >
-          Sieh Dir gerne einen Zusammenschnitt zweier Konzerte an. <br /> So bekommst Du einen guten Eindruck von unserer Art, Musik zu machen.
+          Sieh Dir gerne einen Zusammenschnitt unserer Konzerte an. <br /> So bekommst Du einen guten Eindruck von unserer Art, Musik zu machen.
         </div>
         <div className={styles.videos} >
-          <VideoCard src='https://www.youtube-nocookie.com/embed/urSar1gnXOQ?autoplay=1' text={<>Konzert Jugendhaus Neuried 2023<br />(Highlights)</>} thumbnail='thumbnails/juha.jpg' domain='YouTube' />
-          <VideoCard src='https://www.youtube-nocookie.com/embed/j6pDTYMMN7o?autoplay=1' text={<>40-jähriges Westpark Jubiläum 2023<br />(Highlights)</>} thumbnail='thumbnails/westpark.jpg' domain='YouTube' />
+          <VideoCard src='https://www.youtube-nocookie.com/embed/KYhSNidUJag?autoplay=1' text={<>Musikalisches Weinfest 2025<br />(Highlights)</>} thumbnail='thumbnails/weinfest.png' domain='YouTube' />
         </div>
         <Link href='/galerie' className={styles.link} >
           Hier siehst Du weitere Fotos und Aufnahmen.
