@@ -26,6 +26,12 @@ export async function generateMetadata(
   }
 }
 
+export function generateStaticParams() {
+  return Object.keys(concerts).map((c) => ({
+    concert: c
+  }))
+}
+
 export default function galleryLayout({
   children
 }: {
