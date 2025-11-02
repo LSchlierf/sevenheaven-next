@@ -62,8 +62,9 @@ export async function POST(request: Request) {
     // send mails
     const info = await Promise.all([
       transporter.sendMail({
-        from: "kontakt@sevenheaven.band",
-        to: "kontakt@sevenheaven.band",
+        from: "Seven Heaven <kontakt@sevenheaven.band>",
+        replyTo: mail,
+        to: "Seven Heaven <kontakt@sevenheaven.band>",
         subject: "Neue Kontaktanfrage",
         text: "Neue Nachricht von " + mail + " :\n\n" + mesg + "\n"
       }),
