@@ -49,6 +49,7 @@ export default function Galerie() {
       <div id='videos' />
       <H2 text='Videos' />
       <div className={styles.videos} >
+        <VideoCard src='https://www.youtube-nocookie.com/embed/KYhSNidUJag?autoplay=1' text={<>Musikalisches Weinfest 2025<br />(Highlights)</>} thumbnail='thumbnails/weinfest.png' domain='YouTube' />
         <VideoCard src='https://www.youtube-nocookie.com/embed/qWwdPrLqDso?autoplay=1' text={<>Inside Seven Heaven<br />(Part 1)</>} thumbnail='thumbnails/inside1.jpg' domain='YouTube' />
         <VideoCard src='https://www.youtube-nocookie.com/embed/fqxEIZ4eg38?autoplay=1' text={<>Inside Seven Heaven<br />(Part 2)</>} thumbnail='thumbnails/inside2.jpg' domain='YouTube' />
         <VideoCard src='https://www.youtube-nocookie.com/embed/9AU7nnl1-mk?autoplay=1' text={<>Inside Seven Heaven<br />(Part 3)</>} thumbnail='thumbnails/inside3.jpg' domain='YouTube' />
