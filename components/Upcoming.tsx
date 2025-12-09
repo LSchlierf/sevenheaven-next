@@ -5,7 +5,7 @@ import poster_2025_11_27 from '@/public/img/posters/2025-11-27.jpeg'
 
 export default function upcoming() {
   return <>
-    <H2 text='Kommende Gigs' />
+    {/* <H2 text='Kommende Gigs' />
     <Poster href='https://maerchenbazar.de/' external image={poster_2025_11_27} text={<>
       Es weihnachtet langsam!
       <br />
@@ -16,6 +16,6 @@ export default function upcoming() {
       <br />
       <br />
       Wir freuen uns auf Euch!
-    </>} />
+    </>} /> */}
   </>
 }
