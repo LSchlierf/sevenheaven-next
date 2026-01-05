@@ -8,14 +8,14 @@ import Image from 'next/image';
 import BackButton from '@/components/BackButton';
 
 export async function generateMetadata(
-  { params }: { params: { concert: string } },
+  { params }: { params: Promise<{ concert: string }> },
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  if (!params.concert || !concerts[params.concert as keyof Object]) {
+  if (!(await params).concert || !concerts[(await params).concert as keyof Object]) {
     return notFound()
   }
 
-  let data: any = concerts[params.concert as keyof Object]
+  let data: any = concerts[(await params).concert as keyof Object]
 
   return {
     title: data.preview + ' - Seven Heaven',

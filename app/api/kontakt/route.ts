@@ -42,7 +42,7 @@ export async function POST(request: Request) {
 
   const mesg = json.mesg
 
-  if (!mesg) {
+  if (!mesg || mesg.length < 32) {
     return NextResponse.json({ 'status': 'error', 'error': 'missing message' }, { status: 400 })
   }
 
