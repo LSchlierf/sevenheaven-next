@@ -1,21 +1,32 @@
 import { H2 } from "@/components/Header";
 import Poster from "@/components/Poster";
 
-import poster_2025_11_27 from '@/public/img/posters/2025-11-27.jpeg'
+import poster_2026_02_06 from "@/public/img/posters/2026-02-06.png";
 
 export default function upcoming() {
-  return <>
-    {/* <H2 text='Kommende Gigs' />
-    <Poster href='https://maerchenbazar.de/' external image={poster_2025_11_27} text={<>
-      Es weihnachtet langsam!
-      <br />
-      Deswegen freut es uns umso mehr, den <a href="https://maerchenbazar.de/">Märchenbazar im Olympiapark Süd</a> eröffnen zu dürfen.
-      <br />
-      <br />
-      Also kommt am 27. November zum Olympiapark und holt euch einen Glühwein (oder fünf), wir fangen um 19:30 an zu spielen.
-      <br />
-      <br />
-      Wir freuen uns auf Euch!
-    </>} /> */}
-  </>
+  return (
+    <>
+      <H2 text="Kommende Gigs" />
+      <Poster
+        image={poster_2026_02_06}
+        external
+        href="https://www.pfarrverband-sendling.de/fileadmin/smb/Redaktion/Dateien/Veranstaltungen/2026__Plakat_Sendlinger_Fasching_.pdf"
+        text={
+          <>
+            Helau!
+            <br />
+            Wir sind in Faschingslaune! Am 6. Februar bespielen wir deshalb
+            wieder den Faschingsball der Pfarrgemeinde St. Margaret.
+            <br />
+            <br />
+            Also kramt eure Kostüme vom Dachboden, packt eure Liebsten ein, und
+            schwingt das Tanzbein, es wird ein fabelhafter Abend!
+            <br />
+            <br />
+            Wir freuen uns auf Euch!
+          </>
+        }
+      />
+    </>
+  );
 }
