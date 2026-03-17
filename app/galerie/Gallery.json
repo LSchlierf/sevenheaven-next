@@ -1,4 +1,49 @@
 {
+    "2026-02-06": {
+        "title": "Pfarrfasching St. Margaret",
+        "preview": "Pfarrfasching St. Margaret 2026",
+        "thumbnail": "2026-02-06/thumbnail.jpg",
+        "text": "Dieselbe Location wie letztes Jahr, dieselbe gute Stimmung wie letztes Jahr, derselbe (wenn nicht größerer) Schmarrn auf der Bühne wie letztes Jahr. Immer eine Freude.",
+        "images": [
+            {"src": "2026-02-06/Extra1.jpeg"},
+            {"src": "2026-02-06/Extra2.jpeg", "vert" : true},
+            {"src": "2026-02-06/Extra3.jpeg", "vert" : true},
+            {"src": "2026-02-06/Extra4.jpeg", "vert" : true},
+            {"src": "2026-02-06/Extra5.jpeg"},
+            {"src": "2026-02-06/Extra6.jpeg"},
+            {"src": "2026-02-06/Extra7.jpeg"},
+            {"src": "2026-02-06/Margaret10.png", "vert" : true},
+            {"src": "2026-02-06/Margaret1.png", "vert" : true},
+            {"src": "2026-02-06/Margaret2.png", "vert" : true},
+            {"src": "2026-02-06/Margaret3.png", "vert" : true},
+            {"src": "2026-02-06/Margaret4.png"},
+            {"src": "2026-02-06/Margaret5.png", "vert" : true},
+            {"src": "2026-02-06/Margaret6.png", "vert" : true},
+            {"src": "2026-02-06/Margaret7.png", "vert" : true},
+            {"src": "2026-02-06/Margaret8.png", "vert" : true},
+            {"src": "2026-02-06/Margaret9.png", "vert" : true}
+        ]
+    },
+    "2025-09-05": {
+        "title": "Hamburg",
+        "preview": "Stadtteilfest Hamburg-Volksdorf",
+        "thumbnail": "2025-09-05/thumbnail.jpg",
+        "text": "Dass es uns so bald mal ans andere Ende Deutschlands verschlägt, hätten wir auch nicht gedacht. Aber hey, eine Münchner Band auf einem Hamburger Stadtteilfest; warum auch nicht.",
+        "images": [
+            {"src": "2025-09-05/1d2fce48.jpg"},
+            {"src": "2025-09-05/6aea1da9.jpg", "vert" : true},
+            {"src": "2025-09-05/cc40e683.jpg"},
+            {"src": "2025-09-05/918c1326.jpg", "vert" : true},
+            {"src": "2025-09-05/IMG_9539.jpg"},
+            {"src": "2025-09-05/IMG_9550.jpg"},
+            {"src": "2025-09-05/IMG_9557.jpg"},
+            {"src": "2025-09-05/IMG_9553.jpg", "vert" : true},
+            {"src": "2025-09-05/IMG_9575.jpg"},
+            {"src": "2025-09-05/IMG_9560.jpg", "vert" : true},
+            {"src": "2025-09-05/IMG_9580.jpg"},
+            {"src": "2025-09-05/IMG_9583.jpg"}
+        ]
+    },
     "2025-06-09": {
         "title": "Musikalisches Weinfest",
         "preview": "Musikalisches Weinfest 2025",
