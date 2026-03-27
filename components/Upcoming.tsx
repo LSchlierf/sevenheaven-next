@@ -6,7 +6,7 @@ import poster_2026_03_21 from "@/public/img/posters/2026-03-21.jpeg";
 export default function upcoming() {
   return (
     <>
-      <H2 text="Kommende Gigs" />
+      {/* <H2 text="Kommende Gigs" />
       <Poster
         image={poster_2026_03_21}
         external
@@ -33,7 +33,7 @@ export default function upcoming() {
             Wir freuen uns auf Euch!
           </>
         }
-      />
+      /> */}
     </>
   );
 }

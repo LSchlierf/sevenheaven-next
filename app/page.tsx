@@ -74,6 +74,7 @@ export default function Home() {
           Sieh Dir gerne einen Zusammenschnitt unserer Konzerte an. <br /> So bekommst Du einen guten Eindruck von unserer Art, Musik zu machen.
         </div>
         <div className={styles.videos} >
+          <VideoCard src='https://www.youtube-nocookie.com/embed/XZbJVEIfa9I?autoplay=1' text={<>Interim Laim 2026<br />(Highlights)</>} thumbnail='thumbnails/interim2026.png' domain='YouTube' />
           <VideoCard src='https://www.youtube-nocookie.com/embed/KYhSNidUJag?autoplay=1' text={<>Musikalisches Weinfest 2025<br />(Highlights)</>} thumbnail='thumbnails/weinfest.png' domain='YouTube' />
         </div>
         <Link href='/galerie' className={styles.link} >
