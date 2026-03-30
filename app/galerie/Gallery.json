@@ -1,4 +1,26 @@
 {
+    "2026-03-21": {
+        "title": "Interim",
+        "preview": "Interim Laim 2026",
+        "thumbnail": "2026-03-21/thumbnail.jpg",
+        "text": "",
+        "images": [
+            {"src": "2026-03-21/FCK_1.jpeg"},
+            {"src": "2026-03-21/Flo_Solo.png"},
+            {"src": "2026-03-21/IMG_6661.jpeg", "vert" : true},
+            {"src": "2026-03-21/Hocke.png"},
+            {"src": "2026-03-21/Interim_1.png"},
+            {"src": "2026-03-21/IMG_6679.jpeg", "vert" : true},
+            {"src": "2026-03-21/Julian_und_Lucas.png"},
+            {"src": "2026-03-21/IMG_6668.jpeg", "vert" : true},
+            {"src": "2026-03-21/Luisa_und_Mary.png"},
+            {"src": "2026-03-21/Meeeeeee.png"},
+            {"src": "2026-03-21/Springen.png"},
+            {"src": "2026-03-21/Trio_4.jpeg"},
+            {"src": "2026-03-21/Wh.jpeg"},
+            {"src": "2026-03-21/W.jpeg"}
+        ]
+    },
     "2026-02-06": {
         "title": "Pfarrfasching St. Margaret",
         "preview": "Pfarrfasching St. Margaret 2026",
@@ -22,6 +44,24 @@
             {"src": "2026-02-06/Margaret7.png", "vert" : true},
             {"src": "2026-02-06/Margaret8.png", "vert" : true},
             {"src": "2026-02-06/Margaret9.png", "vert" : true}
+        ]
+    },
+    "2025-11-27": {
+        "title": "Märchenbazar",
+        "preview": "Märchenbazar 2025",
+        "thumbnail": "2025-11-27/thumbnail.jpg",
+        "text": "",
+        "images": [
+            {"src": "2025-11-27/Märchenbazar1.png", "vert": true},
+            {"src": "2025-11-27/Märchenbazar2.png", "vert": true},
+            {"src": "2025-11-27/Märchenbazar3.png", "vert": true},
+            {"src": "2025-11-27/Märchenbazar4.png", "vert": true},
+            {"src": "2025-11-27/Isi.jpeg", "vert": true},
+            {"src": "2025-11-27/Märchenbazar5.png", "vert": true},
+            {"src": "2025-11-27/Märchenbazar9.jpeg"},
+            {"src": "2025-11-27/Märchenbazar6.png", "vert": true},
+            {"src": "2025-11-27/Märchenbazar7.png", "vert": true},
+            {"src": "2025-11-27/Märchenbazar8.png", "vert": true}
         ]
     },
     "2025-09-05": {
