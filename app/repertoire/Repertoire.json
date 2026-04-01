@@ -24,8 +24,16 @@
         "letter": "B",
         "songs": [
             {
+                "title": "Bad Romance",
+                "artist": "Lady Gaga"
+            },
+            {
                 "title": "Basket Case",
                 "artist": "Green Day"
+            },
+            {
+                "title": "Bohemian Rhapsody",
+                "artist": "Queen"
             },
             {
                 "title": "Boulevard of Broken Dreams",
@@ -51,6 +59,10 @@
             {
                 "title": "Can't Stop",
                 "artist": "Red Hot Chili Peppers"
+            },
+            {
+                "title": "Can't Take My Eyes off You",
+                "artist": "Gloria Gaynor"
             },
             {
                 "title": "Creep",
@@ -108,6 +120,10 @@
                 "artist": "Owl City"
             },
             {
+                "title": "Footloose",
+                "artist": "Kenny Loggins"
+            },
+            {
                 "title": "F\u00fcrstenfeld",
                 "artist": "S.T.S"
             }
@@ -150,6 +166,10 @@
                 "artist": "Toto"
             },
             {
+                "title": "Holding Out for a Hero",
+                "artist": "Bonnie Tyler"
+            },
+            {
                 "title": "Holiday",
                 "artist": "Green Day"
             },
@@ -162,8 +182,16 @@
                 "artist": "Blue Swede, Bj\u00f6rn Skifs"
             },
             {
+                "title": "Hot Stuff",
+                "artist": "Donna Summer"
+            },
+            {
                 "title": "Hotel California",
                 "artist": "Eagles"
+            },
+            {
+                "title": "Hurra, hurra, die Schule brennt",
+                "artist": "Extrabreit"
             }
         ]
     },
@@ -175,7 +203,7 @@
                 "artist": "Gloria Gaynor"
             },
             {
-                "title": "Irgendwie, irgendwo, irgendwann",
+                "title": "Irgendwie, Irgendwo, Irgendwann",
                 "artist": "Nena"
             },
             {
@@ -190,6 +218,10 @@
             {
                 "title": "Jailhouse Rock",
                 "artist": "The Blues Brothers"
+            },
+            {
+                "title": "Jerk It Out",
+                "artist": "Caesars"
             },
             {
                 "title": "Jet Lag",
@@ -219,6 +251,10 @@
             {
                 "title": "Little Talks",
                 "artist": "Of Monsters and Men"
+            },
+            {
+                "title": "Livin' On a Prayer",
+                "artist": "Bon Jovi"
             }
         ]
     },
@@ -244,6 +280,10 @@
             {
                 "title": "More Than You Know",
                 "artist": "Axwell /\\ Ingrosso"
+            },
+            {
+                "title": "Mr. Brightside",
+                "artist": "The Killers"
             }
         ]
     },
@@ -295,7 +335,7 @@
         "letter": "R",
         "songs": [
             {
-                "title": "Rock Around the Clock",
+                "title": "Rock Around The Clock",
                 "artist": "Bill Haley & His Comets"
             },
             {
@@ -320,6 +360,10 @@
                 "artist": "Rihanna"
             },
             {
+                "title": "Sar\u00e0 perch\u00e9 ti amo",
+                "artist": "Ricchi E Poveri"
+            },
+            {
                 "title": "Schickeria",
                 "artist": "Spider Murphy Gang"
             },
@@ -332,12 +376,12 @@
                 "artist": "Eros Ramazzotti"
             },
             {
-                "title": "Seven Nation Army (Walzer)",
-                "artist": "Seven Heaven"
-            },
-            {
                 "title": "Seven Nation Army",
                 "artist": "The White Stripes"
+            },
+            {
+                "title": "Seven Nation Army Walzer",
+                "artist": "Seven Heaven"
             },
             {
                 "title": "Sex on Fire",
@@ -346,6 +390,10 @@
             {
                 "title": "Shallow",
                 "artist": "Lady Gaga, Bradley Cooper"
+            },
+            {
+                "title": "She's Got Nothing On (But the Radio)",
+                "artist": "Roxette"
             },
             {
                 "title": "Shut Up and Dance",
@@ -366,6 +414,10 @@
             {
                 "title": "Sommer in der Stadt",
                 "artist": "Spider Murphy Gang"
+            },
+            {
+                "title": "Songs f\u00fcr Liam",
+                "artist": "Kraftklub"
             },
             {
                 "title": "Sternenhimmel",
@@ -393,12 +445,12 @@
                 "artist": "Die Toten Hosen"
             },
             {
-                "title": "The Greatest Show",
-                "artist": "The Greatest Showman"
+                "title": "The Best",
+                "artist": "Tina Turner"
             },
             {
-                "title": "The best",
-                "artist": "Tina Turner"
+                "title": "The Greatest Show",
+                "artist": "The Greatest Showman"
             },
             {
                 "title": "This Is The Life",
@@ -439,6 +491,10 @@
                 "artist": "ABBA"
             },
             {
+                "title": "Wei\u00df' der Geier",
+                "artist": "Wolfgang Petry"
+            },
+            {
                 "title": "Westerland",
                 "artist": "Die \u00c4rzte"
             },
@@ -476,8 +532,12 @@
         "letter": "Z",
         "songs": [
             {
+                "title": "Zombie",
+                "artist": "The Cranberries"
+            },
+            {
                 "title": "Zruck zu dir (Hallo Klaus)",
-                "artist": "Nickerbocker & Biene"
+                "artist": "Nickerbocker, Biene"
             }
         ]
     },
