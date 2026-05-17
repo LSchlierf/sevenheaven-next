@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
-    "next": "16.0.7",
-    "nodemailer": "^6.9.8",
+    "next": ">=16.2.6",
+    "nodemailer": ">=8.0.5",
     "react": "^18",
     "react-device-detect": "^2.2.3",
     "react-dom": "^18",
