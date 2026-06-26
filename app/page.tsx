@@ -82,6 +82,17 @@ export default function Home() {
         </Link>
         <H2 text='Das sagen unsere Gäste' />
         <div className={styles.reviews} >
+          <Review name='Tamara Lang' rating={5} link='https://share.google/YJWgQuLmOz0H5DQ0R' review={
+            <>
+              7heaven hat uns auf unserer Hochzeit die Party des Jahres beschert.
+              <br/>
+              Nicht nur, dass sie unglaublich flexibel waren, als sich unser Zeitplan gen Abend einfach aufgelöst hat, der ganze Umgang, die Planung und der Aufbau waren einfach unkompliziert. Vorab konnten wir sogar noch Songs vorschlagen, die sie extra für uns gelernt haben und der absolute Banger bei unseren Gästen waren.
+              <br/>
+              Die Band ist eins der meist genannten Dinge in dem Feedback, dass wir so bekommen haben.
+              <br/>
+              Ihr lieben Ihr seid einfach der Wahnsinn und habt den Laden abgerissen. Danke für alles. Hier die ausdrückliche Empfehlung sich für diese feinen Menschen zu entscheiden.
+            </>
+          } />
           <Review name='Ralf Isermann' rating={5} link='https://maps.app.goo.gl/zBGMYh6uMcgTrDRA9' review={
             <>
               Eine herausragende Band! Seven Heaven haben auf unserer Silberhochzeit in München gespielt und hatten sehr großen Anteil daran, dass es ein rauschendes Fest wurde. Freunde und Familie, aus ganz Deutschland angereist, schwärmen auch Wochen später.
@@ -95,14 +106,7 @@ export default function Home() {
             <>
               Danke an Seven Heaven!
               <br/>
-              Ihr habt unser Stadtteilfest sehr bereichert- geniale Sänger und Sängerinnen, coole Performance… es hat hat einfach Spaß gemacht mit Euch!
-            </>
-          } />
-          <Review name='Lena Johanna' rating={5} link='https://g.co/kgs/ZtetMxR' review={
-            <>
-              Auf allen Konzerten ist immer eine super Stimmung. Haben ein tolles Reportoire und schaffen es ihr Publikum zum Tanzen zu animieren. Man merkt die Freude die sie alle dabei haben und diesen Spaß übertragen sie auf alle anderen. Jedes Konzert ist ein denkwürdiger Abend und ein Riesenspaß.
-              <br />
-              Eine große Empfehlung!!
+              Ihr habt unser Stadtteilfest sehr bereichert - geniale Sänger und Sängerinnen, coole Performance… es hat hat einfach Spaß gemacht mit Euch!
             </>
           } />
         </div>
