@@ -1,4 +1,26 @@
 {
+    "2026-06-13": {
+        "title": "Hochzeit",
+        "preview": "Hochzeit 13. Juni 2026",
+        "thumbnail": "2026-06-13/thumbnail.png",
+        "text": "",
+        "images": [
+            {"src":"2026-06-13/120507.png", "vert" : true},
+            {"src":"2026-06-13/120624.png"},
+            {"src":"2026-06-13/120651.png", "vert" : true},
+            {"src":"2026-06-13/120935.png"},
+            {"src":"2026-06-13/120710.png", "vert" : true},
+            {"src":"2026-06-13/120826.png", "vert" : true},
+            {"src":"2026-06-13/120903.png", "vert" : true},
+            {"src":"2026-06-13/IMG_4743.jpeg", "vert" : true},
+            {"src":"2026-06-13/IMG_4746.jpeg"},
+            {"src":"2026-06-13/IMG_4745.jpeg", "vert" : true},
+            {"src":"2026-06-13/IMG_4749.jpeg"},
+            {"src":"2026-06-13/IMG_4757.jpeg", "vert" : true},
+            {"src":"2026-06-13/IMG_4759.jpeg", "vert" : true},
+            {"src":"2026-06-13/IMG_4760.jpeg"}
+        ]
+    },
     "2026-05-25": {
         "title": "Musikalisches Weinfest",
         "preview": "Musikalisches Weinfest 2026",
