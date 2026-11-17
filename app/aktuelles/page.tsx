@@ -3,12 +3,8 @@ import banner from '@/public/img/2023-11-11/Flo2.jpg'
 import { H1, H2 } from "@/components/Header";
 import styles from './page.module.css'
 import { Metadata } from "next";
-import blog from './blog.json'
-import LinkButton from "@/components/LinkButton";
 import Poster from "@/components/Poster";
 import poster_2025_03_21 from '@/public/img/posters/2025-03-21.png'
-import poster_2025_02_21 from '@/public/img/posters/2025-02-21.png'
-import poster_2024_07_21 from '@/public/img/posters/2024-07-21.png'
 import poster_2024_04_13 from '@/public/img/posters/2024-04-13.png'
 import poster_2024_01_20 from '@/public/img/posters/2024-01-20.jpg'
 import poster_2023_03_25 from '@/public/img/posters/2023-03-25.jpg'
@@ -34,24 +30,6 @@ export default function Aktuelles() {
         Melde dich zu unserem Newsletter an, um keine Neuigkeiten mehr zu verpassen.
       </div>
       {NewsletterSignup()}
-      <H2 text='Historie' />
-      <div className={styles.textBox}>
-        Hier bleibst du up-to-date über die aktuellen Entwicklungen.
-      </div>
-      <div className={styles.history} >
-        {Object.entries(blog).map(([title, content]) => <div className={styles.blogItem} key={title}>
-          <div className={styles.blogContent} >
-            <div className={styles.blogTitle} >
-              {title}
-            </div>
-            <div className={styles.blogText} >
-              {content.text}
-              {'gallery' in content ? <LinkButton text='Zur Galerie' href={'/galerie/' + content.gallery} /> : <></>}
-            </div>
-          </div>
-          <div className={styles.blogSeparator} />
-        </div>)}
-      </div>
       <H2 text='Presented by Seven Heaven' />
       <div className={styles.posters}>
         <Poster image={poster_2025_03_21} />
